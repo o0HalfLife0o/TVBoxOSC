@@ -91,13 +91,12 @@ jobs:
             cd TVBoxOSC
             export LESSCHARSET=utf-8
             if [ "${{ env.commit }}" == "${lastCommit}" ]; then
-              COMMIT_MESSAGE="$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))"  "`git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e 's# \{2,\}#\n#g' -e '/^Merge pull/d' -e 's#"#\\"#g' -e '/^$/d' |sort -u`")"
+              COMMIT_MESSAGE="$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))"  "`git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e 's# \{2,\}#\n#g' -e '/^Merge pull/d' -e 's#"#\\"#g' -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- `")"
             else
-              COMMIT_MESSAGE="$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))"  "`git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e 's# \{2,\}#\n#g' -e '/^Merge pull/d' -e 's#"#\\"#g' -e '/^$/d' |sort -u`")"
+              COMMIT_MESSAGE="$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))"  "`git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e 's# \{2,\}#\n#g' -e '/^Merge pull/d' -e 's#"#\\"#g' -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- `")"
             fi
-            #if [ ${#COMMIT_MESSAGE} -gt 0 ] && [ ${#COMMIT_MESSAGE} -le 1024 ] && echo "${COMMIT_MESSAGE}" |grep -qv '%22'; then
             if [ ${#COMMIT_MESSAGE} -gt 0 ] && [ ${#COMMIT_MESSAGE} -le 1024 ]; then
-              ESCAPED="$COMMIT_MESSAGE"
+              ESCAPED="$(echo $COMMIT_MESSAGE |sed 's#%[eE]2[0-9a-zA-Z%]\{6\}##g')"
             else
               COMMIT_URL=${{ env.upstreamCode }}/commits/main
               ESCAPED="$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$COMMIT_URL")"
