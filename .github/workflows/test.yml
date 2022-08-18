@@ -8,6 +8,12 @@ on:
       - master
   workflow_dispatch:
 
+  
+env:
+  userName: q215613905
+  repoName: TVBoxOS
+  branchName: main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,9 +24,9 @@ jobs:
           fetch-depth: 0
       - name: Check New Commit
         run: |
-          upstreamCode=https://github.com/q215613905/TVBoxOS
-          echo "upstreamCode=$upstreamCode" >> $GITHUB_ENV
-          commit=$(curl -sL $upstreamCode/commits/main |grep -o '/q215613905/TVBoxOS/commit/[a-z0-9]\+' |head -1 | cut -d\/ -f5)
+          upStream=https://github.com/${{ env.userName }}/${{ env.repoName }}
+          echo "upStream=$upStream" >> $GITHUB_ENV
+          commit=$(curl -sL $upStream/commits/${{ env.branchName }} |grep -o "/${{ env.userName }}/${{ env.repoName }}/commit/[a-z0-9]\+" |head -1 | cut -d\/ -f5)
           if ! git log --oneline |grep -q "$commit"; then
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
@@ -28,7 +34,7 @@ jobs:
       - name: Checkout Source Code and Zip
         if: ${{ env.commit }}
         run: |
-          git clone ${{ env.upstreamCode }} TVBoxOSC
+          git clone ${{ env.upStream }} TVBoxOSC
           cd TVBoxOSC
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%Y%m%d-%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
@@ -98,7 +104,7 @@ jobs:
             if [ ${#COMMIT_MESSAGE} -gt 0 ] && [ ${#COMMIT_MESSAGE} -le 1024 ]; then
               ESCAPED="$(echo $COMMIT_MESSAGE |sed 's#%[eE]2[0-9a-zA-Z%]\{6\}##g')"
             else
-              COMMIT_URL=${{ env.upstreamCode }}/commits/main
+              COMMIT_URL=${{ env.upStream }}/commits/${{ env.branchName }}
               ESCAPED="$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$COMMIT_URL")"
             fi
             curl -v "https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendMediaGroup?chat_id=${{ secrets.CHANNEL_ID }}&media=%5B%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FappRelease%22%7D%2C%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FsourceCode%22%2C%20%22caption%22%3A%22Commit%3A%20${{ env.commit }}%0AChangelog%3A%0A${ESCAPED}%22%7D%5D" -F appRelease="@$appRelease" -F sourceCode="@$sourceCode"
