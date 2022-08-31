@@ -99,7 +99,8 @@ jobs:
             OUTPUT="${{ github.workspace }}/TVBoxOSC/apk/"
             export appRelease=$(find $OUTPUT -name "*release*.apk")
             export sourceCode="${{ github.workspace }}/TVBoxOSC/${{ env.commitS }}-source.zip"
-            lastCommit=`git log --oneline |grep -o '[a-z0-9]\{40\}' |head -1`
+            #lastCommit=`git log --oneline |grep -o '[a-z0-9]\{40\}' |head -1`
+            lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" README.md |grep -o '[a-z0-9]\{40\}')
             cd TVBoxOSC
             export LESSCHARSET=utf-8
             if [ "${{ env.commit }}" == "${lastCommit}" ]; then
