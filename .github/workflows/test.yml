@@ -2,7 +2,7 @@ name: Test
 
 on:
   schedule:
-    - cron: 15,45 0-18 * * *
+    - cron: 15,45 0-18,22-23 * * *
   push:
     branches:
       - master
@@ -44,6 +44,20 @@ jobs:
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%Y%m%d-%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
           zip -q -x ".git/*" -r ${{ env.commitS }}-source.zip .
+      - uses: actions/cache@v3
+        if: ${{ env.commit }}
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-${{ matrix.userName }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.userName }}-
+      - name: Add Build Repo
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          sed -i "/crosswalk/a\        maven { url 'http://9xi4o.tk/maven2' }" build.gradle
       - name: Release Apk Sign
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
