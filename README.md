@@ -9,4 +9,4 @@
 This repo relies on the following third-party projects:
 - [CatVodTVOfficial/TVBoxOSC](https://github.com/CatVodTVOfficial/TVBoxOSC)
 - [q215613905/TVBoxOS](https://github.com/q215613905/TVBoxOS) (Updated: 6c920762d610b04a18f7688c3676b48df0d3f35e)
-- [takagen99/Box](https://github.com/takagen99/Box) (Updated: 40a5a70f16698a2c0f0ac4f4bea369926f6b9426)
+- [takagen99/Box](https://github.com/takagen99/Box) (Updated: 0a135fd68e61a623f17527f8a5f152d9a965cbcc)
