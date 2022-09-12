@@ -90,7 +90,7 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           for file in `find ~ -name "*release*.apk" -print`; do
-            mv "$file" apk/TVBox_release_${{ env.tag }}.apk
+            mv "$file" apk/TVBox_${{ matrix.userName }}_${{ env.tag }}.apk
           done
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
@@ -116,7 +116,7 @@ jobs:
         run: |
           if [ -n "${{ secrets.CHANNEL_ID }}" ] && [ -n "${{ secrets.BOT_TOKEN }}" ]; then
             OUTPUT="${{ github.workspace }}/TVBoxOSC/apk/"
-            export appRelease=$(find $OUTPUT -name "*release*.apk")
+            export appRelease=$(find $OUTPUT -name "*${{ matrix.userName }}*.apk")
             export sourceCode="${{ github.workspace }}/TVBoxOSC/${{ env.commitS }}-source.zip"
             lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" README.md |grep -o '[a-z0-9]\{40\}')
             cd TVBoxOSC
