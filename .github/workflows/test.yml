@@ -56,12 +56,10 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          if ! grep -q '9xi4o.tk' build.gradle; then
-            if grep -q 'crosswalk' build.gradle; then
-              sed -i "/crosswalk/a\        maven { url 'http://9xi4o.tk/maven2' }" build.gradle
-            else
-              sed -i "/jitpack.io/a\        maven { url 'http://9xi4o.tk/maven2' }" build.gradle
-            fi
+          if grep -q 'crosswalk' build.gradle; then
+            sed -i "/crosswalk/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
+          else
+            sed -i "/jitpack.io/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
           fi
       - name: Release Apk Sign
         if: ${{ env.commit }}
