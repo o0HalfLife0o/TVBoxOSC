@@ -62,16 +62,19 @@ jobs:
           key: ${{ runner.os }}-${{ matrix.userName }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-${{ matrix.userName }}-
-      - name: Add Build Repo
+      - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
+          echo '修改VersionName'
+          sed -i "/versionName/s#[0-9a-zA-Z_\.\'\"-]\+\$#\'${{ env.tag }}\'#" app/build.gradle
+          echo 'crosswalk源，防挂'
           if grep -q 'crosswalk' build.gradle; then
             sed -i "/crosswalk/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
           else
             sed -i "/jitpack.io/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
           fi
-      - name: Extra Option For Test
+      - name: Option For Test
         if: ${{ inputs.testOption }}
         working-directory: TVBoxOSC
         run: |
