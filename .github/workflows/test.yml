@@ -128,17 +128,17 @@ jobs:
         run: |
           echo "commit=" >> $GITHUB_ENV
       - name: Release and Upload Assets
-        uses: softprops/action-gh-release@v1
+        uses: ncipollo/release-action@v1
         if: ${{ env.commit }}
         with:
           name: ${{ env.tag }}
-          tag_name: ${{ env.tag }}
-          body_path: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
-          files: |
+          tag: ${{ env.tag }}
+          bodyFile: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
+          allowUpdates: true
+          removeArtifacts: true
+          artifacts: |
             TVBoxOSC/apk/*.apk
             TVBoxOSC/source-${{ env.commitS }}.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Post To Telegram
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
