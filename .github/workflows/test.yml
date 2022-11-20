@@ -45,14 +45,13 @@ jobs:
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
           fi
-      - name: Checkout Source Code and Zip
+      - name: Checkout Source Code
         if: ${{ env.commit }}
         run: |
           git clone ${{ env.upStream }} TVBoxOSC
           cd TVBoxOSC
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%Y%m%d-%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
-          zip -q -x ".git/*" -r source-${{ env.commitS }}.zip .
       - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -66,6 +65,12 @@ jobs:
           else
             sed -i "/jitpack.io/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
           fi
+      - name: Compress Source Code
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          #zip -q -x ".git/*" -r source-${{ env.commitS }}.zip .
+          tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
       - name: Option For Test
         if: ${{ inputs.testOption }}
         working-directory: TVBoxOSC
@@ -111,7 +116,7 @@ jobs:
         run: |
           lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
           export LESSCHARSET=utf-8
-          echo -e "Credit: ${{ matrix.userName }}/${{ matrix.repoName }}\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
+          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
             git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           else
@@ -122,7 +127,8 @@ jobs:
         if: ${{ env.commit }}
         with:
           name: ${{ matrix.userName }}-${{ matrix.repoName }}
-          path: TVBoxOSC/apk/*
+          path: |
+            TVBoxOSC/apk/*
       - name: Whether Or Not to Publish
         if: ${{ inputs.donotpublish && env.commit }}
         run: |
@@ -138,7 +144,7 @@ jobs:
           removeArtifacts: true
           artifacts: |
             TVBoxOSC/apk/*.apk
-            TVBoxOSC/source-${{ env.commitS }}.zip
+            TVBoxOSC/source-${{ env.commitS }}.*
       - name: Post To Telegram
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -146,13 +152,13 @@ jobs:
           if [ -n "${{ secrets.CHANNEL_ID }}" ] && [ -n "${{ secrets.BOT_TOKEN }}" ]; then
             OUTPUT="${{ github.workspace }}/TVBoxOSC/apk/"
             export appRelease=$(find $OUTPUT -name "*${{ matrix.userName }}*.apk")
-            export sourceCode="${{ github.workspace }}/TVBoxOSC/source-${{ env.commitS }}.zip"
-            count=$(wc -m apk/${{ matrix.userName }}-Release.log |cut -d ' ' -f1)
-            echo $count
-            if [ ${count} -eq 0 ] && [ ${count} -gt 1024 ]; then
-              echo -e "Credit: ${{ matrix.userName }}/${{ matrix.repoName }}\nCommit: ${{ env.commit }}\nChangelog:\n${{ env.upStream }}/commits/${{ matrix.branchName }}" > apk/${{ matrix.userName }}-Release.log
+            export sourceCode="${{ github.workspace }}/TVBoxOSC/source-${{ env.commitS }}.*"
+            ESCAPED="$(sed -e '1s/\[\(.*\)\].*/#\1/' -e 's#\([&"\/]\)#\\\1#g' apk/${{ matrix.userName }}-Release.log)"
+            count=$(echo "$ESCAPED" |wc -m |cut -d ' ' -f1)
+            if [ ${count} -eq 1 ] || [ ${count} -gt 1024 ]; then
+              ESCAPED="$(echo -e "Credit: #${{ matrix.userName }}\nCommit: ${{ env.commit }}\nChangelog:\n${{ env.upStream }}/commits/${{ matrix.branchName }}")"
             fi
-            ESCAPED=`python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$(cat apk/${{ matrix.userName }}-Release.log |sed -e '1s/: \(.*\)\/.*/: #\1/' -e 's#\([&"\/]\)#\\\\\1#g')"`
+            ESCAPED=`python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$ESCAPED"`
             #检查源码尺寸，太大则不上传
             file_size=$(du -s ${sourceCode} | awk '{print $1}')
             #文件最大值，1024代表1M
