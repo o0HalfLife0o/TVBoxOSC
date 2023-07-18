@@ -25,11 +25,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - userName: q215613905
-            repoName: TVBoxOS
+          - userName: xisohi
+            repoName: XHYSTV
             branchName: main
-          - userName: takagen99
-            repoName: Box
+          - userName: xisohi
+            repoName: XHYS
             branchName: main
     steps:
       - name: Checkout
