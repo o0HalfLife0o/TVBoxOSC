@@ -1,0 +1,1 @@
+Windows环境下计算文件md5 命令：certutil -hashfile XHYS_20230405-1116.apk MD5回车

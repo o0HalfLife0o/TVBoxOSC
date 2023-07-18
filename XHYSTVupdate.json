@@ -1,0 +1,12 @@
+{
+  "Code": 0,
+  "Msg": "",
+  "UpdateStatus": 1,
+  "VersionCode": 230714,
+  "VersionName": "20230714",
+  "UploadTime": "2023-07-14 20:22:41",
+  "ModifyContent": "\r\n1、修复已知BUG。\r\n2、支持去广告影视接口规则。",
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230716-0905/XHYSTV_20230716-0905.apk",
+  "ApkSize": 14347,
+  "ApkMd5": "97ba62463e8f50a4a647e539aceacbe7"
+}
