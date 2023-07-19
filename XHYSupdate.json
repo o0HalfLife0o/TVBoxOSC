@@ -1,12 +1,12 @@
 {
-  "Code": 0,
-  "Msg": "",
-  "UpdateStatus": 1,
-  "VersionCode": 230714,
-  "VersionName": "230714",
-  "UploadTime": "2023-07-14 20:23:41",
-  "ModifyContent": "\r\n1、修复部份 已知bug。\r\n2、支持去广告。\r\n3、",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230714-1958/XHYS_20230714-1958.apk",
-  "ApkSize": 23053,
-  "ApkMd5": "528e427dcf59251f7cd1b0ced279f479"
+  "Code": 0，
+  "Msg": ""，
+  "UpdateStatus": 1，
+  "VersionCode": 230719，
+  "VersionName": "230719"，
+  "UploadTime": "2023-07-14 20:23:41"，
+  "ModifyContent": "\r\n1、修复部份 已知bug。\r\n2、支持去广告。\r\n3、"，
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230719-1149/XHYS_20230719-1149.apk"，
+  "ApkSize": 23053，
+  "ApkMd5": "13c042b0fcf15bec44b5f2a09d613ca4"
 }
