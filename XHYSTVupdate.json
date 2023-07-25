@@ -2,11 +2,11 @@
   "Code": 0,
   "Msg": "",
   "UpdateStatus": 1,
-  "VersionCode": 230725,
-  "VersionName": "20230725",
+  "VersionCode": 230724,
+  "VersionName": "20230724",
   "UploadTime": "2023-07-24 20:22:41",
   "ModifyContent": "\r\n1、修复已知BUG。\r\n2、支持去广告影视接口规则。",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230724-1648/XHYSTV_20230724-1648.apk",
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230724-1908/XHYSTV_20230724-1908.apk",
   "ApkSize": 15653,
-  "ApkMd5": "2a37eeb3f4e0243e4a9da37df717c9d4"
+  "ApkMd5": "64601b00848413138880d451422ff76dd1534761"
 }
