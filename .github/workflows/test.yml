@@ -1,4 +1,4 @@
-name: Test
+name: build_TimeMachine
 
 on:
   workflow_dispatch:
