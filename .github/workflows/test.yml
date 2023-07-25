@@ -1,7 +1,6 @@
 name: Test
 
 on:
-  schedule:
   workflow_dispatch:
     inputs:
       rebuild:
