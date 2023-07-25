@@ -25,11 +25,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - userName: q215613905
-            repoName: TVBoxOS
+          - userName: bestpvp
+            repoName: TVBoxOS_white
             branchName: main
-          - userName: takagen99
-            repoName: Box
+          - userName: bestpvp
+            repoName: Box_black
             branchName: main
     steps:
       - name: Checkout
