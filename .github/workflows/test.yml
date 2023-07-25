@@ -117,32 +117,3 @@ jobs:
           name: ${{ matrix.userName }}-${{ matrix.repoName }}
           path: |
             TVBoxOSC/apk/*
-      - name: Whether Or Not to Publish
-        if: ${{ inputs.donotpublish && env.commit }}
-        run: |
-          echo "commit=" >> $GITHUB_ENV
-      - name: Release and Upload Assets
-        uses: ncipollo/release-action@v1
-        if: ${{ env.commit }}
-        with:
-          name: ${{ env.tag }}
-          tag: ${{ env.tag }}
-          bodyFile: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
-          allowUpdates: true
-          removeArtifacts: true
-          artifacts: |
-            TVBoxOSC/apk/*.apk
-            TVBoxOSC/source-${{ env.commitS }}.*
-      - name: Push to master
-        if: ${{ env.commit }}
-        run: |
-          rm -rf TVBoxOSC
-          sed -i '/url =/d' ./.git/config
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          git pull --rebase
-          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
-          git add --all
-          git commit -m "${{ env.commit }}"
-          git push -u -f origin master
