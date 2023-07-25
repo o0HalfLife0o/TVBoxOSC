@@ -145,30 +145,6 @@ jobs:
           artifacts: |
             TVBoxOSC/apk/*.apk
             TVBoxOSC/source-${{ env.commitS }}.*
-      - name: Post To Telegram
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          if [ -n "${{ secrets.CHANNEL_ID }}" ] && [ -n "${{ secrets.BOT_TOKEN }}" ]; then
-            OUTPUT="${{ github.workspace }}/TVBoxOSC"
-            export appRelease=$(find $OUTPUT/apk/ -name "*${{ matrix.userName }}*.apk")
-            export sourceCode=$(find $OUTPUT -name "source-${{ env.commitS }}.*")
-            ESCAPED="$(sed -e '1s/\[\(.*\)\].*/#\1/' -e 's#\([&"\/]\)#\\\1#g' apk/${{ matrix.userName }}-Release.log)"
-            count=$(echo "$ESCAPED" |wc -m |cut -d ' ' -f1)
-            if [ ${count} -eq 1 ] || [ ${count} -gt 1024 ]; then
-              ESCAPED="$(echo -e "Credit: #${{ matrix.userName }}\nCommit: ${{ env.commit }}\nChangelog:\n${{ env.upStream }}/commits/${{ matrix.branchName }}")"
-            fi
-            ESCAPED=`python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$ESCAPED"`
-            #检查源码尺寸，太大则不上传
-            file_size=$(du -s ${sourceCode} | awk '{print $1}')
-            #文件最大值，1024代表1M
-            file_limit_size=20480
-            if [[ ${file_size} -lt ${file_limit_size} ]];then
-              curl -v "https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendMediaGroup?chat_id=${{ secrets.CHANNEL_ID }}&media=%5B%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FappRelease%22%7D%2C%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FsourceCode%22%2C%20%22caption%22%3A%22${ESCAPED}%22%7D%5D" -F appRelease="@$appRelease" -F sourceCode="@$sourceCode"
-            else
-              curl -v "https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendMediaGroup?chat_id=${{ secrets.CHANNEL_ID }}&media=%5B%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FappRelease%22%2C%20%22caption%22%3A%22${ESCAPED}%22%7D%5D" -F appRelease="@$appRelease"
-            fi
-          fi
       - name: Push to master
         if: ${{ env.commit }}
         run: |
