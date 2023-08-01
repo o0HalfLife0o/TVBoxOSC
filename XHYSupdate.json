@@ -2,11 +2,11 @@
   "Code": 0,
   "Msg": "",
   "UpdateStatus": 1,
-  "VersionCode": 230731,
-  "VersionName": "230731",
-  "UploadTime": "2023-07-31 20:23:41",
+  "VersionCode": 230801,
+  "VersionName": "230801",
+  "UploadTime": "2023-08-01 20:23:41",
   "ModifyContent": "\r\n1、修复部份 已知bug。\r\n2、",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230731-0722/XHYS_20230731-0722.apk",
-  "ApkSize": 28939,
-  "ApkMd5": "f15a91ef5b7f91641edf9af400c1b1ad"
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230801-1553/XHYS_20230801-1553.apk",
+  "ApkSize": 29122,
+  "ApkMd5": "cb645716f26493aac2ba8437c1df17ba"
 }
