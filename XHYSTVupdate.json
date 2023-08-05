@@ -1,12 +1,12 @@
 {
-  "Code": 0,
-  "Msg": "",
-  "UpdateStatus": 1,
-  "VersionCode": 230803,
-  "VersionName": "20230803",
-  "UploadTime": "2023-08-03 20:22:41",
-  "ModifyContent": "\r\n1、修复已知BUG。",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230803-0756/XHYSTV_20230803-0756.apk",
-  "ApkSize": 15653,
-  "ApkMd5": "72d78a0e9dd2b9e9413a6968d9d131ae"
+  "Code": 0，
+  "Msg": ""，
+  "UpdateStatus": 1，
+  "VersionCode": 230803，
+  "VersionName": "20230803"，
+  "UploadTime": "2023-08-03 20:22:41"，
+  "ModifyContent": "\r\n1、修复已知BUG。"，
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230805-1814/XHYSTV_20230805-1814.apk"，
+  "ApkSize": 15653，
+  "ApkMd5": "4f1a743f1fc08385ff640e6308f0ceee"
 }
