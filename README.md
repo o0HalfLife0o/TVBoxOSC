@@ -8,5 +8,5 @@
 ## Credits
 This repo relies on the following third-party projects:
 - [CatVodTVOfficial/TVBoxOSC](https://github.com/CatVodTVOfficial/TVBoxOSC)
-- [xisohi/XHYSTV](https://github.com/xisohi/XHYSTV) (Updated: db56bcf63632b91c02952d934391270e2d10ae34)
+- [xisohi/XHYSTV](https://github.com/xisohi/XHYSTV) (Updated: cb3c6e496c2ed4694d929e83e732649c67c2fbc0)
 - [xisohi/XHYS](https://github.com/xisohi/XHYS) (Updated: 253fd9493bfc5a8ebddd58e7d168842b9bb7d7ea)
