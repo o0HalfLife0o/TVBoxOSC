@@ -1,12 +1,12 @@
 {
   "Code": 0,
   "Msg": "",
-  "UpdateStatus": 1,
-  "VersionCode": 230730,
-  "VersionName": "230730",
-  "UploadTime": "2023-08-01 20:23:41",
-  "ModifyContent": "\r\n1、修复部份 已知bug。\r\n2、",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230801-1553/XHYS_20230801-1553.apk",
-  "ApkSize": 29122,
-  "ApkMd5": "cb645716f26493aac2ba8437c1df17ba"
+  "UpdateStatus": 3,
+  "VersionCode": 230819,
+  "VersionName": "230819",
+  "UploadTime": "2023-08-19 20:23:41",
+  "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份 已知bug",
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230819-1810/XHYS_20230819-1810.apk",
+  "ApkSize": 28628,
+  "ApkMd5": "c0094889faaee6fea163293c35efb15a"
 }
