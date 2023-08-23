@@ -6,9 +6,9 @@
   "VersionName": "20230823",
   "UploadTime": "2023-08-23 17:22:41",
   "ModifyContent": "\r\n1、修复已知BUG。",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230823-2053/XHYSTV_20230823-2053.apk",
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230823-2138/XHYSTV_20230823-2138.apk",
   "ApkSize": 15789,
-  "ApkMd5": "6f3f3cdf0fa535ef40c97197bdfcddf6"
+  "ApkMd5": "4c4b7e74eb4ccd94c8834af792efeded"
 }
 // 代码配置相关
     "IsRecodeLog":true, // 是否记录文件日志
