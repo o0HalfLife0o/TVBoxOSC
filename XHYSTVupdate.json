@@ -1,14 +1,14 @@
 {
   "Code": 0,
   "Msg": "",
-  "UpdateStatus": 1,
+  "UpdateStatus": 3,
   "VersionCode": 230825,
   "VersionName": "20230825",
   "UploadTime": "2023-08-25 17:22:41",
   "ModifyContent": "\r\n1、修复已知BUG。",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230825-0918/XHYSTV_20230825-0918.apk",
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230825-1055/XHYSTV_20230825-1055.apk",
   "ApkSize": 15796,
-  "ApkMd5": "28b9e23f8825c914cde8a4fa4dc88a11"
+  "ApkMd5": "e700360493f682490dc1bc5ac748b84e"
 }
 // 代码配置相关
     "IsRecodeLog":true, // 是否记录文件日志
