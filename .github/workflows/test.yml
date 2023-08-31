@@ -130,6 +130,13 @@ jobs:
         if: ${{ inputs.donotpublish && env.commit }}
         run: |
           echo "commit=" >> $GITHUB_ENV
+      ## Create hash files
+      - name: Create pre-build and doc archives
+        run: |
+          shopt -s nullglob
+          cd artifacts
+          FILES=$(ls {*.apk,*.txt})
+          md5sum $FILES > MD5.txt
       - name: Release and Upload Assets
         uses: ncipollo/release-action@v1
         if: ${{ env.commit }}
