@@ -134,7 +134,7 @@ jobs:
       - name: Create pre-build and doc archives
         run: |
           shopt -s nullglob
-          cd artifacts
+          cd TVBoxOSC/apk/
           FILES=$(ls {*.apk,*.txt})
           md5sum $FILES > MD5.txt
       - name: Release and Upload Assets
