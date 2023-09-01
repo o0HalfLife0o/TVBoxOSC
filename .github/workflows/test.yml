@@ -107,6 +107,13 @@ jobs:
           for file in `find ~ -name "*release*.apk" -print`; do
             mv "$file" apk/${{ matrix.repoName }}_${{ env.tag }}.apk
           done
+      ## Create hash files
+      - name: Create pre-build and doc archives
+        run: |
+          shopt -s nullglob
+          cd apk
+          FILES=$(ls {*.apk,*.txt})
+          md5sum $FILES > MD5.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -130,13 +137,6 @@ jobs:
         if: ${{ inputs.donotpublish && env.commit }}
         run: |
           echo "commit=" >> $GITHUB_ENV
-      ## Create hash files
-      - name: Create pre-build and doc archives
-        run: |
-          shopt -s nullglob
-          cd TVBoxOSC/apk/
-          FILES=$(ls {*.apk,*.txt})
-          md5sum $FILES > MD5.txt
       - name: Release and Upload Assets
         uses: ncipollo/release-action@v1
         if: ${{ env.commit }}
