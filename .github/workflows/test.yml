@@ -108,12 +108,10 @@ jobs:
             mv "$file" apk/${{ matrix.repoName }}_${{ env.tag }}.apk
           done
       ## Create hash files
-      - name: Create pre-build and doc archives
-        run: |
-          shopt -s nullglob
-          cd apk
-          FILES=$(ls {*.apk,*.txt})
-          md5sum $FILES > MD5.txt
+    - name: Compute md5 sums
+      shell: bash
+      run: |
+        md5sum *.apk > md5sums.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
