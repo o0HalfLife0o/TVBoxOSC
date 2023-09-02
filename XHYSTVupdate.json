@@ -2,36 +2,11 @@
   "Code": 0,
   "Msg": "",
   "UpdateStatus": 3,
-  "VersionCode": 230830,
-  "VersionName": "20230830",
-  "UploadTime": "2023-08-30 15:22:41",
-  "ModifyContent": "\r\n1、修复已知BUG。",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230830-1512/XHYSTV_20230830-1512.apk",
-  "ApkSize": 16023,
-  "ApkMd5": "dd0f29ee6d095019ed9acb84bad85a52"
+  "VersionCode": 230902,
+  "VersionName": "20230902",
+  "UploadTime": "2023-09-02 18:22:41",
+  "ModifyContent":  "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份 已知bug\r\n3、优化图片加载;(可能是最后一版对4.4以下的支持)",
+  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230902-1827/XHYSTV_20230902-1827.apk",
+  "ApkSize": 15931,
+  "ApkMd5": "16e44e23f1b9168ae44f13e24a64a3e8"
 }
-// 代码配置相关
-    "IsRecodeLog":true, // 是否记录文件日志
-    
-// 默认配置相关
-    "ForceChangeAPIUrl": false, //强制替换首页默认API地址，防止API失效不更新包的手段
-    "APIUrl":"https://gitee.com/xisohi/xhysyuan/raw/master/XC.json", //首页默认API地址
-    "HomeID": "dr_荐片", //厂长
-    "HomeShowType": 2, //默认首页推荐 0 豆瓣热播 1 数据源推荐 2 历史
-    "HomeSearchType": 0, //默认搜索展示 0 列表 1 缩略图
-    "HomeFastSearch": false, //默认聚合模式
-    "HomeDNSType": 0, //默认安全DNS 0 关闭 1 腾讯 2 阿里 3 360
-    "HomeHistoryNum": 1, //默认历史记录 0 30条 1 50条 2 70条
-    "HomePictureZoom": 0, //默认画面缩放 0 默认 1 16:9 2 4:3 3 填充 4 原始 5 裁剪
-    "HomeWindowPreview": true, //默认窗口预览
-    
-    
-// 直播配置相关
-    "Live":{
-        "Channel": "CCTV-13", // 频道名字
-        "ChannelReverse": false, // 换台反转
-        "CrossGroup": false, // 跨选分类
-        "ConnectTimeout": 1, // 超时换源时间 0 5s 1 10s 2 15s 3 20s 4 25s 5 30s
-        "ShowNetSpeed": true, // 显示网速
-        "ShowTime": true // 显示时间
-    }
