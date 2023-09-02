@@ -107,11 +107,6 @@ jobs:
           for file in `find ~ -name "*release*.apk" -print`; do
             mv "$file" apk/${{ matrix.repoName }}_${{ env.tag }}.apk
           done
-      ## Create hash files
-    - name: Compute md5 sums
-      shell: bash
-      run: |
-        md5sum *.apk > md5sums.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
