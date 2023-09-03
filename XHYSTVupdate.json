@@ -1,7 +1,7 @@
 {
   "Code": 0,
   "Msg": "",
-  "UpdateStatus": 3,
+  "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
   "VersionCode": 230902,
   "VersionName": "20230902",
   "UploadTime": "2023-09-02 18:22:41",
