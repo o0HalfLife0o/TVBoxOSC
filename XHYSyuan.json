@@ -3,2401 +3,290 @@
 	"wallpaper": "http://lcjly.cn/tupian",
 
 	"sites": [
-		{
-			"key": "dr_乐猪TV",
-			"name": "乐猪TV(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=乐猪TV",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_荐片",
-			"name": "荐片(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=荐片",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_爱看",
-			"name": "爱看(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱看",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "csp_LiteApple",
-			"name": "🍎小苹果",
-			"type": 3,
-			"api": "csp_LiteApple",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "dr_新视觉影视",
-			"name": "新视觉影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=新视觉影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "cms_爱看乐看",
-			"name": "爱看乐看",
-			"type": 1,
-			"api": "https://ikan6.vip/api.php/provide/vod",
-			"playerType": 1,
-			"playUrl": "https://cms.ikan6.vip/nidasicaibudaowozaina/nicaibudaowozaina.php?url=",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"categories": [
-				"国产剧",
-				"综艺频道",
-				"动漫频道",
-				"日韩剧",
-				"港台剧",
-				"欧美剧",
-				"动作片",
-				"科幻片",
-				"战争片",
-				"喜剧片",
-				"爱情片",
-				"恐怖片",
-				"剧情片"
-			]
-		},
-		{
-			"key": "dr_cokemv",
-			"name": "cokemv(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=cokemv",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_Fun4K",
-			"name": "Fun4K(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=Fun4K",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_在线之家",
-			"name": "在线之家(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=在线之家",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_凌云影视",
-			"name": "凌云影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=凌云影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "艾旦影视",
-			"name": "艾旦影视(聚)",
-			"type": 1,
-			"api": "https://lovedan.net/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "影图",
-			"name": "影图(聚)",
-			"type": 1,
-			"api": "https://cj.vodimg.top/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "天堂资源",
-			"name": "天堂资源(官)",
-			"type": 1,
-			"api": "http://vipmv.cc/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "csp_Cokemv",
-			"name": "🚗Cokemv(SP)",
-			"type": 3,
-			"api": "csp_Cokemv",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Kuaikan",
-			"name": "👀快看(SP)",
-			"type": 3,
-			"api": "csp_Kuaikan",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "dr_看了么",
-			"name": "看了么(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=看了么",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_Nike影视",
-			"name": "Nike影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=Nike影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_Nike影视",
-			"name": "Nike影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=Nike影视&ext=txt/js/tg/Nike影视.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_MXONE",
-			"name": "MXONE(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=MXONE&ext=txt/js/tg/MXONE.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "t4",
-			"name": "T4",
-			"type": 4,
-			"api": "https://t4.secan.icu/vod?sites=all&ali_token=220cbbd6609b40ddb39bf9f48113e98f&timeout=8",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 0
-		},
-		{
-			"key": "dr_蓝光影院",
-			"name": "蓝光影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=蓝光影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_菜狗",
-			"name": "菜狗(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=菜狗",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_腾云驾雾",
-			"name": "腾云驾雾(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=腾云驾雾",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_奇珍异兽",
-			"name": "奇珍异兽(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=奇珍异兽",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_奇优影院",
-			"name": "奇优影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=奇优影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_影视工厂",
-			"name": "影视工厂(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=影视工厂",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_555影视",
-			"name": "555影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=555影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_百忙无果",
-			"name": "百忙无果(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=百忙无果",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_优酷",
-			"name": "优酷(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=优酷",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_酷云77",
-			"name": "酷云77(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=酷云77",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_夜空",
-			"name": "夜空(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=夜空",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_爱迪影视",
-			"name": "爱迪影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱迪影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_539影院",
-			"name": "539影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=539影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_花猪影视[V2]",
-			"name": "花猪影视[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=花猪影视[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_KUBO影视[飞]",
-			"name": "KUBO影视[飞](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=KUBO影视[飞]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_广播迷FM",
-			"name": "广播迷FM(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=广播迷FM",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_ikanbot2",
-			"name": "ikanbot2(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=ikanbot2",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_嘶哩嘶哩",
-			"name": "嘶哩嘶哩(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=嘶哩嘶哩",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_独播库[飞]",
-			"name": "独播库[飞](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=独播库[飞]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_蜥蜴影视",
-			"name": "蜥蜴影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=蜥蜴影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_海兔影院",
-			"name": "海兔影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=海兔影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_gaze",
-			"name": "gaze(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=gaze",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_新片场",
-			"name": "新片场(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=新片场",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_Icio影视",
-			"name": "Icio影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=Icio影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_JangoIndex",
-			"name": "JangoIndex(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=JangoIndex",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_网飞.TV",
-			"name": "网飞.TV(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=网飞.TV",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_我的哔哩",
-			"name": "我的哔哩(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=我的哔哩",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_清风DJ",
-			"name": "清风DJ(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=清风DJ",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_多瑙影视",
-			"name": "多瑙影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=多瑙影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_速看100[V2]",
-			"name": "速看100[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=速看100[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_孜然影视",
-			"name": "孜然影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=孜然影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_楚门影院",
-			"name": "楚门影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=楚门影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_310直播",
-			"name": "310直播(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=310直播",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_花屋影院",
-			"name": "花屋影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=花屋影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_思古影视",
-			"name": "思古影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=思古影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_博看听书",
-			"name": "博看听书(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=博看听书",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_爱壹帆",
-			"name": "爱壹帆(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱壹帆",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_双十电影",
-			"name": "双十电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=双十电影",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_饭团影视",
-			"name": "饭团影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=饭团影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_七年影视",
-			"name": "七年影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=七年影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_跑TV",
-			"name": "跑TV(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=跑TV",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_热播之家",
-			"name": "热播之家(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=热播之家",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_兰花影院",
-			"name": "兰花影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=兰花影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_落攻阁影视",
-			"name": "落攻阁影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=落攻阁影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_UrleBird",
-			"name": "UrleBird(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=UrleBird",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_素白白",
-			"name": "素白白(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=素白白",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_映迷影院",
-			"name": "映迷影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=映迷影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_看一看影视",
-			"name": "看一看影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=看一看影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_柒之社",
-			"name": "柒之社(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=柒之社",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_139影视",
-			"name": "139影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=139影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_188看",
-			"name": "188看(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=188看",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_天天视频",
-			"name": "天天视频(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=天天视频",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_NT动漫",
-			"name": "NT动漫(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=NT动漫",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_MV263",
-			"name": "MV263(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=MV263",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_58动漫",
-			"name": "58动漫(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=58动漫",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_童趣",
-			"name": "童趣(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=童趣",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_中华听书网",
-			"name": "中华听书网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=中华听书网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_voflix",
-			"name": "voflix(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=voflix",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_Anime1动畫",
-			"name": "Anime1动畫(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=Anime1动畫",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_KOK影院",
-			"name": "KOK影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=KOK影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_去看吧",
-			"name": "去看吧(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=去看吧",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_音悦网",
-			"name": "音悦网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=音悦网",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_苹果DJ",
-			"name": "苹果DJ(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=苹果DJ",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_i275听书",
-			"name": "i275听书(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=i275听书",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_扛把子影院",
-			"name": "扛把子影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=扛把子影院",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_创艺影视[V2]",
-			"name": "创艺影视[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=创艺影视[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_皮皮鸭",
-			"name": "皮皮鸭(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=皮皮鸭",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_我爱跟剧",
-			"name": "我爱跟剧(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=我爱跟剧",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_NyaFun",
-			"name": "NyaFun(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=NyaFun",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_爱迪[V2]",
-			"name": "爱迪[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱迪[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_量子影视",
-			"name": "量子影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=量子影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_唐人街影视[飞]",
-			"name": "唐人街影视[飞](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=唐人街影视[飞]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_ikanbot3",
-			"name": "ikanbot3(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=ikanbot3",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_蘑菇",
-			"name": "蘑菇(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=蘑菇",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_爱壹帆[飞]",
-			"name": "爱壹帆[飞](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱壹帆[飞]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_被窝电影",
-			"name": "被窝电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=被窝电影",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_金曼影视",
-			"name": "金曼影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=金曼影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_海洋听书",
-			"name": "海洋听书(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=海洋听书",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_8号影院",
-			"name": "8号影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=8号影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_吼吼[飞]",
-			"name": "吼吼[飞](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=吼吼[飞]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_尘落影视",
-			"name": "尘落影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=尘落影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_好趣网",
-			"name": "好趣网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=好趣网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_种子音乐",
-			"name": "种子音乐(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=种子音乐",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_开眼视频",
-			"name": "开眼视频(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=开眼视频",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_UM电影[V2]",
-			"name": "UM电影[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=UM电影[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_JustLive",
-			"name": "JustLive(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=JustLive",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_大豆",
-			"name": "大豆(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=大豆",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_奇米动漫",
-			"name": "奇米动漫(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=奇米动漫",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_西瓜影院",
-			"name": "西瓜影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=西瓜影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_磁力熊[磁]",
-			"name": "磁力熊[磁](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=磁力熊[磁]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_我爱电影网",
-			"name": "我爱电影网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=我爱电影网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_哔哩影视",
-			"name": "哔哩影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=哔哩影视",
-			"searchable": 1,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_咕噜[V2]",
-			"name": "咕噜[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=咕噜[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_米爱影视",
-			"name": "米爱影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=米爱影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_啊班[V2]",
-			"name": "啊班[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=啊班[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_达达龟",
-			"name": "达达龟(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=达达龟",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_评书随身听",
-			"name": "评书随身听(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=评书随身听",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_539影视",
-			"name": "539影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=539影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_鸭鸭[V2]",
-			"name": "鸭鸭[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=鸭鸭[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_奈飞中文",
-			"name": "奈飞中文(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=奈飞中文",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_创艺影视",
-			"name": "创艺影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=创艺影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_乐鱼影视",
-			"name": "乐鱼影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=乐鱼影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_星辰",
-			"name": "星辰(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=星辰",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_光棍影院",
-			"name": "光棍影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=光棍影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_欧乐影院[飞]",
-			"name": "欧乐影院[飞](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=欧乐影院[飞]",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_网易公版影像",
-			"name": "网易公版影像(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=网易公版影像",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_武享吧",
-			"name": "武享吧(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=武享吧",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_电影先生",
-			"name": "电影先生(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=电影先生",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_哔哩兔",
-			"name": "哔哩兔(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=哔哩兔",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_jsapi",
-			"name": "jsapi(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=jsapi",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_69美剧[V2]",
-			"name": "69美剧[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=69美剧[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_TVB云播",
-			"name": "TVB云播(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=TVB云播",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_影探[V2]",
-			"name": "影探[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=影探[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_往往影视",
-			"name": "往往影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=往往影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_爱看影院",
-			"name": "爱看影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱看影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_免费看",
-			"name": "免费看(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=免费看",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_快看",
-			"name": "快看(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=快看",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_4K电影网",
-			"name": "4K电影网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=4K电影网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_城市电影",
-			"name": "城市电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=城市电影",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_剧迷su",
-			"name": "剧迷su(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=剧迷su",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_星空影视",
-			"name": "星空影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=星空影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_酷客影院",
-			"name": "酷客影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=酷客影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_6V新版[磁]",
-			"name": "6V新版[磁](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=6V新版[磁]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_欧帝影院",
-			"name": "欧帝影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=欧帝影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_飞兔影视",
-			"name": "飞兔影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=飞兔影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_小狗影院",
-			"name": "小狗影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=小狗影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_农民影视",
-			"name": "农民影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=农民影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_F7好看剧[V2]",
-			"name": "F7好看剧[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=F7好看剧[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_555影视[V2]",
-			"name": "555影视[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=555影视[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_云镜影视",
-			"name": "云镜影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=云镜影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_南瓜影视",
-			"name": "南瓜影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=南瓜影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_万博剧院",
-			"name": "万博剧院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=万博剧院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_稀饭影视",
-			"name": "稀饭影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=稀饭影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_播客",
-			"name": "播客(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=播客",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_首播影院",
-			"name": "首播影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=首播影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_小白菜电影",
-			"name": "小白菜电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=小白菜电影",
-			"searchable": 2,
-			"quickSearch": 1,
-			"filterable": 0
-		},
-		{
-			"key": "dr_八蛋影视",
-			"name": "八蛋影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=八蛋影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_北川影视",
-			"name": "北川影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=北川影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_子子影视",
-			"name": "子子影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=子子影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_中国人",
-			"name": "中国人(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=中国人",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_看看剧[V2]",
-			"name": "看看剧[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=看看剧[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_麦豆com",
-			"name": "麦豆com(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=麦豆com",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_345看片",
-			"name": "345看片(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=345看片",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_影视工场",
-			"name": "影视工场(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=影视工场",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_喜马拉雅",
-			"name": "喜马拉雅(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=喜马拉雅",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_麦豆",
-			"name": "麦豆(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=麦豆",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_追剧迷",
-			"name": "追剧迷(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=追剧迷",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_蛋蛋剧",
-			"name": "蛋蛋剧(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=蛋蛋剧",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_萌蛋蛋[V2]",
-			"name": "萌蛋蛋[V2](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=萌蛋蛋[V2]",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_影视之家",
-			"name": "影视之家(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=影视之家",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_188影视",
-			"name": "188影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=188影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_兄弟影视",
-			"name": "兄弟影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=兄弟影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_秋霞",
-			"name": "秋霞(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=秋霞",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_看韩剧",
-			"name": "看韩剧(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=看韩剧",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_91free",
-			"name": "91free(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=91free",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_影渣渣",
-			"name": "影渣渣(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=影渣渣",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_热播库",
-			"name": "热播库(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=热播库",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_NY影院",
-			"name": "NY影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=NY影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_骚火电影",
-			"name": "骚火电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=骚火电影",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_爱上你听书网",
-			"name": "爱上你听书网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱上你听书网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_9U电影",
-			"name": "9U电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=9U电影",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_爱看机器人",
-			"name": "爱看机器人(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱看机器人",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_美剧网",
-			"name": "美剧网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=美剧网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_ddys",
-			"name": "ddys(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=ddys",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_7喜影院",
-			"name": "7喜影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=7喜影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_厂长资源",
-			"name": "厂长资源(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=厂长资源",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_歪片星球",
-			"name": "歪片星球(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=歪片星球",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_花猫TV",
-			"name": "花猫TV(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=花猫TV",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_朴樱影视",
-			"name": "朴樱影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=朴樱影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_起飞影院",
-			"name": "起飞影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=起飞影院",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_六�TV",
-			"name": "六度TV(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=六度TV",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "py_kunyu77",
-			"name": "py_kunyu77(Pyramid)",
-			"type": 3,
-			"api": "py_kunyu77",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 0,
-			"ext": "http://60.205.202.247:5705/txt/py/py_kunyu77.py"
-		},
-		{
-			"key": "py_bilibili2",
-			"name": "py_bilibili2(Pyramid)",
-			"type": 3,
-			"api": "py_bilibili2",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 0,
-			"ext": "http://60.205.202.247:5705/txt/py/py_bilibili2.py"
-		},
-		{
-			"key": "Alist",
-			"name": "Alist",
-			"type": 3,
-			"api": "http://60.205.202.247:5705/libs/alist.min.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0,
-			"ext": "http://60.205.202.247:5705/txt/json/alist.json;200;video"
-		},
-		{
-			"key": "Alist_obj",
-			"name": "Alist(obj)",
-			"type": 3,
-			"api": "http://60.205.202.247:5705/libs/alist.min.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0,
+		{"key": "dr_乐猪TV","name": "乐猪TV","type": 1,"api": "http://60.205.202.247:5705/vod?rule=乐猪TV","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_荐片","name": "荐片","type": 1,"api": "http://60.205.202.247:5705/vod?rule=荐片","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_爱看","name": "爱看","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱看","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "csp_LiteApple","name": "🍎小苹果","type": 3,"api": "csp_LiteApple","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "dr_新视觉影视","name": "新视觉影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=新视觉影视","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "cms_爱看乐看","name": "爱看乐看","type": 1,"api": "https://ikan6.vip/api.php/provide/vod","playerType": 1,"playUrl": "https://cms.ikan6.vip/nidasicaibudaowozaina/nicaibudaowozaina.php?url=","searchable": 1,"quickSearch": 1,"filterable": 1, "categories": ["国产剧","综艺频道","动漫频道","日韩剧","港台剧","欧美剧","动作片","科幻片","战争片","喜剧片","爱情片","恐怖片","剧情片"]},
+		{"key": "dr_cokemv","name": "cokemv","type": 1,"api": "http://60.205.202.247:5705/vod?rule=cokemv","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_Fun4K","name": "Fun4K","type": 1,"api": "http://60.205.202.247:5705/vod?rule=Fun4K","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_在线之家","name": "在线之家","type": 1,"api": "http://60.205.202.247:5705/vod?rule=在线之家","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_凌云影视","name": "凌云影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=凌云影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "艾旦影视","name": "艾旦影视(聚)","type": 1,"api": "https://lovedan.net/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "影图","name": "影图(聚)","type": 1,"api": "https://cj.vodimg.top/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "天堂资源","name": "天堂资源(官)","type": 1,"api": "http://vipmv.cc/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "csp_Cokemv","name": "🚗Cokemv(SP)","type": 3,"api": "csp_Cokemv","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "csp_Kuaikan","name": "👀快看(SP)","type": 3,"api": "csp_Kuaikan","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "dr_看了么","name": "看了么","type": 1,"api": "http://60.205.202.247:5705/vod?rule=看了么","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_Nike影视","name": "Nike影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=Nike影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_Nike影视","name": "Nike影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=Nike影视&ext=txt/js/tg/Nike影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_MXONE","name": "MXONE","type": 1,"api": "http://60.205.202.247:5705/vod?rule=MXONE&ext=txt/js/tg/MXONE.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "t4","name": "T4","type": 4,"api": "https://t4.secan.icu/vod?sites=all&ali_token=220cbbd6609b40ddb39bf9f48113e98f&timeout=8","searchable": 1,"quickSearch": 1,"filterable": 0},
+		{"key": "dr_蓝光影院","name": "蓝光影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=蓝光影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_菜狗","name": "菜狗","type": 1,"api": "http://60.205.202.247:5705/vod?rule=菜狗","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_腾云驾雾","name": "腾云驾雾","type": 1,"api": "http://60.205.202.247:5705/vod?rule=腾云驾雾","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_奇珍异兽","name": "奇珍异兽","type": 1,"api": "http://60.205.202.247:5705/vod?rule=奇珍异兽","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_奇优影院","name": "奇优影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=奇优影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_影视工厂","name": "影视工厂","type": 1,"api": "http://60.205.202.247:5705/vod?rule=影视工厂","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_555影视","name": "555影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=555影视","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_百忙无果","name": "百忙无果","type": 1,"api": "http://60.205.202.247:5705/vod?rule=百忙无果","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_优酷","name": "优酷","type": 1,"api": "http://60.205.202.247:5705/vod?rule=优酷","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_酷云77","name": "酷云77","type": 1,"api": "http://60.205.202.247:5705/vod?rule=酷云77","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_夜空","name": "夜空","type": 1,"api": "http://60.205.202.247:5705/vod?rule=夜空","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_爱迪影视","name": "爱迪影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱迪影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_539影院","name": "539影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=539影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_花猪影视[V2]","name": "花猪影视[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=花猪影视[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_KUBO影视[飞]","name": "KUBO影视[飞]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=KUBO影视[飞]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_广播迷FM","name": "广播迷FM","type": 1,"api": "http://60.205.202.247:5705/vod?rule=广播迷FM","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_ikanbot2","name": "ikanbot2","type": 1,"api": "http://60.205.202.247:5705/vod?rule=ikanbot2","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_嘶哩嘶哩","name": "嘶哩嘶哩","type": 1,"api": "http://60.205.202.247:5705/vod?rule=嘶哩嘶哩","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_独播库[飞]","name": "独播库[飞]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=独播库[飞]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_蜥蜴影视","name": "蜥蜴影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=蜥蜴影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_海兔影院","name": "海兔影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=海兔影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_gaze","name": "gaze","type": 1,"api": "http://60.205.202.247:5705/vod?rule=gaze","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_新片场","name": "新片场","type": 1,"api": "http://60.205.202.247:5705/vod?rule=新片场","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_Icio影视","name": "Icio影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=Icio影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_JangoIndex","name": "JangoIndex","type": 1,"api": "http://60.205.202.247:5705/vod?rule=JangoIndex","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_网飞.TV","name": "网飞.TV","type": 1,"api": "http://60.205.202.247:5705/vod?rule=网飞.TV","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_我的哔哩","name": "我的哔哩","type": 1,"api": "http://60.205.202.247:5705/vod?rule=我的哔哩","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_清风DJ","name": "清风DJ","type": 1,"api": "http://60.205.202.247:5705/vod?rule=清风DJ","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_多瑙影视","name": "多瑙影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=多瑙影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_速看100[V2]","name": "速看100[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=速看100[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_孜然影视","name": "孜然影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=孜然影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_楚门影院","name": "楚门影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=楚门影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_310直播","name": "310直播","type": 1,"api": "http://60.205.202.247:5705/vod?rule=310直播","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_花屋影院","name": "花屋影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=花屋影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_思古影视","name": "思古影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=思古影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_博看听书","name": "博看听书","type": 1,"api": "http://60.205.202.247:5705/vod?rule=博看听书","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_爱壹帆","name": "爱壹帆","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱壹帆","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_双十电影","name": "双十电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=双十电影","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_饭团影视","name": "饭团影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=饭团影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_七年影视","name": "七年影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=七年影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_跑TV","name": "跑TV","type": 1,"api": "http://60.205.202.247:5705/vod?rule=跑TV","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_热播之家","name": "热播之家","type": 1,"api": "http://60.205.202.247:5705/vod?rule=热播之家","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_兰花影院","name": "兰花影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=兰花影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_落攻阁影视","name": "落攻阁影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=落攻阁影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_UrleBird","name": "UrleBird","type": 1,"api": "http://60.205.202.247:5705/vod?rule=UrleBird","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_素白白","name": "素白白","type": 1,"api": "http://60.205.202.247:5705/vod?rule=素白白","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_映迷影院","name": "映迷影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=映迷影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_看一看影视","name": "看一看影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=看一看影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_柒之社","name": "柒之社","type": 1,"api": "http://60.205.202.247:5705/vod?rule=柒之社","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_139影视","name": "139影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=139影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_188看","name": "188看","type": 1,"api": "http://60.205.202.247:5705/vod?rule=188看","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_天天视频","name": "天天视频","type": 1,"api": "http://60.205.202.247:5705/vod?rule=天天视频","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_NT动漫","name": "NT动漫","type": 1,"api": "http://60.205.202.247:5705/vod?rule=NT动漫","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_MV263","name": "MV263","type": 1,"api": "http://60.205.202.247:5705/vod?rule=MV263","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_58动漫","name": "58动漫","type": 1,"api": "http://60.205.202.247:5705/vod?rule=58动漫","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_童趣","name": "童趣","type": 1,"api": "http://60.205.202.247:5705/vod?rule=童趣","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_中华听书网","name": "中华听书网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=中华听书网","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_voflix","name": "voflix","type": 1,"api": "http://60.205.202.247:5705/vod?rule=voflix","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_Anime1动畫","name": "Anime1动畫","type": 1,"api": "http://60.205.202.247:5705/vod?rule=Anime1动畫","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_KOK影院","name": "KOK影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=KOK影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_去看吧","name": "去看吧","type": 1,"api": "http://60.205.202.247:5705/vod?rule=去看吧","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_音悦网","name": "音悦网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=音悦网","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_苹果DJ","name": "苹果DJ","type": 1,"api": "http://60.205.202.247:5705/vod?rule=苹果DJ","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_i275听书","name": "i275听书","type": 1,"api": "http://60.205.202.247:5705/vod?rule=i275听书","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_扛把子影院","name": "扛把子影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=扛把子影院","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_创艺影视[V2]","name": "创艺影视[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=创艺影视[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_皮皮鸭","name": "皮皮鸭","type": 1,"api": "http://60.205.202.247:5705/vod?rule=皮皮鸭","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_我爱跟剧","name": "我爱跟剧","type": 1,"api": "http://60.205.202.247:5705/vod?rule=我爱跟剧","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_NyaFun","name": "NyaFun","type": 1,"api": "http://60.205.202.247:5705/vod?rule=NyaFun","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_爱迪[V2]","name": "爱迪[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱迪[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_量子影视","name": "量子影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=量子影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_唐人街影视[飞]","name": "唐人街影视[飞]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=唐人街影视[飞]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_ikanbot3","name": "ikanbot3","type": 1,"api": "http://60.205.202.247:5705/vod?rule=ikanbot3","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_蘑菇","name": "蘑菇","type": 1,"api": "http://60.205.202.247:5705/vod?rule=蘑菇","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_爱壹帆[飞]","name": "爱壹帆[飞]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱壹帆[飞]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_被窝电影","name": "被窝电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=被窝电影","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_金曼影视","name": "金曼影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=金曼影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_海洋听书","name": "海洋听书","type": 1,"api": "http://60.205.202.247:5705/vod?rule=海洋听书","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_8号影院","name": "8号影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=8号影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_吼吼[飞]","name": "吼吼[飞]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=吼吼[飞]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_尘落影视","name": "尘落影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=尘落影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_好趣网","name": "好趣网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=好趣网","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_种子音乐","name": "种子音乐","type": 1,"api": "http://60.205.202.247:5705/vod?rule=种子音乐","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_开眼视频","name": "开眼视频","type": 1,"api": "http://60.205.202.247:5705/vod?rule=开眼视频","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_UM电影[V2]","name": "UM电影[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=UM电影[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_JustLive","name": "JustLive","type": 1,"api": "http://60.205.202.247:5705/vod?rule=JustLive","searchable": 0,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_大豆","name": "大豆","type": 1,"api": "http://60.205.202.247:5705/vod?rule=大豆","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_奇米动漫","name": "奇米动漫","type": 1,"api": "http://60.205.202.247:5705/vod?rule=奇米动漫","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_西瓜影院","name": "西瓜影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=西瓜影院","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_磁力熊[磁]","name": "磁力熊[磁]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=磁力熊[磁]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_我爱电影网","name": "我爱电影网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=我爱电影网","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_哔哩影视","name": "哔哩影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=哔哩影视","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_咕噜[V2]","name": "咕噜[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=咕噜[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_米爱影视","name": "米爱影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=米爱影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_啊班[V2]","name": "啊班[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=啊班[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_达达龟","name": "达达龟","type": 1,"api": "http://60.205.202.247:5705/vod?rule=达达龟","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_评书随身听","name": "评书随身听","type": 1,"api": "http://60.205.202.247:5705/vod?rule=评书随身听","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_539影视","name": "539影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=539影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_鸭鸭[V2]","name": "鸭鸭[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=鸭鸭[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_奈飞中文","name": "奈飞中文","type": 1,"api": "http://60.205.202.247:5705/vod?rule=奈飞中文","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_创艺影视","name": "创艺影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=创艺影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_乐鱼影视","name": "乐鱼影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=乐鱼影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_星辰","name": "星辰","type": 1,"api": "http://60.205.202.247:5705/vod?rule=星辰","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_光棍影院","name": "光棍影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=光棍影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_欧乐影院[飞]","name": "欧乐影院[飞]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=欧乐影院[飞]","searchable": 0,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_网易公版影像","name": "网易公版影像","type": 1,"api": "http://60.205.202.247:5705/vod?rule=网易公版影像","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_武享吧","name": "武享吧","type": 1,"api": "http://60.205.202.247:5705/vod?rule=武享吧","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_电影先生","name": "电影先生","type": 1,"api": "http://60.205.202.247:5705/vod?rule=电影先生","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_哔哩兔","name": "哔哩兔","type": 1,"api": "http://60.205.202.247:5705/vod?rule=哔哩兔","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_jsapi","name": "jsapi","type": 1,"api": "http://60.205.202.247:5705/vod?rule=jsapi","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_69美剧[V2]","name": "69美剧[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=69美剧[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_TVB云播","name": "TVB云播","type": 1,"api": "http://60.205.202.247:5705/vod?rule=TVB云播","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_影探[V2]","name": "影探[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=影探[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_往往影视","name": "往往影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=往往影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_爱看影院","name": "爱看影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱看影院","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_免费看","name": "免费看","type": 1,"api": "http://60.205.202.247:5705/vod?rule=免费看","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_快看","name": "快看","type": 1,"api": "http://60.205.202.247:5705/vod?rule=快看","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_4K电影网","name": "4K电影网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=4K电影网","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_城市电影","name": "城市电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=城市电影","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_剧迷su","name": "剧迷su","type": 1,"api": "http://60.205.202.247:5705/vod?rule=剧迷su","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_星空影视","name": "星空影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=星空影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_酷客影院","name": "酷客影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=酷客影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_6V新版[磁]","name": "6V新版[磁]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=6V新版[磁]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_欧帝影院","name": "欧帝影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=欧帝影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_飞兔影视","name": "飞兔影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=飞兔影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_小狗影院","name": "小狗影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=小狗影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_农民影视","name": "农民影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=农民影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_F7好看剧[V2]","name": "F7好看剧[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=F7好看剧[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_555影视[V2]","name": "555影视[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=555影视[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_云镜影视","name": "云镜影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=云镜影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_南瓜影视","name": "南瓜影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=南瓜影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_万博剧院","name": "万博剧院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=万博剧院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_稀饭影视","name": "稀饭影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=稀饭影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_播客","name": "播客","type": 1,"api": "http://60.205.202.247:5705/vod?rule=播客","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_首播影院","name": "首播影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=首播影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_小白菜电影","name": "小白菜电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=小白菜电影","searchable": 2,"quickSearch": 1,"filterable": 0},
+		{"key": "dr_八蛋影视","name": "八蛋影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=八蛋影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_北川影视","name": "北川影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=北川影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_子子影视","name": "子子影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=子子影视","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_中国人","name": "中国人","type": 1,"api": "http://60.205.202.247:5705/vod?rule=中国人","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_看看剧[V2]","name": "看看剧[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=看看剧[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_麦豆com","name": "麦豆com","type": 1,"api": "http://60.205.202.247:5705/vod?rule=麦豆com","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_345看片","name": "345看片","type": 1,"api": "http://60.205.202.247:5705/vod?rule=345看片","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_影视工场","name": "影视工场","type": 1,"api": "http://60.205.202.247:5705/vod?rule=影视工场","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_喜马拉雅","name": "喜马拉雅","type": 1,"api": "http://60.205.202.247:5705/vod?rule=喜马拉雅","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_麦豆","name": "麦豆","type": 1,"api": "http://60.205.202.247:5705/vod?rule=麦豆","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_追剧迷","name": "追剧迷","type": 1,"api": "http://60.205.202.247:5705/vod?rule=追剧迷","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_蛋蛋剧","name": "蛋蛋剧","type": 1,"api": "http://60.205.202.247:5705/vod?rule=蛋蛋剧","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_萌蛋蛋[V2]","name": "萌蛋蛋[V2]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=萌蛋蛋[V2]","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_影视之家","name": "影视之家","type": 1,"api": "http://60.205.202.247:5705/vod?rule=影视之家","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_188影视","name": "188影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=188影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_兄弟影视","name": "兄弟影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=兄弟影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_秋霞","name": "秋霞","type": 1,"api": "http://60.205.202.247:5705/vod?rule=秋霞","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_看韩剧","name": "看韩剧","type": 1,"api": "http://60.205.202.247:5705/vod?rule=看韩剧","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_91free","name": "91free","type": 1,"api": "http://60.205.202.247:5705/vod?rule=91free","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_影渣渣","name": "影渣渣","type": 1,"api": "http://60.205.202.247:5705/vod?rule=影渣渣","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_热播库","name": "热播库","type": 1,"api": "http://60.205.202.247:5705/vod?rule=热播库","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_NY影院","name": "NY影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=NY影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_骚火电影","name": "骚火电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=骚火电影","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_爱上你听书网","name": "爱上你听书网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱上你听书网","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_9U电影","name": "9U电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=9U电影","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_爱看机器人","name": "爱看机器人","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱看机器人","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_美剧网","name": "美剧网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=美剧网","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_ddys","name": "ddys","type": 1,"api": "http://60.205.202.247:5705/vod?rule=ddys","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_7喜影院","name": "7喜影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=7喜影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_厂长资源","name": "厂长资源","type": 1,"api": "http://60.205.202.247:5705/vod?rule=厂长资源","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_歪片星球","name": "歪片星球","type": 1,"api": "http://60.205.202.247:5705/vod?rule=歪片星球","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_花猫TV","name": "花猫TV","type": 1,"api": "http://60.205.202.247:5705/vod?rule=花猫TV","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_朴樱影视","name": "朴樱影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=朴樱影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_起飞影院","name": "起飞影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=起飞影院","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_六�TV","name": "六度TV","type": 1,"api": "http://60.205.202.247:5705/vod?rule=六度TV","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "py_kunyu77","name": "py_kunyu77(Pyramid)","type": 3,"api": "py_kunyu77","searchable": 1,"quickSearch": 1,"filterable": 0,"ext": "http://60.205.202.247:5705/txt/py/py_kunyu77.py"},
+		{"key": "py_bilibili2","name": "py_bilibili2(Pyramid)","type": 3,"api": "py_bilibili2","searchable": 1,"quickSearch": 1,"filterable": 0,
+			"ext": "http://60.205.202.247:5705/txt/py/py_bilibili2.py"},
+		{"key": "Alist","name": "Alist","type": 3,"api": "http://60.205.202.247:5705/libs/alist.min.js","searchable": 2,"quickSearch": 0,"filterable": 0,
+			"ext": "http://60.205.202.247:5705/txt/json/alist.json;200;video"},
+		{"key": "Alist_obj","name": "Alist(obj)","type": 3,"api": "http://60.205.202.247:5705/libs/alist.min.js","searchable": 2,"quickSearch": 0,"filterable": 0,
 			"ext": [
-				{
-					"name": "🙋丫仙女",
-					"server": "http://alist.xiaoya.pro/",
-					"startPage": "/",
-					"showAll": false,
-					"search": true,
-					"params": {
-						"/abc": {
-							"password": "123"
-						},
-						"/abc/abc": {
-							"password": "123"
-						}
-					}
-				},
-				{
-					"name": "🌤晴园的宝藏库",
-					"server": "https://alist.52qy.repl.co"
-				},
-				{
-					"name": "🐭米奇妙妙屋",
-					"server": "https://anime.mqmmw.ga"
-				},
-				{
-					"name": "💂小兵组网盘影视",
-					"server": "https://6vv.app"
-				},
-				{
-					"name": "🐋一只鱼",
-					"server": "https://alist.youte.ml"
-				},
-				{
-					"name": "🌊七米蓝",
-					"server": "https://al.chirmyram.com"
-				},
-				{
-					"name": "🥼帅盘",
-					"server": "https://hi.shuaipeng.wang"
-				},
-				{
-					"name": "🐉神族九帝",
-					"server": "https://alist.shenzjd.com"
-				},
-				{
-					"name": "☃️姬路白雪",
-					"server": "https://pan.jlbx.xyz"
-				},
-				{
-					"name": "🎧听闻网盘",
-					"server": "https://wangpan.sangxuesheng.com"
-				},
-				{
-					"name": "💾DISK",
-					"server": "http://124.222.140.243:8080"
-				},
-				{
-					"name": "🌨云播放",
-					"server": "https://quanzi.laoxianghuijia.cn"
-				},
-				{
-					"name": "✨星梦",
-					"server": "https://pan.bashroot.top"
-				},
-				{
-					"name": "💫触光",
-					"server": "https://pan.ichuguang.com"
-				},
-				{
-					"name": "🕵️好汉吧",
-					"server": "https://8023.haohanba.cn"
-				},
-				{
-					"name": "💢repl",
-					"server": "https://ali.liucn.repl.co"
-				},
-				{
-					"name": "🌨秋雨分享",
-					"server": "https://share.laowang.me"
-				},
-				{
-					"name": "💦讯维云盘",
-					"server": "https://pan.xwbeta.com"
-				}
-			]
-		},
-		{
-			"key": "cms_douban",
-			"name": "豆瓣(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=drpy",
-			"searchable": 2,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Ysgc",
-			"name": "影视工厂(SP)",
-			"type": 3,
-			"api": "csp_Ysgc",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Yj1211",
-			"name": "just live(SP)",
-			"type": 3,
-			"api": "csp_Yj1211",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Fantuan",
-			"name": "饭团(SP)",
-			"type": 3,
-			"api": "csp_Fantuan",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Ddrk",
-			"name": "低端影视(SP)",
-			"type": 3,
-			"api": "csp_Ddrk",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Dm84",
-			"name": "动漫巴士(SP)",
-			"type": 3,
-			"api": "csp_Dm84",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "csp_Kunyu77",
-			"name": "👒七七(SP)",
-			"type": 3,
-			"api": "csp_Kunyu77",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "dr_皮皮泡",
-			"name": "皮皮泡(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=皮皮泡&ext=txt/js/tg/皮皮泡.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_特狗影视",
-			"name": "特狗影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=特狗影视&ext=txt/js/tg/特狗影视.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_爱看电影",
-			"name": "爱看电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=爱看电影&ext=txt/js/tg/爱看电影.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_快云影院",
-			"name": "快云影院(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=快云影院&ext=txt/js/tg/快云影院.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_大师兄影视",
-			"name": "大师兄影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=大师兄影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_剧迷",
-			"name": "剧迷(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=剧迷",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_剧迷",
-			"name": "剧迷(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=剧迷&ext=txt/js/tg/剧迷.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_两个BT",
-			"name": "两个BT(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=两个BT&ext=txt/js/tg/两个BT.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "csp_appysv2_阿里影视",
-			"name": "阿里影视(萝卜)",
-			"type": 3,
-			"api": "csp_AppYsV2",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"ext": "http://aliys.cn:90/api.php/v1.vod"
-		},
-		{
-			"key": "csp_appysv2_看剧吧",
-			"name": "看剧吧(萝卜)",
-			"type": 3,
-			"api": "csp_AppYsV2",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"ext": "http://app.ishen520.com/api.php/v1.vod"
-		},
-		{
-			"key": "csp_appysv2_冷视TV",
-			"name": "冷视TV(萝卜)",
-			"type": 3,
-			"api": "csp_AppYsV2",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"ext": "https://len.tv/api.php/v1.vod"
-		},
-		{
-			"key": "csp_appysv2_淘剧社",
-			"name": "淘剧社(萝卜)",
-			"type": 3,
-			"api": "csp_AppYsV2",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1,
-			"ext": "https://app.shuhai99.com/api.php/v1.vod"
-		},
-		{
-			"key": "csp_Nbys",
-			"name": "牛逼影视(SP)",
-			"type": 3,
-			"api": "csp_Nbys",
-			"searchable": 1,
-			"quickSearch": 1,
-			"filterable": 1
-		},
-		{
-			"key": "百度资源",
-			"name": "百度资源(切)",
-			"type": 1,
-			"api": "https://api.apibdzy.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "韩剧资源",
-			"name": "韩剧资源(切)",
-			"type": 1,
-			"api": "http://www.hanjuzy.com/inc/apijson_vod.php",
-			"searchable": 0,
-			"quickSearch": 0
-		},
-		{
-			"key": "鱼乐资源",
-			"name": "鱼乐资源(切)",
-			"type": 1,
-			"api": "https://api.ylzy1.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "飞速资源",
-			"name": "飞速资源(切)",
-			"type": 1,
-			"api": "https://www.feisuzy.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "易看资源",
-			"name": "易看资源(切)",
-			"type": 1,
-			"api": "https://api.yikanapi.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "红牛资源",
-			"name": "红牛资源(切)",
-			"type": 1,
-			"api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "FOX资源",
-			"name": "FOX资源(切)",
-			"type": 1,
-			"api": "https://api.foxzyapi.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "快车资源",
-			"name": "快车资源(切)",
-			"type": 1,
-			"api": "https://caiji.kczyapi.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "忆梦",
-			"name": "忆梦(官)",
-			"type": 1,
-			"api": "http://anltv.cn/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "飘零影院",
-			"name": "飘零影院(聚)",
-			"type": 1,
-			"api": "https://p2100.net/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "乐活影视",
-			"name": "乐活影视(优)",
-			"type": 1,
-			"api": "https://lehootv.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "789盘",
-			"name": "789盘(优)",
-			"type": 1,
-			"api": "https://www.rrvipw.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "U酷资源",
-			"name": "U酷资源(优)",
-			"type": 1,
-			"api": "https://api.ukuapi.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "天空资源",
-			"name": "天空资源(切)",
-			"type": 1,
-			"api": "https://api.tiankongapi.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "dr_360影视",
-			"name": "360影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=360影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_l0l",
-			"name": "l0l(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=l0l",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_人人影视",
-			"name": "人人影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=人人影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_万能影视",
-			"name": "万能影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=万能影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_天空影视",
-			"name": "天空影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=天空影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_天空影视2",
-			"name": "天空影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=天空影视&ext=txt/js/tg/天空影视.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "39影视",
-			"name": "39影视(聚)",
-			"type": 1,
-			"api": "https://www.39kan.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "dr_看看电影",
-			"name": "看看电影(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=看看电影",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "Alist_pt",
-			"name": "Alist(pluto)",
-			"type": 3,
-			"api": "http://60.205.202.247:5705/libs/alist.min.js",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0,
-			"ext": "http://60.205.202.247:5705/config/2;200;video"
-		},
-		{
-			"key": "dr_007影视",
-			"name": "007影视(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=007影视",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "卧龙资源",
-			"name": "卧龙资源(切)",
-			"type": 1,
-			"api": "https://collect.wolongzyw.com/api.php/provide/vod/",
-			"searchable": 1,
-			"quickSearch": 1
-		},
-		{
-			"key": "dr_LIBVIO",
-			"name": "LIBVIO(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=LIBVIO",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_A8音乐",
-			"name": "A8音乐(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=A8音乐",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_有声绘本网",
-			"name": "有声绘本网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=有声绘本网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_路漫漫",
-			"name": "路漫漫(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=路漫漫",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_怡萱动漫",
-			"name": "怡萱动漫(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=怡萱动漫",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_苹果爱微",
-			"name": "苹果爱微(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=苹果爱微",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_相声随身听",
-			"name": "相声随身听(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=相声随身听",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_学生球赛录像[js1]",
-			"name": "学生球赛录像[js1](道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=学生球赛录像[js1]",
-			"searchable": 0,
-			"quickSearch": 0,
-			"filterable": 0
-		},
-		{
-			"key": "dr_AGE动漫",
-			"name": "AGE动漫(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=AGE动漫",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 1
-		},
-		{
-			"key": "dr_小品网",
-			"name": "小品网(道长)",
-			"type": 1,
-			"api": "http://60.205.202.247:5705/vod?rule=小品网",
-			"searchable": 2,
-			"quickSearch": 0,
-			"filterable": 0
-		}
+				{"name": "🙋丫仙女","server": "http://alist.xiaoya.pro/","startPage": "/","showAll": false,"search": true,"params": {"/abc": {"password": "123"},"/abc/abc": {"password": "123"}}},
+				{"name": "🌤晴园的宝藏库","server": "https://alist.52qy.repl.co"},
+				{"name": "🐭米奇妙妙屋","server": "https://anime.mqmmw.ga"},
+				{"name": "💂小兵组网盘影视","server": "https://6vv.app"},
+				{"name": "🐋一只鱼","server": "https://alist.youte.ml"},
+				{"name": "🌊七米蓝","server": "https://al.chirmyram.com"},
+				{"name": "🥼帅盘","server": "https://hi.shuaipeng.wang"},
+				{"name": "🐉神族九帝","server": "https://alist.shenzjd.com"},
+				{"name": "☃️姬路白雪","server": "https://pan.jlbx.xyz"},
+				{"name": "🎧听闻网盘","server": "https://wangpan.sangxuesheng.com"},
+				{"name": "💾DISK","server": "http://124.222.140.243:8080"},
+				{"name": "🌨云播放","server": "https://quanzi.laoxianghuijia.cn"},
+				{"name": "✨星梦","server": "https://pan.bashroot.top"},
+				{"name": "💫触光","server": "https://pan.ichuguang.com"},
+				{"name": "🕵️好汉吧","server": "https://8023.haohanba.cn"},
+				{"name": "💢repl","server": "https://ali.liucn.repl.co"},
+				{"name": "🌨秋雨分享","server": "https://share.laowang.me"},
+				{"name": "💦讯维云盘","server": "https://pan.xwbeta.com"}
+			]},
+		{"key": "cms_douban","name": "豆瓣","type": 1,"api": "http://60.205.202.247:5705/vod?rule=drpy","searchable": 2,"quickSearch": 1,"filterable": 1},
+		{"key": "csp_Ysgc","name": "影视工厂(SP)","type": 3,"api": "csp_Ysgc","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "csp_Yj1211","name": "just live(SP)","type": 3,"api": "csp_Yj1211","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "csp_Fantuan","name": "饭团(SP)","type": 3,"api": "csp_Fantuan","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "csp_Ddrk","name": "低端影视(SP)","type": 3,"api": "csp_Ddrk","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "csp_Dm84","name": "动漫巴士(SP)","type": 3,"api": "csp_Dm84","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "csp_Kunyu77","name": "👒七七(SP)","type": 3,"api": "csp_Kunyu77","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "dr_皮皮泡","name": "皮皮泡","type": 1,"api": "http://60.205.202.247:5705/vod?rule=皮皮泡&ext=txt/js/tg/皮皮泡.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_特狗影视","name": "特狗影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=特狗影视&ext=txt/js/tg/特狗影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_爱看电影","name": "爱看电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=爱看电影&ext=txt/js/tg/爱看电影.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_快云影院","name": "快云影院","type": 1,"api": "http://60.205.202.247:5705/vod?rule=快云影院&ext=txt/js/tg/快云影院.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_大师兄影视","name": "大师兄影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=大师兄影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_剧迷","name": "剧迷","type": 1,"api": "http://60.205.202.247:5705/vod?rule=剧迷","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_剧迷","name": "剧迷","type": 1,"api": "http://60.205.202.247:5705/vod?rule=剧迷&ext=txt/js/tg/剧迷.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_两个BT","name": "两个BT","type": 1,"api": "http://60.205.202.247:5705/vod?rule=两个BT&ext=txt/js/tg/两个BT.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "csp_appysv2_阿里影视","name": "阿里影视(萝卜)","type": 3,"api": "csp_AppYsV2","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": "http://aliys.cn:90/api.php/v1.vod"},
+		{"key": "csp_appysv2_看剧吧","name": "看剧吧(萝卜)","type": 3,"api": "csp_AppYsV2","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": "http://app.ishen520.com/api.php/v1.vod"},
+		{"key": "csp_appysv2_冷视TV","name": "冷视TV(萝卜)","type": 3,"api": "csp_AppYsV2","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": "https://len.tv/api.php/v1.vod"},
+		{"key": "csp_appysv2_淘剧社","name": "淘剧社(萝卜)","type": 3,"api": "csp_AppYsV2","searchable": 1,"quickSearch": 1,"filterable": 1,"ext": "https://app.shuhai99.com/api.php/v1.vod"},
+		{"key": "csp_Nbys","name": "牛逼影视(SP)","type": 3,"api": "csp_Nbys","searchable": 1,"quickSearch": 1,"filterable": 1},
+		{"key": "百度资源","name": "百度资源(切)","type": 1,"api": "https://api.apibdzy.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "韩剧资源","name": "韩剧资源(切)","type": 1,"api": "http://www.hanjuzy.com/inc/apijson_vod.php","searchable": 0,"quickSearch": 0},
+		{"key": "鱼乐资源","name": "鱼乐资源(切)","type": 1,"api": "https://api.ylzy1.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "飞速资源","name": "飞速资源(切)","type": 1,"api": "https://www.feisuzy.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "易看资源","name": "易看资源(切)","type": 1,"api": "https://api.yikanapi.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "红牛资源","name": "红牛资源(切)","type": 1,"api": "https://www.hongniuzy2.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "FOX资源","name": "FOX资源(切)","type": 1,"api": "https://api.foxzyapi.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "快车资源","name": "快车资源(切)","type": 1,"api": "https://caiji.kczyapi.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "忆梦","name": "忆梦(官)","type": 1,"api": "http://anltv.cn/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "飘零影院","name": "飘零影院(聚)","type": 1,"api": "https://p2100.net/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "乐活影视","name": "乐活影视(优)","type": 1,"api": "https://lehootv.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "789盘","name": "789盘(优)","type": 1,"api": "https://www.rrvipw.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "U酷资源","name": "U酷资源(优)","type": 1,"api": "https://api.ukuapi.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "天空资源","name": "天空资源(切)","type": 1,"api": "https://api.tiankongapi.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "dr_360影视","name": "360影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=360影视","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_l0l","name": "l0l","type": 1,"api": "http://60.205.202.247:5705/vod?rule=l0l","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_人人影视","name": "人人影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=人人影视","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_万能影视","name": "万能影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=万能影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_天空影视","name": "天空影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=天空影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_天空影视2","name": "天空影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=天空影视&ext=txt/js/tg/天空影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "39影视","name": "39影视(聚)","type": 1,"api": "https://www.39kan.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "dr_看看电影","name": "看看电影","type": 1,"api": "http://60.205.202.247:5705/vod?rule=看看电影","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "Alist_pt","name": "Alist(pluto)","type": 3,"api": "http://60.205.202.247:5705/libs/alist.min.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "http://60.205.202.247:5705/config/2;200;video"},
+		{"key": "dr_007影视","name": "007影视","type": 1,"api": "http://60.205.202.247:5705/vod?rule=007影视","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "卧龙资源","name": "卧龙资源(切)","type": 1,"api": "https://collect.wolongzyw.com/api.php/provide/vod/","searchable": 1,"quickSearch": 1},
+		{"key": "dr_LIBVIO","name": "LIBVIO","type": 1,"api": "http://60.205.202.247:5705/vod?rule=LIBVIO","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_A8音乐","name": "A8音乐","type": 1,"api": "http://60.205.202.247:5705/vod?rule=A8音乐","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_有声绘本网","name": "有声绘本网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=有声绘本网","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_路漫漫","name": "路漫漫","type": 1,"api": "http://60.205.202.247:5705/vod?rule=路漫漫","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_怡萱动漫","name": "怡萱动漫","type": 1,"api": "http://60.205.202.247:5705/vod?rule=怡萱动漫","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_苹果爱微","name": "苹果爱微","type": 1,"api": "http://60.205.202.247:5705/vod?rule=苹果爱微","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_相声随身听","name": "相声随身听","type": 1,"api": "http://60.205.202.247:5705/vod?rule=相声随身听","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_学生球赛录像[js1]","name": "学生球赛录像[js1]","type": 1,"api": "http://60.205.202.247:5705/vod?rule=学生球赛录像[js1]","searchable": 0,"quickSearch": 0,"filterable": 0},
+		{"key": "dr_AGE动漫","name": "AGE动漫","type": 1,"api": "http://60.205.202.247:5705/vod?rule=AGE动漫","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_小品网","name": "小品网","type": 1,"api": "http://60.205.202.247:5705/vod?rule=小品网","searchable": 2,"quickSearch": 0,"filterable": 0}
 	],
-"parses": [{
-		"name": "Json聚合",
-		"type": 3,
-		"url": "Demo"
-	}, {
-		"name": "Web聚合",
-		"type": 3,
-		"url": "Web"
-	}, {
-		"name": "小新",
-		"type": 1,
-		"url": "http://xiaoxin.1080p.fun/home/api?type=ys&uid=13270&key=cehklprBCEPUVWY234&url="
-	}, {
-		"name": "哥哥们",
-		"type": 1,
-		"url": "http://jx.wogg.link:63/jiexi/饭特析.php?url="
-	}, {
-		"name": "777",
-		"type": 0,
-		"url": "https://jx.777jiexi.com/player/?url=",
-		"ext": {
-			"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}
-		}   
-	}, {
-		"name": "jsonplayer",
-		"type": 0,
-		"url": "https://jx.jsonplayer.com/player/?url=",
-		"ext": {
-			"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}
-		}   
-	}, {
-		"name": "xmflv",
-		"type": 0,
-		"url": "https://jx.xmflv.com/?url=",
-		"ext": {
-			"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]
-		}  
-	}, {
-		"name": "bozrc",
-		"type": 0,
-		"url": "https://jx.bozrc.com:4433/player/?url=",
-		"ext": {
-			"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}
-		}   
-	}, {
-		"name": "ckmov",
-		"type": 0,
-		"url": "https://yun.ckmov.com/?url=",
-		"ext": {
-			"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]
-		}  
+"parses": [{"name": "Json聚合","type": 3,"url": "Demo"},
+	{"name": "Web聚合","type": 3,"url": "Web"},
+	{"name": "小新","type": 1,"url": "http://xiaoxin.1080p.fun/home/api?type=ys&uid=13270&key=cehklprBCEPUVWY234&url="},
+	{"name": "哥哥们","type": 1,"url": "http://jx.wogg.link:63/jiexi/饭特析.php?url="},
+	{"name": "777","type": 0,"url": "https://jx.777jiexi.com/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}  },
+	{"name": "jsonplayer","type": 0,"url": "https://jx.jsonplayer.com/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
+	{"name": "xmflv","type": 0,"url": "https://jx.xmflv.com/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]}},
+	{"name": "bozrc","type": 0,"url": "https://jx.bozrc.com:4433/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
+	{"name": "ckmov","type": 0,"url": "https://yun.ckmov.com/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]}
 	}],
-   "lives":[{"name":"live","type":0,"url":"https://agit.ai/xisohi/box/raw/branch/master/live.txt","playerType":1,"epg":"http://diyp.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
+   "lives":[{"name":"live","type":0,"url":"https://raw.githubusercontent.com/xisohi/TVBoxOSC/master/live.txt","playerType":1,"epg":"http://diyp.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
    "doh":[{"name":"Google","url":"https://dns.google/dns-query","ips":["8.8.4.4","8.8.8.8"]},{"name":"Cloudflare","url":"https://cloudflare-dns.com/dns-query","ips":["1.1.1.1","1.0.0.1","2606:4700:4700::1111","2606:4700:4700::1001"]},{"name":"AdGuard","url":"https://dns.adguard.com/dns-query","ips":["94.140.14.140","94.140.14.141"]},{"name":"DNSWatch","url":"https://resolver2.dns.watch/dns-query","ips":["84.200.69.80","84.200.70.40"]},{"name":"Quad9","url":"https://dns.quad9.net/dns-quer","ips":["9.9.9.9","149.112.112.112"]}],
    "rules":[{"name":"lz","hosts":["vip.lz","hd.lz"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.433333,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]},{"name":"ff","hosts":["vip.ffzy","hd.ffzy"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:6.666667,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]},{"name":"bf","hosts":["bfzy","s5.bfzycdn"],"regex":["#EXT-X-DISCONTINUITY\\r*\\n*#EXTINF:3,[\\s\\S]*?#EXT-X-DISCONTINUITY","#EXTINF.*?\\s+.*?1o.*?\\.ts\\s+"]},{"name":"hs","hosts":["huoshan.com"],"regex":["item_id="]},{"name":"dy","hosts":["douyin.com"],"regex":["is_play_url="]},{"name":"cl","hosts":["magnet"],"regex":["最 新","直 播","更 新"]}],
    "flags":["youku","qq","QQ","iqiyi","qiyi","letv","sohu","tudou","pptv","PPTV","mgtv","ltnb","rx","SLYS4k","BYGA","BYGB","luanzi","dxzy","QEYSS","aliyun","AliS","122","chuangying","CL4K","xfyun","wuduzy","wasu","bilibili","renrenmi","xmm","xigua","m1905","funshion","优酷","芒果","腾讯","爱奇艺","奇艺","哔哩哔哩","哔哩","西瓜视频","腾讯视频","奇艺视频","优酷视频","芒果视频","乐视视频","FY","fy","FeiYun","feiyun","飞云"],
