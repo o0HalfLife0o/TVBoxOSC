@@ -1,10 +1,10 @@
 {
-	"spider": "https://agit.ai/xisohi/box/raw/branch/master/Yoursmile.jar;md5;54C10560F16EE36885DF2AF75EBD12BB",
+	"spider": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/jar/custom_spider.jar",
 	"wallpaper": "http://lcjly.cn/tupian",
 
 	"sites": [
-		{"key": "dr_乐猪TV","name": "乐猪TV","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/乐猪TV.js","searchable": 2,"quickSearch": 0,"filterable": 1},
-		{"key": "dr_荐片","name": "荐片","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/荐片.js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_乐猪TV","name": "乐猪TV","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/乐猪TV.js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_荐片","name": "荐片","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/荐片.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "dr_爱看","name": "爱看","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/爱看.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "dr_新视觉影视","name": "新视觉影视","type": 3,"api": "https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js","ext":"https://ghproxy.com/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/新视觉影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		{"key": "cms_爱看乐看","name": "爱看乐看","type": 3,"api": "https://ikan6.vip/api.php/provide/vod","playerType": 1,"playUrl": "https://cms.ikan6.vip/nidasicaibudaowozaina/nicaibudaowozaina.php?url=.js","searchable": 1,"quickSearch": 1,"filterable": 1, "categories": ["国产剧","综艺频道","动漫频道","日韩剧","港台剧","欧美剧","动作片","科幻片","战争片","喜剧片","爱情片","恐怖片","剧情片"]},
