@@ -2,11 +2,11 @@
   "Code": 0,
   "Msg": "",
   "UpdateStatus": 3,
-  "VersionCode": 230819,
-  "VersionName": "230819",
-  "UploadTime": "2023-08-19 20:23:41",
-  "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份 已知bug",
-  "DownloadUrl": "https://gitee.com/xisohi/XHYSosc/releases/download/20230819-1810/XHYS_20230819-1810.apk",
-  "ApkSize": 28628,
-  "ApkMd5": "c0094889faaee6fea163293c35efb15a"
+  "VersionCode": 230905,
+  "VersionName": "230905",
+  "UploadTime": "2023-09-05 22:23:41",
+  "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug",
+  "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20230905-2223/XHYS_20230905-2223.apk",
+  "ApkSize": 28895,
+  "ApkMd5": "e479a81b0a89f70813e27ba995daba22"
 }
