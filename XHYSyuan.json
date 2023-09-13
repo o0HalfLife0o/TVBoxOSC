@@ -222,15 +222,16 @@
 		{"key": "dr_相声随身听","name": "相声随身听","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/相声随身听.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "dr_小品网","name": "小品网","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/小品网.js","searchable": 2,"quickSearch": 0,"filterable": 0}
 	],
-"parses": [{"name": "Json聚合","type": 3,"url": "Demo"},
-	{"name": "Web聚合","type": 3,"url": "Web"},
-	{"name": "小新","type": 3,"url": "http://xiaoxin.1080p.fun/home/api?type=ys&uid=13270&key=cehklprBCEPUVWY234&url="},
-	{"name": "哥哥们","type": 3,"url": "http://jx.wogg.link:63/jiexi/饭特析.php?url="},
+"parses": [
+                //{"name": "Json聚合","type": 3,"url": "Demo"},
+	//{"name": "Web聚合","type": 3,"url": "Web"},
+	//{"name": "小新","type": 3,"url": "http://xiaoxin.1080p.fun/home/api?type=ys&uid=13270&key=cehklprBCEPUVWY234&url="},
+	//{"name": "哥哥们","type": 3,"url": "http://jx.wogg.link:63/jiexi/饭特析.php?url="},
 	{"name": "777","type": 0,"url": "https://jx.777jiexi.com/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}  },
 	{"name": "jsonplayer","type": 0,"url": "https://jx.jsonplayer.com/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
 	{"name": "xmflv","type": 0,"url": "https://jx.xmflv.com/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]}},
-	{"name": "bozrc","type": 0,"url": "https://jx.bozrc.com:4433/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
-	{"name": "ckmov","type": 0,"url": "https://yun.ckmov.com/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]}
+	{"name": "虾米","type": 0,"url": "https://jx.xmflv.cc/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"],"header":{"User-Agent":"okhttp/4.1.0"}}},
+	{"name": "爱酷","type": 0,"url": "https://jx.zhanlangbu.com/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]}
 	}],
    "lives":[{"name":"live","type":0,"url":"https://raw.githubusercontent.com/xisohi/TVBoxOSC/master/live.txt","playerType":1,"epg":"http://diyp.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
    "doh":[{"name":"Google","url":"https://dns.google/dns-query","ips":["8.8.4.4","8.8.8.8"]},{"name":"Cloudflare","url":"https://cloudflare-dns.com/dns-query","ips":["1.1.1.1","1.0.0.1","2606:4700:4700::1111","2606:4700:4700::1001"]},{"name":"AdGuard","url":"https://dns.adguard.com/dns-query","ips":["94.140.14.140","94.140.14.141"]},{"name":"DNSWatch","url":"https://resolver2.dns.watch/dns-query","ips":["84.200.69.80","84.200.70.40"]},{"name":"Quad9","url":"https://dns.quad9.net/dns-quer","ips":["9.9.9.9","149.112.112.112"]}],
