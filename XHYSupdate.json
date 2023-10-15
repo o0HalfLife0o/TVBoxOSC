@@ -1,12 +1,12 @@
 {
   "Code": 0,
   "Msg": "",
-  "UpdateStatus": 3,
-  "VersionCode": 230926,
-  "VersionName": "230926",
-  "UploadTime": "2023-09-26 22:23:41",
+  "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
+  "VersionCode": 2301015,
+  "VersionName": "231015",
+  "UploadTime": "2023-10-15 22:23:41",
   "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug.\r\n2、添加自动更新功能",
-  "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20230926-1748/XHYS_20230926-1748.apk",
-  "ApkSize": 22863,
-  "ApkMd5": "e959208aab78ace6b34f8ba0043129bc"
+  "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231015-0900/XHYS_20231015-0900.apk",
+  "ApkSize": 41052,
+  "ApkMd5": "c09406081d8e47b1b284456e09b4a06c"
 }
