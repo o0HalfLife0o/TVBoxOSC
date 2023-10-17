@@ -8,5 +8,5 @@
   "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug.\r\n2、添加自动更新功能",
   "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231015-0900/XHYS_20231015-0900.apk",
   "ApkSize": 41052,
-  "ApkMd5": "c09406081d8e47b1b284456e09b4a06c"
+  "ApkMd5": ""
 }
