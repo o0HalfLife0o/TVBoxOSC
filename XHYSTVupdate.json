@@ -2,11 +2,11 @@
   "Code": 0,
   "Msg": "",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 231015,
-  "VersionName": "20231015",
-  "UploadTime": "2023-10-15 18:22:41",
+  "VersionCode": 231017,
+  "VersionName": "20231017",
+  "UploadTime": "2023-10-17 18:22:41",
   "ModifyContent":  "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份 已知bug\r\n3、不再支持安卓4.3以下安装",
-  "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231015-2041/XHYSTV_20231015-2041.apk",
+  "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231016-1250/XHYSTV_20231016-1250.apk",
   "ApkSize": 17370,
   "ApkMd5": ""
 }
