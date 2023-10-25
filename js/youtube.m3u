@@ -1,3 +1,14 @@
+#EXTM3U
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",中天新闻台
+http://192.168.1.8:35455/youtube/oIgbl7t0S_w
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",TVBS
+http://192.168.1.8:35455/youtube/YvdcZ_jpLXE
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",東森新聞
+http://192.168.1.8:35455/youtube/E0zhe2gkXBs
+
+
+
+
 中天新闻台，https://xhysyuan.vercel.app/live/youtube/oIgbl7t0S_w?quality=720
 TVBS,https://xhysyuan.vercel.app/live/youtube/YvdcZ_jpLXE
 東森新聞,https://xhysyuan.vercel.app/live/youtube/E0zhe2gkXBs
