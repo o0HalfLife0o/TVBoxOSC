@@ -5,7 +5,10 @@ http://192.168.1.8:35455/youtube/oIgbl7t0S_w
 http://192.168.1.8:35455/youtube/YvdcZ_jpLXE
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",東森新聞
 http://192.168.1.8:35455/youtube/E0zhe2gkXBs
-
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1016/b9/b6824c9d5593f03f5b5c4f71189023_180_135.jpg?1564815405" group-title="王者荣耀",张大仙
+http://192.168.1.8:35455/huya/688
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",平靜祥和的咖啡廳鋼琴曲
+http://192.168.1.8:35455/youtube/cK4LemjoFd0
 
 
 
