@@ -584,7 +584,7 @@ CGTN,rtp://239.254.96.16:7112
 澄迈,rtp://239.254.96.111:7772
 
 抖音,#genre#
-央视网,http://live.lcjly.cn/douyin/870887192950
+文具范范 瑞峰百货,http://live.lcjly.cn/douyin/197942888655
 
 虎牙,#genre#
 集梦张开朗,http://live.lcjly.cn/huya/233
