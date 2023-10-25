@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",中天新闻台
-http://live.lcjly.cn/youtube/oIgbl7t0S_w
+http://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",TVBS
-http://live.lcjly.cn/youtube/YvdcZ_jpLXE
+http://live.lcjly.cn/youtube/YvdcZ_jpLXE?quality=360
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",東森新聞
 http://live.lcjly.cn/youtube/E0zhe2gkXBs
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1016/b9/b6824c9d5593f03f5b5c4f71189023_180_135.jpg?1564815405" group-title="王者荣耀",东东爱弹琴
