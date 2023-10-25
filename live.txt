@@ -583,16 +583,16 @@ CGTN,rtp://239.254.96.16:7112
 三亚1,rtp://239.254.96.106:8832
 澄迈,rtp://239.254.96.111:7772
 
-yuotube,#genre#
-中天新闻台，https://xhysyuan.vercel.app/live/youtube/oIgbl7t0S_w?quality=720
-TVBS,https://xhysyuan.vercel.app/live/youtube/YvdcZ_jpLXE
-東森新聞,https://xhysyuan.vercel.app/live/youtube/E0zhe2gkXBs
-TVBS新聞台,https://xhysyuan.vercel.app/live/youtube/2mCSYvcfhtc
-三立新聞台,https://xhysyuan.vercel.app/live/youtube/oZdzzvxTfUY
-民视新闻台，https://xhysyuan.vercel.app/live/youtube/ylYJSBUgaMA
-
 抖音,#genre#
 央视网，http://live.lcjly.cn/douyin/870887192950
 
 虎牙,#genre#
 集梦张开朗，http://live.lcjly.cn/huya/233
+
+yuotube,#genre#
+中天新闻台，https://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
+TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE
+東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
+TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
+三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
+民视新闻台，https://live.lcjly.cn/youtube/ylYJSBUgaMA
