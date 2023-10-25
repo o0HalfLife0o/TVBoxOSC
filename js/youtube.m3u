@@ -1,14 +1,14 @@
 #EXTM3U
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",中天新闻台
-http://192.168.1.8:35455/youtube/oIgbl7t0S_w
+http://live.lcjly.cn/youtube/oIgbl7t0S_w
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",TVBS
-http://192.168.1.8:35455/youtube/YvdcZ_jpLXE
+http://live.lcjly.cn/youtube/YvdcZ_jpLXE
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",東森新聞
-http://192.168.1.8:35455/youtube/E0zhe2gkXBs
+http://live.lcjly.cn/youtube/E0zhe2gkXBs
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1016/b9/b6824c9d5593f03f5b5c4f71189023_180_135.jpg?1564815405" group-title="王者荣耀",东东爱弹琴
-http://192.168.1.8:35455/huya/573218
+http://live.lcjly.cn/huya/573218
 #EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",平靜祥和的咖啡廳鋼琴曲
-http://192.168.1.8:35455/youtube/cK4LemjoFd0
+http://live.lcjly.cn/youtube/cK4LemjoFd0
 
 
 
@@ -18,3 +18,11 @@ TVBS,https://xhysyuan.vercel.app/live/youtube/YvdcZ_jpLXE
 TVBS新聞台,https://xhysyuan.vercel.app/live/youtube/2mCSYvcfhtc
 三立新聞台,https://xhysyuan.vercel.app/live/youtube/oZdzzvxTfUY
 民视新闻台，https://xhysyuan.vercel.app/live/youtube/ylYJSBUgaMA
+
+
+中天新闻台，https://live.lcjly.cn/live/youtube/oIgbl7t0S_w?quality=720
+TVBS,https://live.lcjly.cn/live/youtube/YvdcZ_jpLXE
+東森新聞,https://live.lcjly.cn/live/youtube/E0zhe2gkXBs
+TVBS新聞台,https://live.lcjly.cn/live/youtube/2mCSYvcfhtc
+三立新聞台,https://live.lcjly.cn/live/youtube/oZdzzvxTfUY
+民视新闻台，https://live.lcjly.cn/live/youtube/ylYJSBUgaMA
