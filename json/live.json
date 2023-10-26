@@ -1,5 +1,5 @@
 [
-    {"name": "北京联通",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%e5%8c%97%e4%ba%ac%e8%81%94%e9%80%9a.m3u"},
+    {"name": "城市专用",     "url": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/js/tv.txt"},
     {"name": "安徽移动",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%e5%ae%89%e5%be%bd%e7%a7%bb%e5%8a%a8.txt"},
     {"name": "安徽联通",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%E5%AE%89%E5%BE%BD%E8%81%94%E9%80%9A.txt"},
     {"name": "海南联通",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%e6%b5%b7%e5%8d%97%e8%81%94%e9%80%9a.m3u"},

@@ -3,7 +3,7 @@
 	"wallpaper": "http://lcjly.cn/tupian",
 
 	"sites": [
-		{"key":"Live2CMS","name":"电视直播（城市专用）","type":3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/live2cms.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/json/live.json"},
+		{"key":"Live2CMS","name":"IPTV（城市专用）","type":3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/live2cms.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/json/live.json"},
 		{"key": "dr_农民影视","name": " 👨‍🌾农民影视","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/农民影视.js","searchable": 2,"quickSearch": 1,"filterable": 1},
 		{"key": "dr_荐片","name": " 🧲荐片","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/荐片.js","searchable": 2,"quickSearch": 1,"filterable": 1},
 		{"key": "dr_乐猪TV","name": " 🐷乐猪TV","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/乐猪TV.js","searchable": 2,"quickSearch": 0,"filterable": 1},
