@@ -1,8 +1,8 @@
 [
-    {"name": "城市专用",     "url": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/js/tv.txt"},
-    {"name": "安徽移动",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%e5%ae%89%e5%be%bd%e7%a7%bb%e5%8a%a8.txt"},
-    {"name": "安徽联通",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%E5%AE%89%E5%BE%BD%E8%81%94%E9%80%9A.txt"},
-    {"name": "海南联通",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%e6%b5%b7%e5%8d%97%e8%81%94%e9%80%9a.m3u"},
-    {"name": "吾爱",     "url": "http://52bsj.vip:81/api/v3/file/get/763/live.txt?sign=87BTGT1_6AOry7FPwy_uuxFTv2Wcb9aDMj46rDdRTD8%3D%3A0"},
-    {"name": "饭太硬",     "url": "http://ftyyy.tk/live.txt"}
+    {"name": "城市专用",     "url": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/js/IPTV.txt"},
+//    {"name": "安徽移动",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%e5%ae%89%e5%be%bd%e7%a7%bb%e5%8a%a8.txt"},
+//    {"name": "安徽联通",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%E5%AE%89%E5%BE%BD%E8%81%94%E9%80%9A.txt"},
+//    {"name": "海南联通",     "url": "https://agit.ai/xisohi/iptv/raw/branch/master/m3u/%e6%b5%b7%e5%8d%97%e8%81%94%e9%80%9a.m3u"},
+//    {"name": "吾爱",     "url": "http://52bsj.vip:81/api/v3/file/get/763/live.txt?sign=87BTGT1_6AOry7FPwy_uuxFTv2Wcb9aDMj46rDdRTD8%3D%3A0"},
+//    {"name": "饭太硬",     "url": "http://ftyyy.tk/live.txt"}
     ]
