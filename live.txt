@@ -234,16 +234,6 @@ TVBS新闻,http://50.7.238.114:8278/tvbs_n/playlist.m3u8?tid=MEFE528332245283322
 三立綜合,http://50.7.238.114:8278/sanlizhonghe/playlist.m3u8?tid=MB0B8754413687544136&ct=19193&tsum=b815a8eec252a8266b57178e6b336b03
 TVBS亚洲,http://38.64.72.148:80/hls/modn/list/4005/chunklist0.m3u8
 TVBS亚洲,http://38.64.72.148:80/hls/modn/list/4005/chunklist1.m3u8
-凤凰卫视,http://193.233.206.48:8090/live/rx3/2291/1f879248cae6ded1cbb4aa43daa15cba/index.m3u8
-凤凰卫视,http://193.233.206.48:8090/live/rx1/2812/f3f1b5a0c603ec0e7b016d36e110c175/index.m3u8
-凤凰资讯,http://193.233.206.48:8090/live/rx3/2292/d810e714a752752d55ac9541541a7ae4/index.m3u8
-凤凰资讯,http://193.233.206.48:8090/live/rx1/2811/11599481d8b22d575edc99c72d089368/index.m3u8
-TVBS,http://193.233.206.48:8090/live/rx1/2273/d58941d7de65f386d127f700503d9bab/index.m3u8
-TVBS,http://193.233.206.48:8090/live/rx5/16/e72ddccce59e2728624bf6cb7979ce2c/index.m3u8 
-TVBS新闻,http://193.233.206.48:8090/live/rx5/2736/f63662b245f328e65e78a6c6cb77e0f9/index.m3u8
-TVBS新闻,http://193.233.206.48:8090/live/rx2/2/fdb3b27a99f4b35ad67a39f1f6c6ea79/index.m3u8
-华视新闻,http://193.233.206.48:8090/live/rx1/2424/da65646d73d6be18105f76700304e580/index.m3u8
-民视新闻,http://193.233.206.48:8090/live/rx2/13/78467438670a4073ea69bb45c28da549/index.m3u8
 
 安徽移动（专用）,#genre#
 CCTV-1,http://120.210.193.151:8006/120000001001/wlds:8080/ysten-business/live/cctv-1/1.m3u8
@@ -357,9 +347,6 @@ CGTN高清,http://120.210.193.151:8006/120000001001/wlds:8080/ysten-business/liv
 海豚健康,http://120.210.193.151:8006/120000001002/XMThtjk/1.m3u8
 海豚影视,http://120.210.193.151:8006/120000001002/XMThtys/1.m3u8
 海豚少儿,http://120.210.193.151:8006/120000001002/XMThtse/1.m3u8
-家庭影院（测试）,http://120.210.193.151:8006/120000001002/XMTjtyy/1.m3u8
-动作电影（测试）,http://120.210.193.151:8006/120000001002/XMTdzdy/1.m3u8
-高清电影（测试）,http://120.210.193.151:8006/120000001002/XMTgqdy/1.m3u8
 蚌埠新闻综合,http://120.210.193.151:8006/120000001002/XMTBB_xwzh/index.m3u8
 蚌埠公共频道,http://120.210.193.151:8006/120000001003/live/program/_ahbyfh-1_/live/ah_bbggpd/index.m3u8
 
