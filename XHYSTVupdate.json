@@ -6,7 +6,7 @@
   "VersionName": "20231017",
   "UploadTime": "2023-10-17 18:22:41",
   "ModifyContent":  "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份 已知bug\r\n3、不再支持安卓4.3以下安装",
-  "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231017-0945/XHYSTV_20231017-0945.apk",
+  "DownloadUrl": "https://gh-proxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231017-0945/XHYSTV_20231017-0945.apk",
   "ApkSize": 17370,
   "ApkMd5": ""
 }
