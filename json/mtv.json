@@ -56,15 +56,6 @@
       "filterable": 0
     },
     {
-      "key": "zp127",
-      "name": "色色资源",
-      "type": 0,
-      "api": "http://secj8.com/inc/sapi.php?ac=videolist",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "zp124",
       "name": "色猫资源",
       "type": 0,
