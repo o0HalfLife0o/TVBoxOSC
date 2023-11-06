@@ -171,13 +171,6 @@
       "api": "https://shayuapi.com/api.php/provide/vod/at/xml"
     },
     {
-      "key": "*探探",
-      "name": "*探探",
-      "type": 0,
-      "api": "https://apittzy.com/api.php/provide/vod/at/xml",
-      "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url="
-    },
-    {
       "key": "*蛋蛋视频",
       "name": "*蛋蛋视频",
       "type": 1,
