@@ -178,14 +178,6 @@
       "quickSearch": 0
     },
     {
-      "key": "*色猫资源",
-      "name": "*色猫资源",
-      "type": 1,
-      "api": "https://api.maozyapi.com/inc/apijson_vod.php",
-      "searchable": 0,
-      "quickSearch": 0
-    },
-    {
       "key": "*花魁资源",
       "name": "*花魁资源",
       "type": 1,
