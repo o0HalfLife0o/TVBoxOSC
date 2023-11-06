@@ -1,16 +1,7 @@
 {
   "sites": [
     {key:'快看',name:'快看',type:3,api:'csp_Kuaikan',searchable:1,quickSearch:1,filterable:1},
-    {
-      "key": "zp024",
-      "name": "BT天堂-伦理",
-      "type": 0,
-      "api": "http://bttcj.com/inc/sapi.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
+{
       "key": "zp143",
       "name": "天堂福利",
       "type": 0,
