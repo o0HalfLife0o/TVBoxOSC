@@ -71,6 +71,8 @@
 		{"key": "dr_凌云影视","name": "凌云影视","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/凌云影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "dr_创艺影视","name": "创艺影视","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/创艺影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "dr_创艺影视[V2]","name": "创艺影视[V2]","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/创艺影视[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "dr_刺桐[V2]","name": "刺桐[V2]","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/刺桐[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
+
 		//{"key": "dr_剧迷","name": "剧迷","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/剧迷.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "dr_剧迷su","name": "剧迷su","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/剧迷su.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "dr_北川影视","name": "北川影视","type": 3,"api": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/drpy2.min.js","ext":"https://agit.ai/xisohi/dr_py/raw/branch/main/js/北川影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
