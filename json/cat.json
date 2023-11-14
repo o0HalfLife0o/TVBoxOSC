@@ -1,5 +1,6 @@
 {
-  "video": {
+  "spider": "https://agit.ai/xisohi/dr_py/raw/branch/main/libs/jar/custom_spider.jar",
+  "wallpaper": "http://lcjly.cn/tupian",
 "sites": [
 {"key": "duboku",  "name": "独播库[飞]","type": 3,"api": "https://agit.ai/xisohi/CatVodOpen/raw/branch/main/js/duboku_bytecode.js"},
 {"key": "mybili_ts99999","name": "我的哔哩","type": 3,"api": "https://agit.ai/xisohi/CatVodOpen/raw/branch/main/js/bili_bytecode3.js","ext": {  "categories": "经典无损音乐合集#帕梅拉#太极拳#健身#舞蹈#音乐#歌曲#MV4K#演唱会4K#白噪音4K#知名UP主#说案#解说#演讲#时事#探索发现超清#纪录片超清#平面设计教学#软件教程#实用教程#旅游#风景4K#食谱#美食超清#搞笑#球星#动物世界超清#相声小品#戏曲#儿童#小姐姐4K#热门#旅行探险",
@@ -115,8 +116,7 @@
 {"key": "18a_yozo","name": "18AV","type": 3,"api": "https://agit.ai/xisohi/CatVodOpen/raw/branch/main/js/18a_open.js"},
 {"key": "mtsp_yozo","name": "蜜桃","type": 3,"api": "https://agit.ai/xisohi/CatVodOpen/raw/branch/main/js/mtsp_bytecode.js"},
 {"key": "hsck","name": "黄色仓库","type": 3,"api": "https://agit.ai/xisohi/CatVodOpen/raw/branch/main/js/hsck_bytecode.js"}
-]
-  },
+],
   "pan": {
 "sites": [
 {"key": "alist","name": "Alist","type": 40,"api": "https://agit.ai/xisohi/CatVodOpen/raw/branch/main/js/alist_open.js","ext": [
@@ -130,4 +130,6 @@
   {"name": "💦讯维云盘","server": "https://pan.xwbeta.com"  }
 ]}
 ]
-  }}
+  },
+  "lives":[{"name":"live","type":0,"url":"https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/live.txt","playerType":1,"epg":"http://diyp.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}]
+}
