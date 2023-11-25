@@ -1,0 +1,29 @@
+{
+  "spider":"https://raw.sock.cf/gaotianliuyun/gao/master/jar/fan.txt",
+  "lives":[
+    {"name":"饭太硬","type":0,"url":"https://agit.ai/fantaiying/0/raw/branch/main/tvlive.txt","playerType":1,"ua":"okhttp/3.15","epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"},
+  ],
+  "wallpaper":"http://饭太硬.top/深色壁纸/api.php",
+  "sites":[
+    {"key":"drpy_js_奇珍异兽","name":"官源┃奇艺[js]","type":3,"api":"https://raw.sock.cf/gaotianliuyun/gao/master/lib/drpy2.min.js","ext":"https://raw.sock.cf/gaotianliuyun/gao/master/js/奇珍异兽.js"},
+    {"key":"drpy_js_百忙无果","name":"官源┃芒果[js]","type":3,"api":"https://raw.sock.cf/gaotianliuyun/gao/master/lib/drpy2.min.js","ext":"https://raw.sock.cf/gaotianliuyun/gao/master/js/百忙无果.js"},
+    {"key":"drpy_js_腾云驾雾","name":"官源┃腾讯[js]","type":3,"api":"https://raw.sock.cf/gaotianliuyun/gao/master/lib/drpy2.min.js","ext":"https://raw.sock.cf/gaotianliuyun/gao/master/js/腾云驾雾.js"},
+    {"key":"drpy_js_优酷","name":"官源┃优酷[js]","type":3,"api":"https://raw.sock.cf/gaotianliuyun/gao/master/lib/drpy2.min.js","ext":"https://raw.sock.cf/gaotianliuyun/gao/master/js/优酷.js"}
+  ],
+  "parses":[
+    {"name":"解析","type":3,"url":"Demo"},
+    {"name":"嗅探","type":3,"url":"Web"},
+    {"name":"太硬","type":1,"url":"http://api.888484.xyz/jiexi/米太硬.php?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果"]}},
+    {"name":"天云","type":1,"url":"https://api.tyun77.cn/api.php/provide/parseDicturl?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"虾米","type":0,"url":"https://jx.xmflv.com/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"小米","type":0,"url":"https://jx.xmflv.cc/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"杰森","type":0,"url":"https://jx.jsonplayer.com/player/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"三七","type":0,"url":"https://jx.777jiexi.com/player/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"夜幕","type":0,"url":"https://www.yemu.xyz/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"醉仙","type":0,"url":"https://jx.zui.cm/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"超快","type":0,"url":"https://www.ckplayer.vip/jiexi/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"解析","type":0,"url":"https://api.jiexi.la/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
+    {"name":"神哥","type":0,"url":"https://json.ovvo.pro/jx.php?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}}
+  ],
+  "flags":["qq","qiyi","优酷","mgtv"]
+}
