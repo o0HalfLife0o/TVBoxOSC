@@ -12,7 +12,7 @@
 		{"key": "drpy_js_荐片","name": " 🧲荐片","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/荐片.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_酷云77","name": "👒酷云七七","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy.min.js","ext":"http://drpy.lcjly.cn/js/酷云77.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "csp_77","name": "👒酷云七七","type": 3,"api": "csp_Kunyu77","searchable": 1,"quickSearch": 1,"filterable": 1,"jar":"https://agit.ai/xisohi/Box/raw/branch/master/Yoursmile.jar"},
-		{"key": "drpy_js_007影视","name": "007影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/007影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		//{"key": "drpy_js_007影视","name": "007影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/007影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_139影视","name": "139影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/139影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "drpy_js_188影视","name": "188影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/188影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_345看片","name": "345看片","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/345看片.js","searchable": 2,"quickSearch": 0,"filterable": 1},
