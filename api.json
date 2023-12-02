@@ -14,7 +14,6 @@
   "parses":[
     {"name":"解析","type":3,"url":"Demo"},
     {"name":"嗅探","type":3,"url":"Web"},
-    {"name":"太硬","type":1,"url":"http://api.888484.xyz/jiexi/米太硬.php?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果"]}},
     {"name":"天云","type":1,"url":"https://api.tyun77.cn/api.php/provide/parseDicturl?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
     {"name":"虾米","type":0,"url":"https://jx.xmflv.com/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
     {"name":"小米","type":0,"url":"https://jx.xmflv.cc/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
@@ -22,8 +21,6 @@
     {"name":"三七","type":0,"url":"https://jx.777jiexi.com/player/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
     {"name":"夜幕","type":0,"url":"https://www.yemu.xyz/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
     {"name":"醉仙","type":0,"url":"https://jx.zui.cm/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
-    {"name":"超快","type":0,"url":"https://www.ckplayer.vip/jiexi/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
-    {"name":"解析","type":0,"url":"https://api.jiexi.la/?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}},
     {"name":"神哥","type":0,"url":"https://json.ovvo.pro/jx.php?url=","ext":{"flag":["qq","qiyi","优酷","mgtv"]}}
   ]
 }
