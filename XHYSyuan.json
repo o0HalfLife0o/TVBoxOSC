@@ -1,6 +1,6 @@
 {
 	//"spider": "http://drpy.lcjly.cn/libs/jar/custom_spider.jar",
-	"spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/13998394872/TVBox/main/jar/pg.jar",
+	"spider": "https://xhys.lcjly.cn/jar/pg.jar",
 	"wallpaper": "http://lcjly.cn/tupian",
 
 	"sites": [
@@ -26,7 +26,7 @@
 		{"key": "drpy_js_69美剧[V2]","name": "69美剧[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/69美剧[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_6V新版[磁]","name": "6V新版[磁]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/6V新版[磁].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_7喜影院","name": "7喜影院","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/7喜影院.js","searchable": 2,"quickSearch": 0,"filterable": 1},
-		{"key": "drpy_js_8号影院","name": "8号影院","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/8号影院.js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		//{"key": "drpy_js_8号影院","name": "8号影院","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/8号影院.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "drpy_js_91free","name": "91free","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/91free.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_9U电影","name": "9U电影","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/9U电影.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_Auete","name": "Auete","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/Auete.js","searchable": 2,"quickSearch": 0,"filterable": 1},
@@ -209,7 +209,7 @@
 		//		{"key": "drpy_js_特狗影视","name": "特狗影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/txt/js/tg/特狗影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		//		{"key": "drpy_js_快云影院","name": "快云影院","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/txt/js/tg/快云影院.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		//		{"key": "Alist_pt","name": "Alist(pluto)","type": 3,"api": "http://drpy.lcjly.cn/libs/alist.min.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "http://drpy.lcjly.cn/config/2;200;video"},
-		{"key": "drpy_js_Alist","name": "Alist","type": 3,"api": "http://drpy.lcjly.cn/libs/alist.min.js","ext": "http://drpy.lcjly.cn/txt/json/alist.json","searchable": 2,"quickSearch": 0,"filterable": 0},
+		//{"key": "drpy_js_Alist","name": "Alist","type": 3,"api": "http://drpy.lcjly.cn/libs/alist.min.js","ext": "http://drpy.lcjly.cn/txt/json/alist.json","searchable": 2,"quickSearch": 0,"filterable": 0},
 		{"key": "Wogg","name": "玩偶哥哥 | 网盘","type": 3,"api": "csp_Wogg","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/13998394872/TVBox/main/ext/Token_Quark.json$$$https://wogg.xyz/"},
 		{"key": "Wobg","name": "玩偶表哥 | 网盘","type": 3,"api": "csp_Wobg","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/13998394872/TVBox/main/ext/Token_Quark.json$$$https://wobge.run.goorm.io/"},
 		{"key": "Hdhive","name": "影巢 | 网盘","type": 3,"api": "csp_Hdhive","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/13998394872/TVBox/main/ext/Token_Quark.json"},
