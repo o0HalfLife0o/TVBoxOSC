@@ -6,7 +6,8 @@
   "VersionName": "重阳节",
   "UploadTime": "2023-10-24 22:23:41",
   "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug.\r\n2、添加自动更新功能",
-  "DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231024-0822/XHYS_20231024-0822.apk",
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231206-1001/XHYS_20231206-1001.apk",
+  //"DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231024-0822/XHYS_20231024-0822.apk",
   "ApkSize": 41052,
   "ApkMd5": ""
 }
