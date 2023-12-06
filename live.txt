@@ -134,24 +134,6 @@ CCTV-16,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226
 兵团卫视,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226214/index.m3u8
 农林卫视,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226229/index.m3u8
 
-CCTV-1,https://live.goodiptv.club/api/cqyx.php?id=cctv1HD
-CCTV-2,https://live.goodiptv.club/api/cqyx.php?id=cctv2HD
-CCTV-4,https://live.goodiptv.club/api/cqyx.php?id=CCTV4K
-CCTV-5+,https://live.goodiptv.club/api/cqyx.php?id=cctv5SportHD
-CCTV-5,https://live.goodiptv.club/api/cqyx.php?id=cctv5HD
-CCTV-6,https://live.goodiptv.club/api/cqyx.php?id=cctv6HD
-CCTV-7,https://live.goodiptv.club/api/cqyx.php?id=cctv7HD
-CCTV-8,https://live.goodiptv.club/api/cqyx.php?id=cctv8HD
-CCTV-9,https://live.goodiptv.club/api/cqyx.php?id=cctv9HD
-CCTV-10,https://live.goodiptv.club/api/cqyx.php?id=cctv10HD
-CCTV-11,https://live.goodiptv.club/api/cqyx.php?id=cctv11HD
-CCTV-12,https://live.goodiptv.club/api/cqyx.php?id=cctv12HD
-CCTV-13,https://live.goodiptv.club/api/cqyx.php?id=CCTVNewsHD
-CCTV-14,https://live.goodiptv.club/api/cqyx.php?id=cctvseHD
-CCTV-15,https://live.goodiptv.club/api/cqyx.php?id=cctv15HD
-CCTV-16,https://live.goodiptv.club/api/cqyx.php?id=CCTV16_4K
-CCTV-17,https://live.goodiptv.club/api/cqyx.php?id=cctv17HD
-
 
 港澳台,#genre#
 凤凰卫视,http://r.jdshipin.com/cCCzW
