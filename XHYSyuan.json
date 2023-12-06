@@ -210,6 +210,7 @@
 		//		{"key": "drpy_js_快云影院","name": "快云影院","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/txt/js/tg/快云影院.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		//		{"key": "Alist_pt","name": "Alist(pluto)","type": 3,"api": "http://drpy.lcjly.cn/libs/alist.min.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "http://drpy.lcjly.cn/config/2;200;video"},
 		//{"key": "drpy_js_Alist","name": "Alist","type": 3,"api": "http://drpy.lcjly.cn/libs/alist.min.js","ext": "http://drpy.lcjly.cn/txt/json/alist.json","searchable": 2,"quickSearch": 0,"filterable": 0},
+		{"key": "wogg_okjack","name": "玩偶gg","type": 3,"api": "https://xhys.lcjly.cn/js/wogg_open.js","ext": "d6a1e4f89ffa44d59971480fffbf4fb4"},
 		{"key": "Wogg","name": "玩偶哥哥 | 网盘","type": 3,"api": "csp_Wogg","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$https://wogg.xyz/"},
 		{"key": "Wobg","name": "玩偶表哥 | 网盘","type": 3,"api": "csp_Wobg","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$https://wobge.run.goorm.io/"},
 		{"key": "Hdhive","name": "影巢 | 网盘","type": 3,"api": "csp_Hdhive","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json"},
