@@ -16,6 +16,7 @@
 		//{"key": "drpy_js_007影视","name": "007影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/007影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_139影视","name": "139影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/139影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "drpy_js_188影视","name": "188影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/188影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "drpy_js_333影视","name": "333影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/333影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "drpy_js_345看片","name": "345看片","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/345看片.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_348电影网","name": "348电影网","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/348电影网.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_360影视","name": "360影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/360影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
