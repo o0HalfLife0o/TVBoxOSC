@@ -46,7 +46,7 @@ proxies:
     path: "/argo-vmess?ed=2048"
      headers: 
        Host: arthur-experienced-hate-maiden.trycloudflare.com
-   udp: true
+  udp: true
 - name: 🇨🇳 github.com/freefq - 广东省广州市移动 3
   server: service.ouluyun9803.com
   port: 20001
@@ -119,7 +119,7 @@ proxies:
     path: /
     headers:
       Host: us-02.jikuai.xyz
-      udp: true
+  udp: true
 - name: 🇺🇸US-89.187.179.192-0852 | 201.829MB
   server: 89.187.179.192
   port: 443
