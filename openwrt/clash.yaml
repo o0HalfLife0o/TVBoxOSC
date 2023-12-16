@@ -17,6 +17,109 @@ dns:
   - https://dns.google/dns-query
   - tls://dns.google:853
 proxies:
+- name: 🇨🇳 github.com/freefq - 湖南省联通 1
+  server: t.cnmjcn.cyou
+  port: 16616
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts: 
+    path: /
+    headers: 
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+  udp: true
+- name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+  server: hexsen.com
+  port: 443
+  type: vmess
+  uuid: de04add9-5c68-8bab-950c-08cd5320df18
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts: 
+    path: "/argo-vmess?ed=2048"
+     headers: 
+       Host: arthur-experienced-hate-maiden.trycloudflare.com
+   udp: true
+- name: 🇨🇳 github.com/freefq - 广东省广州市移动 3
+  server: service.ouluyun9803.com
+  port: 20001
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  udp: true
+- name: 🇨🇦 github.com/freefq - 加拿大  4
+  server: 142.202.48.43
+  port: 2375
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+  server: cf-lt.sharecentre.online
+  port: 80
+  type: vmess
+  uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v3/download.getFile
+    headers: 
+      Host: ssrsub.v005.ssrsub.com
+  udp: true
+- name: 🇨🇳 github.com/freefq - 广西河池市联通 6
+  server: yes.cnmjcn.net
+  port: 16616
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+  path: /
+  headers:
+    Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+  udp: true
+- name: 🇨🇳 github.com/freefq - 广东省广州市移动 7
+  server: service.ouluyun9803.com
+  port: 26668
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  udp: true
+- name: 🇨🇳 github.com/freefq - 广东省广州市移动 8
+  server: service.ouluyun9803.com
+  port: 26666
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cfa17a0d-5e7d-4871-976e-f116e0818123
+  udp: true
+- name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+  server: us-02.jikuai.xyz
+  port: 2082
+  type: vmess
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us-02.jikuai.xyz
+      udp: true
 - name: 🇺🇸US-89.187.179.192-0852 | 201.829MB
   server: 89.187.179.192
   port: 443
@@ -1906,7 +2009,7 @@ proxy-groups:
   - Global - Fallback(Tiers) 🌎
   - Global - LoadBalance(ch) 🦄
   - Global - LoadBalance(rr) 🍄
-  - Tier 1 🚀
+  - 节点选择 🚀
   - Tier 2 ⚡️
   - Tier 3 💎
   - Tier 4 🗿
@@ -1915,7 +2018,7 @@ proxy-groups:
   url: http://clients3.google.com/generate_204
   interval: 300
   proxies:
-  - Tier 1 🚀
+  - 节点选择 🚀
   - Tier 2 ⚡️
   - Tier 3 💎
   - Tier 4 🗿
@@ -1924,7 +2027,7 @@ proxy-groups:
   url: http://clients3.google.com/generate_204
   interval: 300
   proxies:
-  - Tier 1 🚀
+  - 节点选择 🚀
   - Tier 2 ⚡️
   - Tier 3 💎
   - Tier 4 🗿
@@ -1934,7 +2037,7 @@ proxy-groups:
   url: http://clients3.google.com/generate_204
   interval: 300
   proxies:
-  - Tier 1 🚀
+  - 节点选择 🚀
   - Tier 2 ⚡️
   - Tier 3 💎
   - Tier 4 🗿
@@ -1944,11 +2047,11 @@ proxy-groups:
   url: http://clients3.google.com/generate_204
   interval: 300
   proxies:
-  - Tier 1 🚀
+  - 节点选择 🚀
   - Tier 2 ⚡️
   - Tier 3 💎
   - Tier 4 🗿
-- name: Tier 1 🚀
+- name: 节点选择 🚀
   type: url-test
   url: http://clients3.google.com/generate_204
   interval: 300
