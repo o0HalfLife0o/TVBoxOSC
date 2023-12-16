@@ -1,9 +1,9 @@
 port: 7890
 socks-port: 7891
-allow-lan: false
+allow-lan: true
 mode: rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: 0.0.0.1:9090
 dns:
   enable: true
   ipv6: false
@@ -17,6 +17,31 @@ dns:
   - https://dns.google/dns-query
   - tls://dns.google:853
 proxies:
+- name: 🇫🇷FR-135.125.172.153-018
+  server: 135.125.172.153
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: asdKkaskJKfnsa}
+- name: 🇫🇷FR-51.158.195.96-002
+  server: 51.158.195.96
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: asdKkaskJKfnsa
+- name: 🏁RELAY-104.19.154.92-009
+  server: 104.19.154.92
+  port: 2087
+  type: vmess
+  uuid: 8fada9c0-c348-4465-aade-ff0311454178
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-path: /kqlqqv
+  ws-headers:
+    Host: pAnel159.moOkomeILz.homes
 - name: 🇺🇸US-89.187.179.192-0852 | 201.829MB
   server: 89.187.179.192
   port: 443
