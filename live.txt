@@ -616,13 +616,10 @@ CGTN,rtp://239.254.96.16:7112
 三亚1,rtp://239.254.96.106:8832
 澄迈,rtp://239.254.96.111:7772
 
-抖音,#genre#
-文具范范 瑞峰百货,http://live.lcjly.cn/douyin/197942888655
-
-yuotube,#genre#
-中天新闻台,https://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
-TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE
-東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
-TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
-三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
-民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA
+//yuotube,#genre#
+//中天新闻台,https://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
+//TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE
+//東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
+//TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
+//三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
+//民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA
