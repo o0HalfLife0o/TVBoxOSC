@@ -215,7 +215,6 @@
 		{"key": "Xb6v","name": "新6V | 网盘","type": 3,"api": "csp_Xb6v","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$http://www.xb6v.com"},
 		{"key": "FourKHDR","name": "4KHDR | 网盘","type": 3,"api": "csp_FourKHDR","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$https://mirror.ghproxy.com/https://raw.githubusercontent.com/13998394872/TVBox/main/ext/4KHDR_Cookie.json"},
 		//{"key": "drpy_js_vidhub","name": "vidhub","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/vidhub.js","searchable": 2,"quickSearch": 0,"filterable": 1},
-		{"key": "hipy_cctv","name": "hipy_cctv","type": 4,"api": "http://192.168.31.49:5707/api/v1/vod/cctv_spider?api_ext=http://drpy.lcjly.cn/txt/hipy/cctv_spider.json","searchable":1,"quickSearch":1,"filterable":1,"ext":"cctv_spider"}
 		{"key": "drpy_js_播客","name": "播客","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/播客.js","searchable": 0,"quickSearch": 0,"filterable": 0},
 		{"key": "drpy_js_广播迷FM","name": "广播迷FM","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/广播迷FM.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_清风DJ","name": "清风DJ","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/清风DJ.js","searchable": 2,"quickSearch": 0,"filterable": 1},
