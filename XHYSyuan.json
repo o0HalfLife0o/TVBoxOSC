@@ -147,7 +147,7 @@
 		{"key": "drpy_js_爱看机器人","name": "爱看机器人","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/爱看机器人.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "drpy_js_爱看电影","name": "爱看电影","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/爱看电影&ext=txt/js/tg/爱看电影.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		//{"key": "drpy_js_爱迪[V2]","name": "爱迪[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/爱迪[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
-		//		{"key": "drpy_js_爱迪影视","name": "爱迪影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/爱迪影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "drpy_js_爱迪影视","name": "爱迪影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/爱迪影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "drpy_js_独播库[飞]","name": "独播库[飞]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/独播库[飞].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_电影先生","name": "电影先生","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/电影先生.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "drpy_js_电影先生[V2]","name": "电影先生[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/电影先生[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
