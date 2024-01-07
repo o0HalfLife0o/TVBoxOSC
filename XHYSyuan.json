@@ -222,6 +222,7 @@
 		{"key": "Xb6v","name": "新6V | 网盘","type": 3,"api": "csp_Xb6v","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$http://www.xb6v.com"},
 		{"key": "FourKHDR","name": "4KHDR | 网盘","type": 3,"api": "csp_FourKHDR","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$https://mirror.ghproxy.com/https://raw.githubusercontent.com/13998394872/TVBox/main/ext/4KHDR_Cookie.json"},
 		//		{"key": "drpy_js_539影院","name": "539影院","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/539影院.js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "drpy_js_vidhub","name": "vidhub","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/vidhub.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "drpy_js_花屋影院","name": "花屋影院","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/花屋影院.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_播客","name": "播客","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/播客.js","searchable": 0,"quickSearch": 0,"filterable": 0},
 		{"key": "drpy_js_广播迷FM","name": "广播迷FM","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/广播迷FM.js","searchable": 2,"quickSearch": 0,"filterable": 1},
