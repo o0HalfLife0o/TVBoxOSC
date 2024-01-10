@@ -58,6 +58,8 @@
 		//{"key": "drpy_js_七年影视","name": "七年影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/七年影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "drpy_js_万能影视","name": "万能影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/万能影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "drpy_js_两个BT","name": "两个BT","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/两个BT&ext=txt/js/tg/两个BT.js","searchable": 2,"quickSearch": 0,"filterable": 0},
+        {"key": "hipy_t3_cntv央视","name": "cntv央视(hipy_t3)","type": 3,"api": "http://drpy.lcjly.cn/txt/hipy/cntv央视.py","searchable": 1,"quickSearch": 0,"filterable": 1,"ext": "http://drpy.lcjly.cn/txt/hipy/cntv央视.json"},		
+        {"key": "hipy_t3_两个BT","name": "两个BT(hipy_t3)","type": 3,"api": "http://drpy.lcjly.cn/txt/hipy/两个BT.py","searchable": 1,"quickSearch": 0,"filterable": 1,"ext": "http://drpy.lcjly.cn/txt/hipy/两个BT.json"},		
 		{"key": "drpy_js_中国人","name": "中国人","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/中国人.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		{"key": "drpy_js_乐鱼影视","name": "乐鱼影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/乐鱼影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//		{"key": "drpy_js_云镜影视","name": "云镜影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/云镜影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
