@@ -105,7 +105,10 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           for file in `find ~ -name "*release*.apk" -print`; do
-            mv "$file" apk/${{ matrix.repoName }}_${{ env.tag }}.apk
+            mv "$file" apk/${{ matrix.repoName }}_Release.apk
+          done
+          for file in `find ~ -name "*debug*.apk" -print`; do
+            mv "$file" apk/${{ matrix.repoName }}_Debug.apk
           done
       - name: Release Note
         if: ${{ env.commit }}

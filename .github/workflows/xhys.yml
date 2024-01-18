@@ -99,7 +99,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: ${{ env.commit }}
         with:
-          name: ${{ env.tag }}
+          name: XHYS
           tag_name: ${{ env.tag }}
           body: ${{ env.commit }}
           files: |
