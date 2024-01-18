@@ -71,10 +71,10 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           for file in `find ~ -name "*release*.apk" -print`; do
-            mv "$file" apk/TVBoxOS_${{ env.tag }}_Release.apk
+            mv "$file" apk/XHYS_${{ env.tag }}_Release.apk
           done
           for file in `find ~ -name "*debug*.apk" -print`; do
-            mv "$file" apk/TVBoxOS_${{ env.tag }}_Debug.apk
+            mv "$file" apk/XHYS_${{ env.tag }}_Debug.apk
           done
 
       - name: Release Note
