@@ -92,12 +92,20 @@ jobs:
       - name: Setup Gradle
         if: ${{ env.commit }}
         uses: gradle/gradle-build-action@v2
-      - name: Build With Gradle
+      - name: Build Release With Gradle
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
+            - name: Build With Gradle
+        if: ${{ env.commit }}
+      - name: Build Debug With Gradle
+        if: ${{ env.commit }}  
+        working-directory: TVBoxOSC
+        run: |
+          chmod +x gradlew
+          ./gradlew assembledebug --build-cache --parallel --daemon --warning-mode all
       - name: Prepare App
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
