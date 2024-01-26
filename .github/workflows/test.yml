@@ -33,7 +33,7 @@ jobs:
             branchName: main
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Check New Commit
@@ -92,9 +92,21 @@ jobs:
           sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
           sed -i '$a\RELEASE_STORE_PASSWORD=TVBoxOSC'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=TVBoxOSC'         ./gradle.properties
-      - name: Setup Gradle
+      - name: Check JAVA Version
         if: ${{ env.commit }}
-        uses: gradle/gradle-build-action@v2
+        working-directory: TVBoxOSC
+        run: |
+          setup_java_ver=$(grep -o 'JavaVersion.VERSION_[0-9_]\+' app/build.gradle |head -1 |sed 's/.*_//')
+          if [ $setup_java_ver -gt 11 ]; then
+            echo "setup_java_ver=$setup_java_ver" >> $GITHUB_ENV
+          fi
+      - uses: actions/setup-java@v4
+        if: ${{ env.setup_java_ver }}
+        with:
+          distribution: temurin
+          java-version: ${{ env.setup_java_ver }}
+      - uses: gradle/gradle-build-action@v2
+        if: ${{ env.commit }}
       - name: Build With Gradle
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
