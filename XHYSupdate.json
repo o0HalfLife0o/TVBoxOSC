@@ -2,9 +2,9 @@
   "Code": 0,
   "Msg": "",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240130,
-  "VersionName": "240130",
-  "UploadTime": "2024-01-29 22:23:41",
+  "VersionCode": 240131,
+  "VersionName": "240131",
+  "UploadTime": "2024-01-31 22:23:41",
   "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug.\r\n2、添加自动更新功能",
   "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240131-0807/XHYS_Release.apk",
   //"DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231024-0822/XHYS_20231024-0822.apk",
