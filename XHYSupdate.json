@@ -6,7 +6,7 @@
   "VersionName": "240130",
   "UploadTime": "2024-01-29 22:23:41",
   "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug.\r\n2、添加自动更新功能",
-  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240130-1745/XHYS_Release",
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240130-1745/XHYS_Release.apk",
   //"DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231024-0822/XHYS_20231024-0822.apk",
   "ApkSize": 39501,
   "ApkMd5": ""
