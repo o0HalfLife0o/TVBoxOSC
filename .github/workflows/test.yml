@@ -116,6 +116,11 @@ jobs:
           for file in `find ~ -name "*debug*.apk" -print`; do
             mv "$file" apk/${{ matrix.repoName }}_Debug.apk
           done
+      - name:MD5  App
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          md5sum apk/*.apk > MD5.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
