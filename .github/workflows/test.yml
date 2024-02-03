@@ -121,7 +121,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           cd apk
-          md5sum apk/*.apk > MD5.txt
+          md5sum *.apk > MD5.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
