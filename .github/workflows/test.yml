@@ -156,6 +156,7 @@ jobs:
           removeArtifacts: true
           artifacts: |
             TVBoxOSC/apk/*.apk
+            TVBoxOSC/apk/md5.txt
             TVBoxOSC/source-${{ env.commitS }}.*
       - name: Push to master
         if: ${{ env.commit }}
