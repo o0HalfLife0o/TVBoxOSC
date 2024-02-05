@@ -120,8 +120,7 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          cd apk
-          md5sum *.apk > MD5.txt
+          md5sum apk/*.apk > apk/MD5.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -156,7 +155,7 @@ jobs:
           removeArtifacts: true
           artifacts: |
             TVBoxOSC/apk/*.apk
-            TVBoxOSC/apk/md5.txt
+            TVBoxOSC/apk/*.txt
             TVBoxOSC/source-${{ env.commitS }}.*
       - name: Push to master
         if: ${{ env.commit }}
