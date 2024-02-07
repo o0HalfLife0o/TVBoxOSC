@@ -120,8 +120,8 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          md5sum apk/*.apk > apk/MD5.txt
-          du -k apk/*.apk > apk/MD5.txt
+          md5sum apk/*.apk > apk/ApkMd5.txt
+          ls -k apk/*.apk > apk/ApkSize.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
