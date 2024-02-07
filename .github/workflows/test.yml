@@ -121,6 +121,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           md5sum apk/*.apk > apk/ApkMd5.txt
+          echo "ApkMd5=$(cut -f1 -d' ' apk/ApkMd5.txt)" >> $GITHUB_OUTPUT
           ls -l --block-size=K apk/*.apk > apk/ApkSize.txt
       - name: Release Note
         if: ${{ env.commit }}
@@ -128,7 +129,7 @@ jobs:
         run: |
           lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
           export LESSCHARSET=utf-8
-          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nMD5:\nApkSize:\nChangelog:" > apk/${{ matrix.userName }}-Release.log
+          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nMD5: ${{ env.commit.outputs.md5 }} \nApkSize: ${{  apk/ApkSize.txt }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
             git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           else
