@@ -120,9 +120,9 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          md5sum apk/*.apk > apk/ApkMd5.txt
+          md5sum apk/${{ matrix.repoName }}_Release.apk > apk/ApkMd5.txt
           echo "ApkMd5=$(cut -f1 -d' ' apk/ApkMd5.txt)" >> $GITHUB_OUTPUT
-          ls -l --block-size=K apk/*.apk > apk/ApkSize.txt
+          ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk > apk/ApkSize.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
