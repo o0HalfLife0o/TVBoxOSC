@@ -2,12 +2,12 @@
   "Code": 0,
   "Msg": "",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240203,
-  "VersionName": "240203",
-  "UploadTime": "2024-02-03 22:23:41",
-  "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug.\r\n2、添加自动更新功能",
-  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240203-1803/XHYS_Release.apk",
+  "VersionCode": 240206,
+  "VersionName": "新春吉祥版",
+  "UploadTime": "2024-02-07 22:23:41",
+  "ModifyContent": "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份已知bug.\r\n3、删除部分失效源",
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240207-1700/XHYS_Release.apk",
   //"DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231024-0822/XHYS_20231024-0822.apk",
-  "ApkSize": 39501,
-  "ApkMd5": ""
+  "ApkSize": 39489,
+  "ApkMd5": "8de33ce4e9a8443a7de641519f152664"
 }
