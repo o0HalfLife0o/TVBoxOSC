@@ -121,7 +121,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           md5sum apk/*.apk > apk/ApkMd5.txt
-          ls -k apk/*.apk > apk/ApkSize.txt
+          ls -l --block-size=K apk/*.apk > apk/ApkSize.txt
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
