@@ -117,7 +117,7 @@ jobs:
             mv "$file" apk/${{ matrix.repoName }}_Debug.apk
           done
       - name: Generate md5 hash
-        run: echo "RELEASE_HASH=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
+        run: echo "RELEASE_HASH=$(md5sum /apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
       - name: Calculate MD5
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
