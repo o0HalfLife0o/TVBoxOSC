@@ -121,7 +121,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           md5sum apk/${{ matrix.repoName }}_Release.apk > apk/ApkMd5.txt
-          echo "RELEASE_HASH=$(cut -f1 -d' ' apk/ApkMd5.txt)" >> $GITHUB_OUTPUT
+          echo "RELEASE_HASH=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
           ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk > apk/ApkSize.txt
       - name: Release Note
         if: ${{ env.commit }}
@@ -129,7 +129,7 @@ jobs:
         run: |
           lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
           export LESSCHARSET=utf-8
-          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nMD5: ${{ OUTPUT.RELEASE_HASH}}\nApkSize:\nChangelog:" > apk/${{ matrix.userName }}-Release.log
+          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nMD5: ${{ env.RELEASE_HASH }}\nApkSize:\nChangelog:" > apk/${{ matrix.userName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
             git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           else
