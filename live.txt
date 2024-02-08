@@ -457,4 +457,4 @@ TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE
 TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
 三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
 民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA
-CCTV-1,https://live.lcjly.cn/bestv.php?id=cctv1hd8m/8000000
+CCTV-1,https://live.lcjly.cn/php/bestv.php?id=cctv1hd8m/8000000
