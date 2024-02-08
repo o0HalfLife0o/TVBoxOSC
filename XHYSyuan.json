@@ -1,16 +1,15 @@
 {
 	//"spider": "http://drpy.lcjly.cn/libs/jar/custom_spider.jar",
-	"spider": "./jar/fty.jar;md5;c3e8c08b4cd6f7fd0f868ea48dd42cb2",
+	"spider": "./jar/pg.jar",
 	"wallpaper": "http://lcjly.cn/tupian",
 
 	"sites": [
-		{"key": "drpy_js_996影视","name": "996影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/996影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
-		{"key": "玩偶哥哥","name": "👽玩偶哥哥┃4K弹幕","type": 3,"api": "csp_WoGG","searchable": 1,"quickSearch": 1,"changeable": 0,"ext": "http://127.0.0.1:9978/file/tvfan/token.txt+4k|auto|fhd$$$https://www.wogg.xyz/$$$弹"},
 		//{"key":"Live2CMS","name":"IPTV（城市专用）","type":3,"api": "http://drpy.lcjly.cn/libs/live2cms.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/json/live.json"},
 		//{"key": "drpy_js_佳靓[V2]","name": "佳靓[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/佳靓[V2].js","searchable": 2,"quickSearch": 1,"filterable": 1},
 		//{"key": "drpy_js_花猫TV","name": " 🐈花猫TV","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/花猫TV.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "drpy_js_乐猪TV","name": " 🐷乐猪TV","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/乐猪TV.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_555电影[V2]","name": "555电影[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/555电影[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
+		{"key": "drpy_js_996影视","name": "996影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/996影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		{"key": "drpy_js_农民影视","name": " 👨‍🌾农民影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/农民影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_荐片","name": " 🧲荐片","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/荐片.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_酷云77","name": "👒酷云七七","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy.min.js","ext":"http://drpy.lcjly.cn/js/酷云77.js","searchable": 2,"quickSearch": 0,"filterable": 1},
@@ -208,7 +207,7 @@
 		//		{"key": "Alist_pt","name": "Alist(pluto)","type": 3,"api": "http://drpy.lcjly.cn/libs/alist.min.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "http://drpy.lcjly.cn/config/2;200;video"},
 		//{"key": "drpy_js_Alist","name": "Alist","type": 3,"api": "http://drpy.lcjly.cn/libs/alist.min.js","ext": "http://drpy.lcjly.cn/txt/json/alist.json","searchable": 2,"quickSearch": 0,"filterable": 0},
 		{"key":"WebDAV","name":"📀WebDAV","type":3,"api":"csp_WebDAV","searchable":0,"quickSearch":0,"filterable":1,"changeable":0,"ext":"https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/ext/webdav05155.txt","jar":"./jar/custom_spider.jar"},
-		{"key": "wogg_okjack","name": "玩偶gg","type": 3,"api": "https://xhys.lcjly.cn/js/wogg_open.js","ext": "d6a1e4f89ffa44d59971480fffbf4fb4"},
+		{"key":"Wogg","name":"玩偶哥哥|阿里","type":3,"api":"csp_Wogg","quickSearch":1, "changeable":1, "filterable":1, "timeout":30, "ext":"./json/tokenm.json$$$https://wogg.xyz/$$$null$$$1$$$./json/wogg.json"},
 		{"key": "Wogg","name": "玩偶哥哥 | 网盘","type": 3,"api": "csp_Wogg","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$https://wogg.xyz/"},
 		{"key": "Wobg","name": "玩偶表哥 | 网盘","type": 3,"api": "csp_Wobg","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json$$$https://wobge.run.goorm.io/"},
 		{"key": "Hdhive","name": "影巢 | 网盘","type": 3,"api": "csp_Hdhive","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/jar/token.json"},
