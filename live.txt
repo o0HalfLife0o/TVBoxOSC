@@ -22,7 +22,6 @@ CCTV-13,http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226
 CCTV-14,http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226193/1.m3u8
 CCTV-15,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225785/1.m3u8
 CCTV-16,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226921/1.m3u8
-
 北京卫视,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225796/index.m3u8?
 海南卫视,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225769/index.m3u8?
 南方卫视,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226218/index.m3u8?
@@ -36,6 +35,14 @@ CCTV-16,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226
 江苏卫视,http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226200/index.m3u8?
 深圳卫视,http://39.134.24.166/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226205/index.m3u8?
 浙江卫视 3M1080,http://39.134.24.162/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225798/index.m3u8
+
+CCTV-1,https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
+CCTV-2,https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
+CCTV-5+,https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
+CCTV-5,https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
+CCTV-6,https://node1.olelive.com:6443/live/CCTV6HD/hls.m3u8
+CCTV-8,https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8
+CCTV-9,https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
 
 
 港澳台,#genre#
