@@ -458,3 +458,5 @@ TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
 三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
 民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA
 CCTV-1,https://live.lcjly.cn/php/bestv.php?id=cctv1hd8m/8000000
+集梦张开朗,http://live.lcjly.cn/huya/233
+文具范范 瑞峰百货,http://live.lcjly.cn/douyin/197942888655
