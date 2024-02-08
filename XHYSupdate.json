@@ -1,11 +1,11 @@
 {
   "Code": 0,
-  "Msg": "",
+  "Msg": "新春快乐",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
   "VersionCode": 240206,
   "VersionName": "新春吉祥版",
   "UploadTime": "2024-02-07 22:23:41",
-  "ModifyContent": "\r\n1、直播列表加载rtp协议;\r\n2、修复部份已知bug.\r\n3、删除部分失效源。"
+  "ModifyContent": "\r\n1、直播列表加载rtp协议;\r\n2、修复部份已知bug.\r\n3、删除部分失效源。",
   "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240208-0909/XHYS_Release.apk",
   //"DownloadUrl": "https://ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20231024-0822/XHYS_20231024-0822.apk",
   "ApkSize": 39490,
