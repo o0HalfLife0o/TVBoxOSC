@@ -113,6 +113,9 @@ CCTV-6,https://node1.olelive.com:6443/live/CCTV6HD/hls.m3u8
 CCTV-8,https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8
 CCTV-9,https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
 
+CCTV-6,http://live.lcjly.cn/douyin/69416429589
+江苏卫视,http://live.lcjly.cn/douyin/417926571322
+大湾区卫视,http://live.lcjly.cn/douyin/603789803277
 
 港澳台,#genre#
 凤凰卫视,http://[2409:8087:2001:20:2800:0:df6e:eb22]:80/ott.mobaibox.com/PLTV/3/224/3221228527/index.m3u8
@@ -523,7 +526,7 @@ CGTN,rtp://239.254.96.16:7112
 
 yuotube,#genre#
 中天新闻台,https://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
-TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE
+TVBS,http://live.lcjly.cn/youtube/YvdcZ_jpLXE
 東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
 TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
 三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
