@@ -116,6 +116,8 @@ CCTV-9,https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
 CCTV-6,http://live.lcjly.cn/douyin/69416429589
 江苏卫视,http://live.lcjly.cn/douyin/417926571322
 大湾区卫视,http://live.lcjly.cn/douyin/603789803277
+CCTV-13,https://pi.0472.org/tv/fct.php?auth=2310201855
+CCTV-13,https://live-play.cctvnews.cctv.com/cctv/merge_cctv13.m3u8?auth_key=1635962688
 
 港澳台,#genre#
 凤凰卫视,http://[2409:8087:2001:20:2800:0:df6e:eb22]:80/ott.mobaibox.com/PLTV/3/224/3221228527/index.m3u8
@@ -155,3 +157,13 @@ TVBS新闻,http://50.7.238.114:8278/tvbs_n/playlist.m3u8?tid=MECE323377403233774
 非凡新闻,http://50.7.238.114:8278/feifannews_twn/playlist.m3u8?tid=MFDF6578546865785468&ct=19249&tsum=bbb5f2ee12e8ae89846875a83db08997
 台視新闻,http://50.7.238.114:8278/ttvnews_twn/playlist.m3u8?tid=MBBB6637589866375898&ct=19234&tsum=d2c641a325bf02e0b68c4f245e0165b0
 台視新闻,http://50.7.238.114:8278/ttvnews_twn/playlist.m3u8?tid=MD9D1039476110394761&ct=19193&tsum=9f33349842788bfb7b0e90e93f7bf02c
+
+yuotube,#genre#
+中天新闻台,https://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
+TVBS,http://live.lcjly.cn/youtube/YvdcZ_jpLXE
+東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
+TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
+三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
+民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA
+集梦张开朗,http://live.lcjly.cn/huya/233
+文具范范,http://live.lcjly.cn/douyin/197942888655
