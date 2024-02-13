@@ -112,7 +112,8 @@ CCTV-5,https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
 CCTV-6,https://node1.olelive.com:6443/live/CCTV6HD/hls.m3u8
 CCTV-8,https://node1.olelive.com:6443/live/CCTV8HD/hls.m3u8
 CCTV-9,https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
-
+CCTV-13,https://pi.0472.org/tv/fct.php?auth=2310201855
+CCTV-13,https://live-play.cctvnews.cctv.com/cctv/merge_cctv13.m3u8?auth_key=1635962688
 CCTV-6,http://live.lcjly.cn/douyin/69416429589
 江苏卫视,http://live.lcjly.cn/douyin/417926571322
 大湾区卫视,http://live.lcjly.cn/douyin/603789803277
@@ -345,13 +346,17 @@ CGTN 阿拉伯语,rtp://239.3.1.219:4220
 CGTN 俄语,rtp://239.3.1.220:4220
 
 yuotube,#genre#
+鳳凰衛視資訊台,https://live.lcjly.cn/youtube/ALvxv4ZwK9c?quality=720
 中天新闻台,https://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
-TVBS,http://live.lcjly.cn/youtube/YvdcZ_jpLXE
-東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
-TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
-三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
-民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA
-CCTV-13,https://live-play.cctvnews.cctv.com/cctv/merge_cctv13.m3u8?auth_key=1635962688
+TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE?quality=720
+TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc?quality=720
+東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs?quality=720
+中视新聞台,https://live.lcjly.cn/youtube/TCnaIE_SAtM?quality=720
+寰宇新聞台,https://live.lcjly.cn/youtube/w87VGpgd90U?quality=720
+台视新聞台,https://live.lcjly.cn/youtube/xL0ch83RAK8?quality=720
+华视新聞台,https://live.lcjly.cn/youtube/wM0g8EoUZ_E?quality=720
+镜新聞,https://live.lcjly.cn/youtube/5n0y6b0Q25o?quality=720
+三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY?quality=720
+民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA?quality=720
 集梦张开朗,http://live.lcjly.cn/huya/233
 文具范范,http://live.lcjly.cn/douyin/197942888655
-CCTV13,https://pi.0472.org/tv/fct.php?auth=2310201855
