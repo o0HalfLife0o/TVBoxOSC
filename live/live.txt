@@ -159,17 +159,17 @@ TVBS新闻,http://50.7.238.114:8278/tvbs_n/playlist.m3u8?tid=MECE323377403233774
 台視新闻,http://50.7.238.114:8278/ttvnews_twn/playlist.m3u8?tid=MD9D1039476110394761&ct=19193&tsum=9f33349842788bfb7b0e90e93f7bf02c
 
 yuotube,#genre#
-鳳凰衛視資訊台,https://live.lcjly.cn/youtube/ALvxv4ZwK9c?quality=720
+鳳凰衛視資訊台,https://live.lcjly.cn/youtube/ALvxv4ZwK9c
 中天新闻台,https://live.lcjly.cn/youtube/oIgbl7t0S_w
 TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE
-TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc?quality=720
-東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs?quality=720
-中视新聞台,https://live.lcjly.cn/youtube/TCnaIE_SAtM?quality=720
-寰宇新聞台,https://live.lcjly.cn/youtube/w87VGpgd90U?quality=720
-台视新聞台,https://live.lcjly.cn/youtube/xL0ch83RAK8?quality=720
-华视新聞台,https://live.lcjly.cn/youtube/wM0g8EoUZ_E?quality=720
-镜新聞,https://live.lcjly.cn/youtube/5n0y6b0Q25o?quality=720
-三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY?quality=720
-民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA?quality=720
+TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
+東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
+中视新聞台,https://live.lcjly.cn/youtube/TCnaIE_SAtM
+寰宇新聞台,https://live.lcjly.cn/youtube/w87VGpgd90U
+台视新聞台,https://live.lcjly.cn/youtube/xL0ch83RAK8
+华视新聞台,https://live.lcjly.cn/youtube/wM0g8EoUZ_E
+镜新聞,https://live.lcjly.cn/youtube/5n0y6b0Q25o
+三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
+民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA
 集梦张开朗,https://live.lcjly.cn/huya/233
 文具范范,https://live.lcjly.cn/douyin/197942888655
