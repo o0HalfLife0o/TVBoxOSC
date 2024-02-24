@@ -1,0 +1,10 @@
+    {
+  "drives": [
+    {
+      "name": "Ecve",
+      "server": "https://pan.ecve.cn/dav",
+      "user": "dav",
+      "pass": "dav"
+    }
+  ]
+}

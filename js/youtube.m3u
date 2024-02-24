@@ -1,0 +1,28 @@
+#EXTM3U
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",中天新闻台
+http://live.lcjly.cn/youtube/oIgbl7t0S_w?quality=720
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",TVBS
+http://live.lcjly.cn/youtube/YvdcZ_jpLXE?quality=360
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",東森新聞
+http://live.lcjly.cn/youtube/E0zhe2gkXBs
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1016/b9/b6824c9d5593f03f5b5c4f71189023_180_135.jpg?1564815405" group-title="王者荣耀",东东爱弹琴
+http://live.lcjly.cn/huya/233
+#EXTINF:-1,tvg-id="" tvg-name="" tvg-logo="" group-title="Youtube",平靜祥和的咖啡廳鋼琴曲
+http://live.lcjly.cn/youtube/cK4LemjoFd0
+
+
+
+中天新闻台，https://xhysyuan.vercel.app/youtube/oIgbl7t0S_w?quality=720
+TVBS,https://xhysyuan.vercel.app/youtube/YvdcZ_jpLXE
+東森新聞,https://xhysyuan.vercel.app/youtube/E0zhe2gkXBs
+TVBS新聞台,https://xhysyuan.vercel.app/youtube/2mCSYvcfhtc
+三立新聞台,https://xhysyuan.vercel.app/youtube/oZdzzvxTfUY
+民视新闻台，https://xhysyuan.vercel.app/youtube/ylYJSBUgaMA
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1016/b9/b6824c9d5593f03f5b5c4f71189023_180_135.jpg?1564815405" group-title="王者荣耀",233
+中天新闻台，https://192.168.1.8:35445/huya/233
+TVBS,https://live.lcjly.cn/youtube/YvdcZ_jpLXE
+東森新聞,https://live.lcjly.cn/youtube/E0zhe2gkXBs
+TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc
+三立新聞台,https://live.lcjly.cn/youtube/oZdzzvxTfUY
+民视新闻台，https://live.lcjly.cn/youtube/ylYJSBUgaMA
