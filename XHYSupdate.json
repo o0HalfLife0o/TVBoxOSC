@@ -2,7 +2,7 @@
   "Code": 0,
   "Msg": "新春快乐",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240224,
+  "VersionCode": 240101,
   "VersionName": "龙年大吉",
   "UploadTime": "2402261713",
   "ModifyContent": "\r\n1、添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;\r\n2、已支持RTP://直播格式组播源.\r\n3、删除部分失效源。",
