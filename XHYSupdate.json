@@ -2,11 +2,11 @@
   "Code": 0,
   "Msg": "新春快乐",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240218,
+  "VersionCode": 240225,
   "VersionName": "龙年大吉",
-  "UploadTime": "2024-02-11 22:23:41",
+  "UploadTime": "2024-02-25 22:23:41",
   "ModifyContent": "\r\n1、添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;\r\n2、已支持RTP://直播格式组播源.\r\n3、删除部分失效源。",
   "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2402261305/XHYS_Release.apk",
-  "ApkSize": 40033K,
+  "ApkSize": 40033,
   "ApkMd5": "48d918d9facee32de7a0d181ea29ff4e"
 }
