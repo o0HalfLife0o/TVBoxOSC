@@ -176,7 +176,7 @@ jobs:
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
           sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
-          sed -i "/s/"ApkMd5": "[a-zA-Z0-9]*"/"ApkMd5": "${{ env.RELEASE_HASH }}"/g" ${{ matrix.repoName }}update.json
+          sed -i 's/"ApkMd5": "[a-zA-Z0-9]*"/"ApkMd5": "${{ env.RELEASE_HASH }}"/' ${{ matrix.repoName }}update.json
           git add --all
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
