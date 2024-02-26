@@ -2,7 +2,7 @@ name: Test
 
 on:
   schedule:
-    - cron: 15,45 0-18,22-23 * * *
+    - cron: 59 */8 * * *
   workflow_dispatch:
     inputs:
       rebuild:
@@ -33,7 +33,7 @@ jobs:
             branchName: main
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Check New Commit
@@ -89,9 +89,21 @@ jobs:
           sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
           sed -i '$a\RELEASE_STORE_PASSWORD=xh8621989'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=xh8621989'         ./gradle.properties
-      - name: Setup Gradle
+      - name: Check JAVA Version
         if: ${{ env.commit }}
-        uses: gradle/gradle-build-action@v2
+        working-directory: TVBoxOSC
+        run: |
+          setup_java_ver=$(grep -o 'JavaVersion.VERSION_[0-9_]\+' app/build.gradle |head -1 |sed 's/.*_//')
+          if [ $setup_java_ver -gt 11 ]; then
+            echo "setup_java_ver=$setup_java_ver" >> $GITHUB_ENV
+          fi
+      - uses: actions/setup-java@v4
+        if: ${{ env.setup_java_ver }}
+        with:
+          distribution: temurin
+          java-version: ${{ env.setup_java_ver }}
+      - uses: gradle/gradle-build-action@v2
+        if: ${{ env.commit }}
       - name: Build Release With Gradle
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -164,7 +176,7 @@ jobs:
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
           sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
-          sed -i "/s#ApkMd5: [a-zA-Z0-9]*#ApkMd5: ${{ env.RELEASE_HASH }}#" ${{ matrix.repoName }}update.json
+          sed -i "/s/ApkMd5: [a-zA-Z0-9]*/ApkMd5: ${{ env.RELEASE_HASH }}/g" ${{ matrix.repoName }}update.json
           git add --all
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
