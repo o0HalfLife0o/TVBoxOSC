@@ -176,7 +176,7 @@ jobs:
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
           sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
-          sed -i 's/"DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/[a-zA-Z0-9]*/"DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/${{ env.tag }}/' ${{ matrix.repoName }}update.json
+          sed -i 's/"DownloadUrl": "[a-zA-Z0-9]*"/"DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/${{ env.tag }}/${{ matrix.repoName }}_Release.apk"/' ${{ matrix.repoName }}update.json
           sed -i 's/"ApkSize": [a-zA-Z0-9]*/"ApkSize": ${{ env.RELEASE_SIZE }}/' ${{ matrix.repoName }}update.json
           sed -i 's/"ApkMd5": "[a-zA-Z0-9]*"/"ApkMd5": "${{ env.RELEASE_HASH }}"/' ${{ matrix.repoName }}update.json
           git add --all
