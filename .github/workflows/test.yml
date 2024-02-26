@@ -130,7 +130,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           echo "RELEASE_HASH=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
-          echo "RELEASE_SIZE=$(du -sk apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
+          echo "RELEASE_SIZE=$(ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk | awk '{ print $5 }'|grep -o '[0-9]\+')" >> $GITHUB_ENV
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
