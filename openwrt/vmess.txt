@@ -1,2 +1,0 @@
-trojan://b556587e-6b3a-4cca-b379-714bfae91515@es-full.privateip.net:443?security=tls&type=tcp&headerType=none#%F0%9F%87%AA%F0%9F%87%B8ES-94.131.117.240-2080
-trojan://915dc116-70c6-403b-8a03-18d885c311bf@it-full.privateip.net:443?security=tls&type=tcp&headerType=none#%F0%9F%87%AE%F0%9F%87%B9IT-95.164.46.235-1378
