@@ -4,9 +4,9 @@
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
   "VersionCode": 240227,
   "VersionName": "240227",
-  "UploadTime": "2402271151",
+  "UploadTime": "2402281804",
   "ModifyContent": "\r\n1、添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;\r\n2、已支持RTP://直播格式组播源.\r\n3、删除部分失效源。",
-  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2402271151/XHYS_Release.apk",
-  "ApkSize": 40051,
-  "ApkMd5": "bd89f54aa29ba9247ff23928e72f158d"
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2402281804/XHYS_Release.apk",
+  "ApkSize": 40022,
+  "ApkMd5": "c1e3f3c0d8e3a4aa8ed52f971bfe3aa2"
 }
