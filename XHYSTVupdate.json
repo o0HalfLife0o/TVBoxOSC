@@ -8,5 +8,5 @@
   "ModifyContent":  "\r\n1、如安卓7.0以下无法更新：设置-配置地址-存储权限。\r\n2、修复部份 已知bug\r\n3、不再支持安卓4.4以下安装",
   "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2402160822/XHYSTV_Release.apk",
   "ApkSize": 17391,
-  "ApkMd5": "7b86496bfb3ea6eb1e62ea4d4e92a8a2"
+  "ApkMd5": "38d134766c8fb112bca98cbb0c9386fa"
 }
