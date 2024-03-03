@@ -2,13 +2,13 @@
   "Code": 0,
   "Msg": "新春快乐",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240302,
-  "VersionName": "240302",
+  "VersionCode": 240303,
+  "VersionName": "240303",
   "UploadTime": "2024-03-03 08:07:43",
   "ModifyContent": "Update build.gradle
 自动生成升级文件
 恢复996影视源",
-  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2403031712/XHYS_Release.apk",
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2403031718/XHYS_Release.apk",
   "ApkSize": 40022,
-  "ApkMd5": "425ea8333902a447b41f969f0091d218"
+  "ApkMd5": "736a29d9332b9f41e3df19ebf6da5e66"
 }
