@@ -5,7 +5,7 @@
   "VersionCode": 240303,
   "VersionName": "240303",
   "UploadTime": "2024-03-03 08:07:43",
-  "ModifyContent": "\r\n1、添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;\r\n2、已支持RTP://直播格式组播源.\r\n3、删除部分失效源。",
+  "ModifyContent": "\r\n1、添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;添加运营商IPTV直播源方法：http://www.lcjly.cn/tvbox/;\r\n2、已支持RTP://直播格式组播源.\r\n3、删除部分失效源。",
   "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2403030807/XHYS_Release.apk",
   "ApkSize": 40022,
   "ApkMd5": "18cf8feedc3f9af1cd85e1c66b11fca6"
