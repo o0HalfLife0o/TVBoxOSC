@@ -110,12 +110,6 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
-      - name: Build Debug With Gradle
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          chmod +x gradlew
-          ./gradlew assembledebug --build-cache --parallel --daemon --warning-mode all
       - name: Prepare App
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -143,7 +137,7 @@ jobs:
         run: |
           echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
           echo "UploadTime=$(git log --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
-          echo "ModifyContent=$(cat apk/${{ matrix.userName }}-Release.log | tr -d '\n')" >> $GITHUB_ENV
+          echo "ModifyContent=$(git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2-)" >> $GITHUB_ENV
           echo "ApkMd5=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
           echo "ApkSize=$(ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk | awk '{ print $5 }'|grep -o '[0-9]\+')" >> $GITHUB_ENV
       - name: Upload App To Artifact
@@ -182,7 +176,7 @@ jobs:
           sed -i 's/"VersionCode": [a-zA-Z0-9]*/"VersionCode": ${{ env.VersionCode }}/' ${{ matrix.repoName }}update.json
           sed -i 's/"VersionName": "[a-zA-Z0-9]*"/"VersionName": "${{ env.VersionCode }}"/' ${{ matrix.repoName }}update.json
           sed -i 's/"UploadTime": "[a-zA-Z0-9]*"/"UploadTime": "${{ env.UploadTime }}"/' ${{ matrix.repoName }}update.json
-          sed -i 's/"ModifyContent": "[a-zA-Z0-9]*"/"UploadTime": "${{ env.ModifyContent }}"/' ${{ matrix.repoName }}update.json
+          sed -i 's/"ModifyContent": ".*"/"ModifyContent": "${{ env.ModifyContent }}"/' ${{ matrix.repoName }}update.json
           sed -i 's|"DownloadUrl": ".*"|"DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/${{ env.tag }}/${{ matrix.repoName }}_Release.apk"|g' ${{ matrix.repoName }}update.json
           sed -i 's/"ApkSize": [a-zA-Z0-9]*/"ApkSize": ${{ env.ApkSize }}/' ${{ matrix.repoName }}update.json
           sed -i 's/"ApkMd5": "[a-zA-Z0-9]*"/"ApkMd5": "${{ env.ApkMd5 }}"/' ${{ matrix.repoName }}update.json
