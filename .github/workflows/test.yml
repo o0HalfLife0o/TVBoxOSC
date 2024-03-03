@@ -131,18 +131,6 @@ jobs:
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           fi
-      - name: Build Upgrade log
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
-          export LESSCHARSET=utf-8
-          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.repoName }}.log
-          if [ "${{ env.commit }}" == "${lastCommit}" ]; then
-            git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- > apk/${{ matrix.repoName }}.log
-          else
-            git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- > apk/${{ matrix.repoName }}.log
-          fi
       - name: Build Upgrade content
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -188,7 +176,6 @@ jobs:
           sed -i 's/"VersionCode": [a-zA-Z0-9]*/"VersionCode": ${{ env.VersionCode }}/' ${{ matrix.repoName }}update.json
           sed -i 's/"VersionName": "[a-zA-Z0-9]*"/"VersionName": "${{ env.VersionCode }}"/' ${{ matrix.repoName }}update.json
           sed -i 's|"UploadTime": ".*"|"UploadTime": "${{ env.UploadTime }}"|g' ${{ matrix.repoName }}update.json
-          sed -i 's|"ModifyContent": ".*"|"ModifyContent": "${{ env.ModifyContent }}"|g' ${{ matrix.repoName }}update.json
           sed -i 's|"DownloadUrl": ".*"|"DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/${{ env.tag }}/${{ matrix.repoName }}_Release.apk"|g' ${{ matrix.repoName }}update.json
           sed -i 's/"ApkSize": [a-zA-Z0-9]*/"ApkSize": ${{ env.ApkSize }}/' ${{ matrix.repoName }}update.json
           sed -i 's/"ApkMd5": "[a-zA-Z0-9]*"/"ApkMd5": "${{ env.ApkMd5 }}"/' ${{ matrix.repoName }}update.json
