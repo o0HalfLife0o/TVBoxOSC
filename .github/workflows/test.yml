@@ -125,14 +125,6 @@ jobs:
           for file in `find ~ -name "*release*.apk" -print`; do
             mv "$file" apk/${{ matrix.repoName }}_Release.apk
           done
-      - name: Build Upgrade content
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
-          echo "UploadTime=$(git log --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
-          echo "ApkMd5=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
-          echo "ApkSize=$(ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk | awk '{ print $5 }'|grep -o '[0-9]\+')" >> $GITHUB_ENV
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -145,6 +137,14 @@ jobs:
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           fi
+      - name: Build Upgrade content
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
+          echo "UploadTime=$(git log --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
+          echo "ApkMd5=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
+          echo "ApkSize=$(ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk | awk '{ print $5 }'|grep -o '[0-9]\+')" >> $GITHUB_ENV
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
         if: ${{ env.commit }}
