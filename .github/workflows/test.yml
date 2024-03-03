@@ -125,11 +125,23 @@ jobs:
         run: |
           lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
           export LESSCHARSET=utf-8
-          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nApkMd5: ${{ env.ApkMd5 }}\nApkSize: ${{ env.ApkSize }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
+          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
             git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
+          fi
+      - name: Build Upgrade log
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
+          export LESSCHARSET=utf-8
+          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.userName }}.log
+          if [ "${{ env.commit }}" == "${lastCommit}" ]; then
+            git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- > apk/${{ matrix.userName }}.log
+          else
+            git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}.log
           fi
       - name: Build Upgrade content
         if: ${{ env.commit }}
@@ -137,7 +149,7 @@ jobs:
         run: |
           echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
           echo "UploadTime=$(git log --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
-          echo "ModifyContent=$(git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2-)" >> $GITHUB_ENV
+          echo "ModifyContent=$(cat ${{ matrix.repoName }}.log | tr -d '\n')" >> $GITHUB_ENV
           echo "ApkMd5=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
           echo "ApkSize=$(ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk | awk '{ print $5 }'|grep -o '[0-9]\+')" >> $GITHUB_ENV
       - name: Upload App To Artifact
