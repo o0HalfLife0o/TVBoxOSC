@@ -32,45 +32,34 @@
 | :-------------: | :-------------: | :-------------: | :-------------: | :----------------------------------------: | :-----: | :-------: | :--------: |
 | 安徽 | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/anhui) |   239   | 🌕日常更新 | 2024.02.27 |
 |  北京   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/beijing) |   239   | 🌕日常更新 | 2024.02.27 |
-
+|  重庆   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/chongqing) |   239   | 🌕日常更新 | 2024.02.27 |
+|  福建   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/fujian) |   239   | 🌕日常更新 | 2024.02.27 |
+|  甘肃   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/gansu) |   239   | 🌕日常更新 | 2024.02.27 |
+|  广东   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/guangdong) |   239   | 🌕日常更新 | 2024.02.27 |
+|  广西   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/guangxi) |   239   | 🌕日常更新 | 2024.02.27 |
+|  海南   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hainan) |   239   | 🌕日常更新 | 2024.02.27 |
+|  河北   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hebei) |   239   | 🌕日常更新 | 2024.02.27 |
+|  黑龙江   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/heilongjiang) |   239   | 🌕日常更新 | 2024.02.27 |
+|  河南   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/henan) |   239   | 🌕日常更新 | 2024.02.27 |
+|  湖北   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hubei) |   239   | 🌕日常更新 | 2024.02.27 |
+|  湖南   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hunan) |   239   | 🌕日常更新 | 2024.02.27 |
+|  江苏   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/jiangsu) |   239   | 🌕日常更新 | 2024.02.27 |
+|  江西   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/jiangxi) |   239   | 🌕日常更新 | 2024.02.27 |
+|  吉林   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/jilin) |   239   | 🌕日常更新 | 2024.02.27 |
+|  辽宁   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/liaoning) |   239   | 🌕日常更新 | 2024.02.27 |
+|  内蒙古   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/neimenggu) |   239   | 🌕日常更新 | 2024.02.27 |
+|  宁夏   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/ningxia) |   239   | 🌕日常更新 | 2024.02.27 |
+|  青海   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/qinghai) |   239   | 🌕日常更新 | 2024.02.27 |
+|  陕西   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/xhan3xi) |   239   | 🌕日常更新 | 2024.02.27 |
+|  山东   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/shandong) |   239   | 🌕日常更新 | 2024.02.27 |
+|  上海   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/shanghai) |   239   | 🌕日常更新 | 2024.02.27 |
+|  山西   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/shanxi) |   239   | 🌕日常更新 | 2024.02.27 |
+|  四川   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/sichuan) |   239   | 🌕日常更新 | 2024.02.27 |
+|  天津   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/tianjin) |   239   | 🌕日常更新 | 2024.02.27 |
+|  新疆   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/xingjiang) |   239   | 🌕日常更新 | 2024.02.27 |
+|  西藏   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/xizang) |   239   | 🌕日常更新 | 2024.02.27 |
+|  云南   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/yunnan) |   239   | 🌕日常更新 | 2024.02.27 |
+|  浙江   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/zhejiang) |   239   | 🌕日常更新 | 2024.02.27 |
 <u>注：以上源请点击链接右键复制[PC]/或长按复制[移动设备]</u>
 
-<u>如果不会操作请直接复制下面的小白链接↙</u>
 
-链接[IPv6]：`https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/IPTV/main/IPTV.m3u`[推荐✨]
-
-链接[TVbox]：`https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/IPTV/main/IPTV-tvbox.txt`[需IPv6支持]
-
-
-### 更新
-
-- [安徽(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/anhui)
-- [北京(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/beijing) 
-- [重庆(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/chongqing)
-- [福建(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/fujian)
-- [甘肃(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/gansu)
-- [广东(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/guangdong) 
-- [广西(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/guangxi) 
-- [海南(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hainan) 
-- [河北(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hebei)
-- [黑龙江(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/heilongjiang)
-- [河南(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/henan) 
-- [湖北(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hubei) 
-- [湖南(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/hunan) 
-- [江苏(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/jiangsu) 
-- [江西(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/jiangxi) 
-- [吉林(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/jilin) 
-- [辽宁(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/liaoning) 
-- [内蒙古(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/neimenggu) 
-- [宁夏(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/ningxia) 
-- [青海(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/qinghai) 
-- [陕西(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/xhan3xi)
-- [山东(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/shandong) 
-- [上海(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/shanghai) 
-- [山西(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/shanxi) 
-- [四川(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/sichuan) 
-- [天津(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/tianjin) 
-- [新疆(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/xingjiang) 
-- [西藏(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/xizang) 
-- [云南(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/yunnan)
-- [浙江(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/zhejiang) 
