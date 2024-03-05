@@ -1,9 +1,4 @@
-移动,#genre#
-
-联通,#genre#
-
 电信,#genre#
-#EXTM3U
 CCTV-1HD,rtp://239.49.8.19:9614
 CCTV-2HD,rtp://239.49.8.50:9802
 CCTV-3HD,rtp://239.49.8.74:8000
