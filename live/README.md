@@ -60,6 +60,7 @@
 |  西藏   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/xizang) |   239   | 🌕日常更新 | 2024.02.27 |
 |  云南   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/yunnan) |   239   | 🌕日常更新 | 2024.02.27 |
 |  浙江   | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接]() | [🌐订阅链接](https://mirror.ghproxy.com/https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/zhejiang) |   239   | 🌕日常更新 | 2024.02.27 |
+
 <u>注：以上源请点击链接右键复制[PC]/或长按复制[移动设备]</u>
 
 
