@@ -16,13 +16,23 @@
 
 #### PC:
 - [VLC media player](https://www.videolan.org/vlc/)
+- 💻[potplayer](https://potplayer.org/)
 
-#### 安卓：
+#### Android：
 - [TVBOX](https://github.com/o0HalfLife0o/TVBoxOSC/releases)
 - [VLC media player](https://www.videolan.org/vlc/download-android.html)
 
-#### 苹果
-- [APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
+#### Android TV：
+- [TVBOX](https://github.com/o0HalfLife0o/TVBoxOSC/releases)
+- [VLC media player](https://www.videolan.org/vlc/download-android.html)
+- [Tivimate](https://tivimates.com/download-apk-tivimate-iptv-player/)
+
+#### IOS
+- 📱[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
+- [VLC media player](https://www.videolan.org/vlc/download-ios.html)
+
+#### MAC
+- 💻[APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
 - [VLC media player](https://www.videolan.org/vlc/download-ios.html)
 
 ## 🏄‍♀️源地址
