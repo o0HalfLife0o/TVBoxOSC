@@ -25,6 +25,22 @@
 - [APTV](https://apps.apple.com/cn/app/aptv/id1630403500)
 - [VLC media player](https://www.videolan.org/vlc/download-ios.html)
 
+## 🏄‍♀️源地址
+
+
+|     📦 名称      |                         🔗直播源地址                          | 🔢频道数 |   🅿状态   | 🆕更新时间  |
+| :-------------: | :----------------------------------------------------------: | :-----: | :-------: | :--------: |
+| 安徽 | [安徽(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/anhui) |   239   | 🌕日常更新 | 2024.02.27 |
+|  北京   | [北京(移动\联通\电信)](https://raw.githubusercontent.com/xisohi/TVBOXOSC/master/live/beijing) |   239   | 🌕日常更新 | 2024.02.27 |
+
+<u>注：以上源请点击链接右键复制[PC]/或长按复制[移动设备]</u>
+
+<u>如果不会操作请直接复制下面的小白链接↙</u>
+
+链接[IPv6]：`https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/IPTV/main/IPTV.m3u`[推荐✨]
+
+链接[TVbox]：`https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/IPTV/main/IPTV-tvbox.txt`[需IPv6支持]
+
 
 ### 更新
 
