@@ -1,4 +1,4 @@
-<p align="center"><img src="live/IPTV.jpg" alt="iptv" width="auto" height="150"></p>
+<p align="center"><img src="IPTV.jpg" alt="iptv" width="auto" height="150"></p>
 
 # IPTV直播源相关资源汇总
 
