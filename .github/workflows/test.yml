@@ -51,7 +51,7 @@ jobs:
           git clone ${{ env.upStream }} TVBoxOSC
           cd TVBoxOSC
           git checkout ${{ env.commit }}
-          echo "tag=$(git log --date=format:'%y%m%d%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
+          echo "tag=$(git log --date=format:'%Y%m%d-%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
       - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -104,7 +104,7 @@ jobs:
           java-version: ${{ env.setup_java_ver }}
       - uses: gradle/gradle-build-action@v2
         if: ${{ env.commit }}
-      - name: Build Release With Gradle
+      - name: Build With Gradle
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
@@ -125,11 +125,11 @@ jobs:
         run: |
           lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
           export LESSCHARSET=utf-8
-          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
+          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.repoName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
-            git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
+            git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.repoName }}-Release.log
           else
-            git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
+            git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.repoName }}-Release.log
           fi
       - name: Build Upgrade log
         if: ${{ env.commit }}
@@ -169,7 +169,7 @@ jobs:
         with:
           name: ${{ matrix.repoName }}
           tag: ${{ env.tag }}
-          bodyFile: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
+          bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
           artifacts: |
