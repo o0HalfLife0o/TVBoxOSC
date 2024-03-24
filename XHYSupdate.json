@@ -4,9 +4,9 @@
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
   "VersionCode": 240314,
   "VersionName": "240314",
-  "UploadTime": "2024-03-16 11:32:50",
-  "ModifyContent": "1: 更新版本号314\n2: 测试日志\n",
-  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240316-1132/XHYS_Release.apk",
+  "UploadTime": "2024-03-24 16:42:50",
+  "ModifyContent": "",
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/20240324-1642/XHYS_Release.apk",
   "ApkSize": 24406,
-  "ApkMd5": ""
+  "ApkMd5": "1dfb3151e21d4eb6ded51a3578ee13c5"
 }
