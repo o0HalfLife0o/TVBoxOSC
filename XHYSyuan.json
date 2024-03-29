@@ -6,7 +6,6 @@
 	"sites": [
 		//{"key":"Live2CMS","name":"IPTV（城市专用）","type":3,"api": "http://drpy.lcjly.cn/libs/live2cms.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/json/live.json"},
 		//{"key": "drpy_js_佳靓[V2]","name": "佳靓[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/佳靓[V2].js","searchable": 2,"quickSearch": 1,"filterable": 1},
-		//{"key": "drpy_js_花猫TV","name": " 🐈花猫TV","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/花猫TV.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		//{"key": "drpy_js_乐猪TV","name": " 🐷乐猪TV","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/乐猪TV.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_555电影[V2]","name": "555电影[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/555电影[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_996影视","name": "996影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/996影视.js","searchable": 2,"quickSearch": 0,"filterable": 0},
@@ -252,7 +251,7 @@
 		{"key": "drpy_js_小品网","name": "小品网","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/小品网.js","searchable": 2,"quickSearch": 0,"filterable": 0}
 	],
           "parses": [
-                //{"name": "Json聚合","type": 3,"url": "Demo"},
+    //{"name": "Json聚合","type": 3,"url": "Demo"},
 	//{"name": "Web聚合","type": 3,"url": "Web"},
 	{"name": "8仟","type": 0,"url": "http://mz_llq.8kvod.com/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]} },
 	//{"name": "爱酷","type": 0,"url": "https://jx.zhanlangbu.com/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]} },
