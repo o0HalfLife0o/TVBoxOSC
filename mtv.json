@@ -1,13 +1,13 @@
 {
   "spider":"./jar/pg.nogo.jar;md5;2f9742e4675945a58354b00450c401ad",
+  "wallpaper":"https://liu.chuqiuyu.workers.dev",
   "lives":[{"name":"初秋语","type":0,"url":"./listx.txt"},
-  {"name":"YanG","type":0,"url":"https://fongmi.cachefly.net/YanG-1989/m3u/main/Adult.m3u"},
+  {"name":"YanG","type":0,"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/YanG-1989/m3u/main/Adult.m3u"},
   {"name":"atsushi","type":0,"url":"https://fongmi.cachefly.net/atsushi444/iptv-epg/main/Adult.m3u"},
   {"name":"小武哥","type":0,"url":"https://qu.ax/PEHy.txt"},
   {"name":"AV","type":0,"url":"./livex.m3u"},
-  {"name":"直播","type":0,"url":"https://fongmi.cachefly.net/YanG-1989/m3u/main/XX.m3u"}
+  {"name":"直播","type":0,"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/YanG-1989/m3u/main/XX.m3u"}
   ],
-  "wallpaper":"https://liu.chuqiuyu.workers.dev",
   "sites":[
   {"key":"lf_js_search","name":"搜索","type":3,"searchable":0,"changeable":1,"quickSearch":0,"filterable":0,"api":"./lib/lf_search3_min.js","ext":"18+"},
   {"key":"lf_js_p2p","name":"磁力","type":3,"searchable":1,"changeable":1,"quickSearch":1,"filterable":1,"api":"./lib/lf_p2p2_min.js","ext":"18+","timeout":60},
