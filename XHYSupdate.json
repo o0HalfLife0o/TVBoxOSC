@@ -2,11 +2,11 @@
   "Code": 0,
   "Msg": "新春快乐",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240329,
-  "VersionName": "240329",
-  "UploadTime": "2024-03-29 18:40:13",
-  "ModifyContent": "1:  修正版本号显示\n2: 直播地址写法：修改省份/运营商（https://agit.ai/xisohi/iptv/raw/branch/main/anhui/mobile.txt）\n",
-  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2403291840/XHYS_Release.apk",
-  "ApkSize": 24407,
-  "ApkMd5": "3aaba320eb7d3d658f0e819d92df4ad9"
+  "VersionCode": 240330,
+  "VersionName": "240330",
+  "UploadTime": "2024-03-30 11:58:54",
+  "ModifyContent": "",
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2403301158/XHYS_Release.apk",
+  "ApkSize": 24406,
+  "ApkMd5": "ac78dbf1e4978dd4cb9f82e8c77314b9"
 }
