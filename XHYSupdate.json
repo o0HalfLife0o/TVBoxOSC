@@ -4,9 +4,9 @@
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
   "VersionCode": 240331,
   "VersionName": "240331",
-  "UploadTime": "2024-03-31 10:21:45",
-  "ModifyContent": "",
-  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2403311021/XHYS_Release.apk",
+  "UploadTime": "2024-03-31 15:16:37",
+  "ModifyContent": "1: 播放失败时提示原因\n2: 页面加载完毕后3秒，如果还没嗅探到视频地址，则立即提示失败，避免苦等20秒\n3: 直播支持配置文件指定播放器\n4: support cat open config\n5: fix: 修同一影片多个播放源，从播放源总集数比较多的切换到总集数比较少的会产生异常\n6: fix: 修部分设备选择对话框无法滚动至底部\n",
+  "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2403311516/XHYS_Release.apk",
   "ApkSize": 24405,
-  "ApkMd5": "31960cda3eff12bf7d500f3d49070d67"
+  "ApkMd5": "cc52f7bac6beeb9801b0d46e782997e3"
 }
