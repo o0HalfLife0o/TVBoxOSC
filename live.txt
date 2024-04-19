@@ -360,3 +360,5 @@ TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc?quality=720
 民视新闻台,https://live.lcjly.cn/youtube/ylYJSBUgaMA?quality=720
 集梦张开朗,http://live.lcjly.cn/huya/233
 文具范范,http://live.lcjly.cn/douyin/197942888655
+萌苑精选,http://live.lcjly.cn/douyin/176144336967
+
