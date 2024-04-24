@@ -13,7 +13,7 @@
   {"key":"lf_js_p2p","name":"磁力","type":3,"searchable":1,"changeable":1,"quickSearch":1,"filterable":1,"api":"./lib/lf_p2p2_min.js","ext":"18+","timeout":60},
   {"key":"lf_js_lf_live","name":"直播","type":3,"api":"./lib/lf_live_min.js","style":{ "type":"oval"},"searchable":1,"changeable":0,"quickSearch":1,"filterable":1,"ext":"./js/lf_live1.txt"},
   {"key":"PikPakShare","name":"PikPak","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1, "changeable":0, "filterable":0, "timeout":60, "ext":"http://127.0.0.1:9978/file/TV/token.json$$$./json/pikpakclass.a.json$$$./json/pikpakclass.a.json.txt.gz"},
-  {  "key": "AList",  "name": "AList",  "type": 3,  "api": "csp_AList",  "searchable": 1,  "changeable": 0,  "ext": {"vodPic": "https://x.imgs.ovh/x/2023/09/05/64f680bb030b4.png","drives": [{"name": "网盘1","server": "https://alist-caimoui.cloud.okteto.net/私房菜/"}]}},
+  {"key": "AList",  "name": "AList",  "type": 3,  "api": "csp_AList",  "searchable": 1,  "changeable": 0,  "ext": {"vodPic": "https://x.imgs.ovh/x/2023/09/05/64f680bb030b4.png","drives": [{"name": "网盘1","server": "https://alist-caimoui.cloud.okteto.net/私房菜/"}]}},
   {"key":"csp_JavBus","name":"JavBus","type":3,"api":"csp_JavBus","searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.77},"timeout":60},
   {"key":"csp_JavDb","name":"JavDb","type":3,"api":"csp_JavDb","searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.77},"timeout":60},
   {"key":"nivod18","name":"泥巴貓","type":3,"api":"./cat/js/nivod_op.js","ext":"做爱"},
