@@ -1,6 +1,6 @@
 {
 	//"spider": "http://drpy.lcjly.cn/libs/jar/custom_spider.jar",
-	"spider": "./jar/pg.jar;md5;8b3bd4c4b239ad9dafeb0e658febb701",
+	"spider": "./jar/pg.jar;md5;7220fdfda5e9dbc5521baf2b25d8706c",
 	"wallpaper": "http://lcjly.cn/tupian",
 
 	"sites": [
