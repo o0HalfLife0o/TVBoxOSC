@@ -157,6 +157,10 @@ TVBS新闻,http://50.7.238.114:8278/tvbs_n/playlist.m3u8?tid=MECE323377403233774
 台視新闻,http://50.7.238.114:8278/ttvnews_twn/playlist.m3u8?tid=MBBB6637589866375898&ct=19234&tsum=d2c641a325bf02e0b68c4f245e0165b0
 台視新闻,http://50.7.238.114:8278/ttvnews_twn/playlist.m3u8?tid=MD9D1039476110394761&ct=19193&tsum=9f33349842788bfb7b0e90e93f7bf02c
 
+三立新闻,http://66.165.240.154:8080/live/slxw01/hls.m3u8
+中天新闻,http://66.165.240.154:8080/live/ztylt01/hls.m3u8
+TVBS,http://66.165.240.154:8080/live/tytvbsyz1/hls.m3u8
+台视新闻台,http://66.165.240.154:8080/live/tyxltsxw3/hls.m3u8
 
 安徽移动（专用）,#genre#
 CCTV-1,http://120.210.193.151:8006/120000001001/wlds:8080/ysten-business/live/cctv-1/1.m3u8
