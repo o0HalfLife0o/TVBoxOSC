@@ -345,11 +345,19 @@ SET iNEWS,https://raw.githubusercontent.com/YuanHsing/YTM/main/setmoney159.m3u8
 FTVN Live,https://raw.githubusercontent.com/YuanHsing/YTM/main/FTVLIVE.m3u8
 民视新闻台,https://raw.githubusercontent.com/YuanHsing/YTM/main/FTVCP.m3u8
 CNN-News18,https://raw.githubusercontent.com/YuanHsing/YTM/main/CNN-News18.m3u8
-52,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV52.m3u8
-53,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV53.m3u8
-54,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV54.m3u8
-55,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV55.m3u8
-TVBS,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV56.m3u8
-01,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
-02,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
-03,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
+三立新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
+寰宇新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
+東森财经新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
+04,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV04.m3u8
+05,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV05.m3u8
+06,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
+07,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV07.m3u8
+国会1,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV56.m3u8
+08,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV08.m3u8
+09,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
+10,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV10.m3u8
+11,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV11.m3u8
+12,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
+13,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV13.m3u8
+14,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV14.m3u8
+15,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV15.m3u8
