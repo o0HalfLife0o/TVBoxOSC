@@ -333,17 +333,23 @@ TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc?quality=720
 🎡Taiwan News,#genre#
 CTITV News,https://raw.githubusercontent.com/YuanHsing/YTM/main/ctitv.m3u8
 EBC,https://raw.githubusercontent.com/YuanHsing/YTM/main/newsebc.m3u8
-EBC Financial,https://raw.githubusercontent.com/YuanHsing/YTM/main/EBCFinancial.m3u8
+東森财经新聞,https://raw.githubusercontent.com/YuanHsing/YTM/main/EBCFinancial.m3u8
 TVBS Global News,https://raw.githubusercontent.com/YuanHsing/YTM/main/TVBSNEWS01.m3u8
-Global News TV,https://raw.githubusercontent.com/YuanHsing/YTM/main/GlobalNewsTV.m3u8
+寰宇新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/GlobalNewsTV.m3u8
 mnews,https://raw.githubusercontent.com/YuanHsing/YTM/main/mnews.m3u8
-TTV News,https://raw.githubusercontent.com/YuanHsing/YTM/main/ttvnewsview.m3u8
-CTV News,https://raw.githubusercontent.com/YuanHsing/YTM/main/twctvnews.m3u8
-Tzu Chi DaAiVideo,https://raw.githubusercontent.com/YuanHsing/YTM/main/DaAiVideo.m3u8
-SETN Live News,https://raw.githubusercontent.com/YuanHsing/YTM/main/SETN.m3u8
+台视新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/ttvnewsview.m3u8
+中视新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/twctvnews.m3u8
+三立新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/SETN.m3u8
 SET+ Live News,https://raw.githubusercontent.com/YuanHsing/YTM/main/SETLIVE.m3u8
 SET iNEWS,https://raw.githubusercontent.com/YuanHsing/YTM/main/setmoney159.m3u8
 FTVN Live,https://raw.githubusercontent.com/YuanHsing/YTM/main/FTVLIVE.m3u8
-FTVN News,https://raw.githubusercontent.com/YuanHsing/YTM/main/FTVCP.m3u8
+民视新闻台,https://raw.githubusercontent.com/YuanHsing/YTM/main/FTVCP.m3u8
 CNN-News18,https://raw.githubusercontent.com/YuanHsing/YTM/main/CNN-News18.m3u8
-
+52,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV52.m3u8
+53,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV53.m3u8
+54,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV54.m3u8
+55,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV55.m3u8
+TVBS,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV56.m3u8
+01,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
+02,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
+03,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
