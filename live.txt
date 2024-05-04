@@ -330,31 +330,26 @@ TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc?quality=720
 文具范范,http://live.lcjly.cn/douyin/197942888655
 萌苑精选,http://live.lcjly.cn/douyin/176144336967
 
-🎡Taiwan News,#genre#
-CTITV News,https://raw.githubusercontent.com/YuanHsing/YTM/main/ctitv.m3u8
-EBC,https://raw.githubusercontent.com/YuanHsing/YTM/main/newsebc.m3u8
-東森财经新聞,https://raw.githubusercontent.com/YuanHsing/YTM/main/EBCFinancial.m3u8
-TVBS Global News,https://raw.githubusercontent.com/YuanHsing/YTM/main/TVBSNEWS01.m3u8
-寰宇新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/GlobalNewsTV.m3u8
-mnews,https://raw.githubusercontent.com/YuanHsing/YTM/main/mnews.m3u8
-台视新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/ttvnewsview.m3u8
-中视新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/twctvnews.m3u8
-三立新聞台,https://raw.githubusercontent.com/YuanHsing/YTM/main/SETN.m3u8
-SET+ Live News,https://raw.githubusercontent.com/YuanHsing/YTM/main/SETLIVE.m3u8
-SET iNEWS,https://raw.githubusercontent.com/YuanHsing/YTM/main/setmoney159.m3u8
-FTVN Live,https://raw.githubusercontent.com/YuanHsing/YTM/main/FTVLIVE.m3u8
-民视新闻台,https://raw.githubusercontent.com/YuanHsing/YTM/main/FTVCP.m3u8
-CNN-News18,https://raw.githubusercontent.com/YuanHsing/YTM/main/CNN-News18.m3u8
+🎡港澳台,#genre#
+CTITV News,https://raw.githubusercontent.com/xisohi/YTM/main/ctitv.m3u8
+EBC,https://raw.githubusercontent.com/xisohi/YTM/main/newsebc.m3u8
+東森财经新聞,https://raw.githubusercontent.com/xisohi/YTM/main/EBCFinancial.m3u8
+TVBS Global News,https://raw.githubusercontent.com/xisohi/YTM/main/TVBSNEWS01.m3u8
+寰宇新聞台,https://raw.githubusercontent.com/xisohi/YTM/main/GlobalNewsTV.m3u8
+mnews,https://raw.githubusercontent.com/xisohi/YTM/main/mnews.m3u8
+台视新聞台,https://raw.githubusercontent.com/xisohi/YTM/main/ttvnewsview.m3u8
+中视新聞台,https://raw.githubusercontent.com/xisohi/YTM/main/twctvnews.m3u8
+三立新聞台,https://raw.githubusercontent.com/xisohi/YTM/main/SETN.m3u8
+SET+ Live News,https://raw.githubusercontent.com/xisohi/YTM/main/SETLIVE.m3u8
+SET iNEWS,https://raw.githubusercontent.com/xisohi/YTM/main/setmoney159.m3u8
+FTVN Live,https://raw.githubusercontent.com/xisohi/YTM/main/FTVLIVE.m3u8
+民视新闻台,https://raw.githubusercontent.com/xisohi/YTM/main/FTVCP.m3u8
+CNN-News18,https://raw.githubusercontent.com/xisohi/YTM/main/CNN-News18.m3u8
 三立新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
 寰宇新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
 東森财经新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
-04,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV04.m3u8
-05,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV05.m3u8
-06,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV06.m3u8
-07,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV07.m3u8
 国会1,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV56.m3u8
-08,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV08.m3u8
-09,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
+中视新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV09.m3u8
 10,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV10.m3u8
 11,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV11.m3u8
 12,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV12.m3u8
