@@ -22,6 +22,8 @@ jobs:
       run: |
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
+    - name: Create YouTube directory
+      run: mkdir -p ./YouTube
     #凤凰资讯台
     - name: Get phoenixNews.m3u8
       run: |
