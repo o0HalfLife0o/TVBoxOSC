@@ -155,10 +155,10 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=oZdzzvxTfUY)
         EOL
     #三立iNEWS
-    - name: Get setinews.m3u8
+    - name: Get SETiNews.m3u8
       run: |
-        touch ./YouTube/setinews.m3u8
-        sudo cat >./YouTube/setinews.m3u8 <<EOL
+        touch ./YouTube/SETiNews.m3u8
+        sudo cat >./YouTube/SETiNews.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000

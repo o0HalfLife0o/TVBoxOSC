@@ -330,23 +330,24 @@ TVBS新聞台,https://live.lcjly.cn/youtube/2mCSYvcfhtc?quality=720
 文具范范,http://live.lcjly.cn/douyin/197942888655
 萌苑精选,http://live.lcjly.cn/douyin/176144336967
 
-🎡港澳台,#genre#
-凤凰卫视资讯台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/phoenixNews.m3u8
-中天新闻台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/CtiNews.m3u8
-中天電視台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/ctitv.m3u8
-東森新聞台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/newsebc.m3u8
-東森財經新聞,https://raw.githubusercontent.com/xisohi/YTLIVE/main/EBCFinancial.m3u8
-TVBS新聞台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/TVBSNEWS01.m3u8
-寰宇新聞台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/GlobalNewsTV.m3u8
-鏡新聞,https://raw.githubusercontent.com/xisohi/YTLIVE/main/mnews.m3u8
-台視新聞台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/ttvnewsview.m3u8
-中視新聞台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/twctvnews.m3u8
-三立新聞網,https://raw.githubusercontent.com/xisohi/YTLIVE/main/SETN.m3u8
-三立新聞台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/SETLIVE.m3u8
-三立iNEWS,https://raw.githubusercontent.com/xisohi/YTLIVE/main/setmoney159.m3u8
-FTVN Live,https://raw.githubusercontent.com/xisohi/YTLIVE/main/FTVLIVE.m3u8
-民視新聞台,https://raw.githubusercontent.com/xisohi/YTLIVE/main/FTVCP.m3u8
-CNN-News18,https://raw.githubusercontent.com/xisohi/YTLIVE/main/CNN-News18.m3u8
+🎡Taiwan News,#genre#
+凤凰卫视资讯台,https://xhys.lcjly.cn/YouTube/phoenixNews.m3u8
+中天新闻台,https://xhys.lcjly.cn/YouTube/CtiNews.m3u8
+中天電視台,https://xhys.lcjly.cn/YouTube/ctitv.m3u8
+東森新聞台,https://xhys.lcjly.cn/YouTube/EBCNews.m3u8
+東森財經新聞,https://xhys.lcjly.cn/YouTube/EBCFinancial.m3u8
+TVBS新聞台,https://xhys.lcjly.cn/YouTube/TVBSNews.m3u8
+寰宇新聞台,https://xhys.lcjly.cn/YouTube/GlobalNewsTV.m3u8
+寰宇新聞2台,https://xhys.lcjly.cn/YouTube/globalnewstw2.m3u8
+鏡新聞,https://xhys.lcjly.cn/YouTube/MNews.m3u8
+台視新聞台,https://xhys.lcjly.cn/YouTube/TTVNews.m3u8
+中視新聞台,https://xhys.lcjly.cn/YouTube/CTVNews.m3u8
+三立新聞網,https://xhys.lcjly.cn/YouTube/SETN.m3u8
+三立新聞台,https://xhys.lcjly.cn/YouTube/SETNews.m3u8
+三立iNEWS,https://xhys.lcjly.cn/YouTube/SETiNews.m3u8
+TVBS56,https://xhys.lcjly.cn/YouTube/TVBS56.m3u8
+民視新聞台,https://xhys.lcjly.cn/YouTube/FTVNews.m3u8
+CNN-News18,https://xhys.lcjly.cn/YouTube/CNN-News18.m3u8
 三立新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV01.m3u8
 寰宇新聞台,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV02.m3u8
 東森财经新聞,https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV03.m3u8
