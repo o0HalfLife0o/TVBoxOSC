@@ -1,0 +1,204 @@
+name: Get YouTube Live m3u8
+on:
+  schedule:
+    - cron: '0 0/3 * * *'
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: config
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+    - name: Install yt-dlp
+      run: |
+        sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+        sudo chmod a+rx /usr/local/bin/yt-dlp
+    #凤凰资讯台
+    - name: Get phoenixNews.m3u8
+      run: |
+        touch ./YouTube/phoenixNews.m3u8
+        sudo cat >./YouTube/phoenixNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@phoenixtvhk/live)
+        EOL
+    #中天综合台
+    - name: Get ctitv.m3u8
+      run: |
+        touch ./YouTube/ctitv.m3u8
+        sudo cat >./YouTube/ctitv.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@CtiTv/live)
+        EOL
+    #中天新闻台
+    - name: Get CtiNews.m3u8
+      run: |
+        touch ./YouTube/CtiNews.m3u8
+        sudo cat >./YouTube/CtiNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=oIgbl7t0S_w)
+        EOL
+    #東森新聞台
+    - name: Get EBCNews.m3u8
+      run: |
+        touch ./YouTube/EBCNews.m3u8
+        sudo cat >./YouTube/EBCNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=LuQ4S-i5zoE)
+        EOL
+    #東森財經新聞台
+    - name: Get EBCFinancial.m3u8
+      run: |
+        touch ./YouTube/EBCFinancial.m3u8
+        sudo cat >./YouTube/EBCFinancial.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=WHEPzbFA3hw)
+        EOL
+    #TVBS新聞台
+    - name: Get TVBSNews.m3u8
+      run: |
+        touch ./YouTube/TVBSNews.m3u8
+        sudo cat >./YouTube/TVBSNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=2mCSYvcfhtc)
+        EOL
+    #寰宇新聞台
+    - name: Get GlobalNewsTV.m3u8
+      run: |
+        touch ./YouTube/GlobalNewsTV.m3u8
+        sudo cat >./YouTube/GlobalNewsTV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=6IquAgfvYmc)
+        EOL
+    #寰宇新聞台湾台
+    - name: Get globalnewstw2.m3u8
+      run: |
+        touch ./YouTube/globalnewstw2.m3u8
+        sudo cat >./YouTube/globalnewstw2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=w87VGpgd90U)
+        EOL
+    #镜新聞
+    - name: Get MNews.m3u8
+      run: |
+        touch ./YouTube/MNews.m3u8
+        sudo cat >./YouTube/MNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=5n0y6b0Q25o)
+        EOL
+    #台视新聞台
+    - name: Get TTVNews.m3u8
+      run: |
+        touch ./YouTube/TTVNews.m3u8
+        sudo cat >./YouTube/TTVNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=xL0ch83RAK8)
+        EOL
+    #中視新聞台
+    - name: Get CTVNews.m3u8
+      run: |
+        touch ./YouTube/CTVNews.m3u8
+        sudo cat >./YouTube/CTVNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=TCnaIE_SAtM)
+        EOL
+    #三立新聞網
+    - name: Get SETN.m3u8
+      run: |
+        touch ./YouTube/SETN.m3u8
+        sudo cat >./YouTube/SETN.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@setn/live)
+        EOL
+    #三立新聞台
+    - name: Get SETNews.m3u8
+      run: |
+        touch ./YouTube/SETNews.m3u8
+        sudo cat >./YouTube/SETNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=oZdzzvxTfUY)
+        EOL
+    #三立iNEWS
+    - name: Get setinews.m3u8
+      run: |
+        touch ./YouTube/setinews.m3u8
+        sudo cat >./YouTube/setinews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=CKjSm5ZeehE)
+        EOL
+    #TVBS56
+    - name: Get TVBS56.m3u8
+      run: |
+        touch ./YouTube/TVBS56.m3u8
+        sudo cat >./YouTube/TVBS56.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=YvdcZ_jpLXE)
+        EOL
+    #民視新聞台
+    - name: Get FTVNews.m3u8
+      run: |
+        touch ./YouTube/FTVNews.m3u8
+        sudo cat >./YouTube/FTVNews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/watch?v=ylYJSBUgaMA)
+        EOL
+    #CNN-News18
+    - name: Get CNN-News18.m3u8
+      run: |
+        touch ./YouTube/CNN-News18.m3u8
+        sudo cat >./YouTube/CNN-News18.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@cnnnews18/live)
+        EOL
+
+    - name: git add
+      run: |
+        git add YouTube
+        ls -la
+
+    - name: commit & push
+      run: |
+        git commit -m "links are updated"
+        git push
