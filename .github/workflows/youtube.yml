@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Create YouTube directory
+      run: mkdir -p ./YouTube
     - name: config
       run: |
         git config --global user.email "action@github.com"
@@ -22,8 +24,6 @@ jobs:
       run: |
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
-    - name: Create YouTube directory
-      run: mkdir -p ./YouTube
     #凤凰资讯台
     - name: Get phoenixNews.m3u8
       run: |
