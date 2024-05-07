@@ -1,5 +1,0 @@
-移动,#genre#
-
-联通,#genre#
-
-电信,#genre#
