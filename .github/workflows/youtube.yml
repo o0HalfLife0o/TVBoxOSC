@@ -25,20 +25,20 @@ jobs:
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
     #凤凰资讯台
-    - name: Get phoenixNews.m3u8
+    - name: Get PhoenixNews.m3u8
       run: |
-        touch ./YouTube/phoenixNews.m3u8
-        sudo cat >./YouTube/phoenixNews.m3u8 <<EOL
+        touch ./YouTube/PhoenixNews.m3u8
+        sudo cat >./YouTube/PhoenixNews.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/@phoenixtvhk/live)
         EOL
     #中天综合台
-    - name: Get ctitv.m3u8
+    - name: Get CTITv.m3u8
       run: |
-        touch ./YouTube/ctitv.m3u8
-        sudo cat >./YouTube/ctitv.m3u8 <<EOL
+        touch ./YouTube/CTITv.m3u8
+        sudo cat >./YouTube/CTITv.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
@@ -95,10 +95,10 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=6IquAgfvYmc)
         EOL
     #寰宇新聞台湾台
-    - name: Get globalnewstw2.m3u8
+    - name: Get Globalnewstw2.m3u8
       run: |
-        touch ./YouTube/globalnewstw2.m3u8
-        sudo cat >./YouTube/globalnewstw2.m3u8 <<EOL
+        touch ./YouTube/Globalnewstw2.m3u8
+        sudo cat >./YouTube/Globalnewstw2.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
@@ -165,10 +165,10 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/watch?v=CKjSm5ZeehE)
         EOL
     #TVBS56
-    - name: Get TVBS56.m3u8
+    - name: Get TVBS.m3u8
       run: |
-        touch ./YouTube/TVBS56.m3u8
-        sudo cat >./YouTube/TVBS56.m3u8 <<EOL
+        touch ./YouTube/TVBS.m3u8
+        sudo cat >./YouTube/TVBS.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
