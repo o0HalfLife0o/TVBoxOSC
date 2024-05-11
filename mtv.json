@@ -9,6 +9,7 @@
   {"name":"直播","type":0,"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/YanG-1989/m3u/main/XX.m3u"}
   ],
   "sites":[
+  {"key": "hipy_heiliao","name": "黑料网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/heiliao.js","searchable": 1,"quickSearch": 0,"filterable": 1},
   {"key":"lf_js_search","name":"搜索","type":3,"searchable":0,"changeable":1,"quickSearch":0,"filterable":0,"api":"./lib/lf_search3_min.js","ext":"18+"},
   {"key":"lf_js_p2p","name":"磁力","type":3,"searchable":1,"changeable":1,"quickSearch":1,"filterable":1,"api":"./lib/lf_p2p2_min.js","ext":"18+","timeout":60},
   {"key":"lf_js_lf_live","name":"直播","type":3,"api":"./lib/lf_live_min.js","style":{ "type":"oval"},"searchable":1,"changeable":0,"quickSearch":1,"filterable":1,"ext":"./js/lf_live1.txt"},
