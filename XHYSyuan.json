@@ -5,7 +5,8 @@
 
 	"sites": [
 		//{"key":"Live2CMS","name":"IPTV（城市专用）","type":3,"api": "http://drpy.lcjly.cn/libs/live2cms.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/json/live.json"},
-		{"key": "hipy_农民影视2","name": "👨‍🌾农民影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/农民影视3.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_农民影视2","name": "👨‍🌾农民影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/农民影视2.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_农民影视3","name": "👨‍🌾农民影视3","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/农民影视3.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_荐片","name": "🧲荐片","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/荐片.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_白嫖影视","name": "白嫖影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/白嫖影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_360影视","name": "360影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/360影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
