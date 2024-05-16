@@ -1,7 +1,7 @@
 {
   "spider":"./jar/pg.jar;md5;2a802955dbf60450107eff13e31b7d12",
   "wallpaper":"https://liu.chuqiuyu.workers.dev",
-  "lives":[{"name":"初秋语","type":0,"url":"./listx.txt"},
+  "lives":[
   {"name":"YanG","type":0,"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/YanG-1989/m3u/main/Adult.m3u"},
   {"name":"atsushi","type":0,"url":"https://fongmi.cachefly.net/atsushi444/iptv-epg/main/Adult.m3u"},
   {"name":"小武哥","type":0,"url":"https://qu.ax/PEHy.txt"},
