@@ -5,7 +5,7 @@
 
 	"sites": [
 		//{"key":"Live2CMS","name":"IPTV（城市专用）","type":3,"api": "http://drpy.lcjly.cn/libs/live2cms.js","searchable": 2,"quickSearch": 0,"filterable": 0, "ext": "https://agit.ai/xisohi/TVBoxOSC/raw/branch/master/json/live.json"},
-		{"key": "hipy_农民影视2","name": "👨‍🌾农民影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/农民影视2.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_农民影视2","name": "👨‍🌾农民影视","type": 3,"api": "./lib/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/农民影视2.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_农民影视[优]","name": "👨‍🌾农民影视[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/农民影视[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_荐片[优]","name": "🧲荐片[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/荐片[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_南瓜影视[优]","name": "南瓜影视[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/南瓜影视[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -211,7 +211,7 @@
 		{"name": "777","type": 0,"url": "https://jx.777jiexi.com/player/?url=","ext": {"flag": ["qq", "腾讯", "qiyi", "爱奇艺", "奇艺", "youku", "优酷", "mgtv", "芒果", "letv", "乐视", "pptv", "PPTV", "sohu", "bilibili", "哔哩哔哩", "哔哩"]}}
 	],
     "lives":[{"name":"live","type":0,"url":"https://xhys.lcjly.cn/live.txt","playerType":1,"epg":"http://diyp.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
-         //"lives":[{"name":"live","type":0,"url":"https://raw.githubusercontent.com/xisohi/TVBoxOSC/master/js/tv.txt","playerType":1,"epg":"http://diyp.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
+    //"lives":[{"name":"live","type":0,"url":"https://raw.githubusercontent.com/xisohi/TVBoxOSC/master/js/tv.txt","playerType":1,"epg":"http://diyp.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}],
     "doh":[{"name":"Google","url":"https://dns.google/dns-query","ips":["8.8.4.4","8.8.8.8"]},{"name":"Cloudflare","url":"https://cloudflare-dns.com/dns-query","ips":["1.1.1.1","1.0.0.1","2606:4700:4700::1111","2606:4700:4700::1001"]},{"name":"AdGuard","url":"https://dns.adguard.com/dns-query","ips":["94.140.14.140","94.140.14.141"]},{"name":"DNSWatch","url":"https://resolver2.dns.watch/dns-query","ips":["84.200.69.80","84.200.70.40"]},{"name":"Quad9","url":"https://dns.quad9.net/dns-quer","ips":["9.9.9.9","149.112.112.112"]}],
 	"rules":[
 		{"hosts":["raw.githubusercontent.com","googlevideo.com","cdn.v82u1l.com","cdn.iz8qkg.com","cdn.kin6c1.com","c.biggggg.com","c.olddddd.com","haiwaikan.com","www.histar.tv","youtube.com","uhibo.com",".*boku.*",".*nivod.*",".*ulivetv.*","wogg.link","wogg.xyz"],"name":"proxy"},
