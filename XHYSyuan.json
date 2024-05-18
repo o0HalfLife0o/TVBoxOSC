@@ -93,6 +93,10 @@
 		{"key": "hipy_量子资源[资]","name": "量子资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/量子资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_555影视[飞]","name": "555影视[飞]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/555影视[飞].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_麻雀视频","name": "麻雀视频","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/麻雀视频.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_420电影院","name": "420电影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/420电影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_即看影视","name": "即看影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/即看影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_夕云影视","name": "夕云影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/夕云影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_夕云影视","name": "夕云影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/夕云影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
 		{"key": "drpy_js_555电影[V2]","name": "555电影[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/555电影[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_333影视","name": "333影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/333影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
