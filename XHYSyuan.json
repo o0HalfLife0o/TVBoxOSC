@@ -17,6 +17,7 @@
 		{"key": "hipy_4khdr","name": "4KHDR世界[磁]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/4khdr.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_6V新版[磁]","name": "6V新版[磁]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/6V新版[磁].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_777影视","name": "777影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/777影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_8号影院","name": "8号影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/8号影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_HDmoli","name": "HDmoli","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/HDmoli.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		//{"key": "hipy_996影视","name": "996影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/996影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_LIBVIO[优]","name": "LIBVIO[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/LIBVIO[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -96,7 +97,6 @@
 		{"key": "hipy_420电影院","name": "420电影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/420电影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_即看影视","name": "即看影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/即看影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_夕云影视","name": "夕云影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/夕云影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
-		{"key": "hipy_8号影院","name": "8号影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/8号影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
 		{"key": "drpy_js_555电影[V2]","name": "555电影[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/555电影[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_333影视","name": "333影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/333影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
