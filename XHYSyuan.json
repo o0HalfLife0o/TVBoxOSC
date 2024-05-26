@@ -12,7 +12,6 @@
 		{"key": "hipy_可可影视[优]","name": "可可影视[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/可可影视[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_烧火影视[优]","name": "烧火影视[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/烧火影视[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_素白白[优]","name": "素白白[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/素白白[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
-
 		//{"key": "hipy_白嫖影视","name": "白嫖影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/白嫖影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_420电影院","name": "420电影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/420电影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_4khdr","name": "4KHDR世界[磁]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/4khdr.js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -25,7 +24,6 @@
 		{"key": "hipy_TVB云播","name": "TVB云播","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/TVB云播.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_freeok","name": "freeok","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/freeok.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		//{"key": "hipy_qimiao","name": "qimiao","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/qimiao.js","searchable": 1,"quickSearch": 0,"filterable": 1},
-		
 		{"key": "hipy_voflix","name": "voflix","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/voflix.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_一起看","name": "一起看","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/一起看.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_七年影视","name": "七年影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/七年影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -34,7 +32,6 @@
 		{"key": "hipy_奇珍异兽[官]","name": "爱奇艺[官]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/奇珍异兽[官].js","searchable": 1,"quickSearch": 1,"filterable": 1},
 		{"key": "hipy_腾云驾雾[官]","name": "腾讯视频[官]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/腾云驾雾[官].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_360影视[官]","name": "360影视[官]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/360影视[官].js","searchable": 1,"quickSearch": 0,"filterable": 1},
-
 		{"key": "hipy_哔哩影视[官]","name": "哔哩影视[官]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/哔哩影视[官].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_侠客影视","name": "侠客影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/侠客影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_千神影视","name": "千神影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/千神影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -65,7 +62,6 @@
 		{"key": "hipy_海外剧汇","name": "海外剧汇","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/海外剧汇.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_热播之家","name": "热播之家","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/热播之家.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_爱看影视","name": "爱看影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/爱看影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
-
 		{"key": "hipy_玩偶哥哥[盘]","name": "玩偶哥哥[盘]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/玩偶哥哥[盘].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_电影先生","name": "电影先生","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/电影先生.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_白嫖者联盟","name": "白嫖者联盟","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/白嫖者联盟.js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -84,7 +80,6 @@
 		{"key": "hipy_蛋蛋赞","name": "蛋蛋赞","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/蛋蛋赞.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_西屋影视","name": "西屋影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/西屋影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_酷客影视","name": "酷客影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/酷客影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
-
 		{"key": "hipy_量子影视[资]","name": "量子影视[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/量子影视[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_哔哩直播","name": "哔哩直播","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/哔哩直播.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_暴风资源[资]","name": "暴风资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/暴风资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -93,10 +88,11 @@
 		{"key": "hipy_非凡资源[资]","name": "非凡资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/非凡资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_魔都资源[资]","name": "魔都资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/魔都资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_ok资源[资]","name": "ok资源","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/ok资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
-		{"key": "hipy_兔小贝[儿]","name": "兔小贝[儿]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/兔小贝[儿].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_索尼资源[资]","name": "索尼资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/索尼资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_花子动漫[漫]","name": "花子动漫[漫]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/花子动漫[漫].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_量子资源[资]","name": "量子资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/量子资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_黑木耳资源[资]","name": "黑木耳资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/黑木耳资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_兔小贝[儿]","name": "兔小贝[儿]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/兔小贝[儿].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_555影视[飞]","name": "555影视[飞]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/555影视[飞].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_鸭奈飞影视","name": "鸭奈飞影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/鸭奈飞影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_麻雀视频","name": "麻雀视频","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/麻雀视频.js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -113,8 +109,11 @@
 		{"key": "hipy_短剧TV网","name": "短剧TV网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/短剧TV网.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_首发网","name": "首发网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/首发网.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_魔方影视","name": "魔方影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/魔方影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
-		{"key": "hipy_黑木耳资源[资]","name": "黑木耳资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/黑木耳资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
-		{"key": "hipy_黑木耳资源[资]","name": "黑木耳资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/黑木耳资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_小鱼影视","name": "小鱼影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/小鱼影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_想看影院","name": "想看影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/想看影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_我播","name": "我播","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/我播.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_短剧天堂","name": "短剧天堂","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/短剧天堂.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_飘花影院","name": "飘花影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/飘花影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
 		{"key": "drpy_js_555电影[V2]","name": "555电影[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/555电影[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_333影视","name": "333影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/333影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
