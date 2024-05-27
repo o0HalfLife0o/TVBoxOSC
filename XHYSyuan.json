@@ -12,6 +12,8 @@
 		{"key": "hipy_可可影视[优]","name": "可可影视[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/可可影视[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_烧火影视[优]","name": "烧火影视[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/烧火影视[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_素白白[优]","name": "素白白[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/素白白[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_爱看农民[优]","name": "爱看影视[优]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/爱看农民[优].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+
 		//{"key": "hipy_白嫖影视","name": "白嫖影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/白嫖影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_420电影院","name": "420电影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/420电影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_4khdr","name": "4KHDR世界[磁]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/4khdr.js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -114,6 +116,8 @@
 		{"key": "hipy_麻雀视频","name": "麻雀视频","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/麻雀视频.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_短剧TV网","name": "短剧TV网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/短剧TV网.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_短剧天堂","name": "短剧天堂","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/短剧天堂.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_广播迷FM","name": "广播迷FM","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/广播迷FM.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_动漫巴士","name": "动漫巴士","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/动漫巴士.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
 		{"key": "drpy_js_555电影[V2]","name": "555电影[V2]","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/555电影[V2].js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_333影视","name": "333影视","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/333影视.js","searchable": 2,"quickSearch": 0,"filterable": 1},
@@ -172,7 +176,6 @@
 		{"key": "Xb6v","name": "新6V | 网盘","type": 3,"api": "csp_Xb6v","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/json/token.json$$$http://www.xb6v.com"},
 		{"key": "FourKHDR","name": "4KHDR | 网盘","type": 3,"api": "csp_FourKHDR","searchable": 1,"changeable": 1,"timeout": 60,"ext": "https://xhys.lcjly.cn/json/token.json$$$https://mirror.ghproxy.com/https://raw.githubusercontent.com/13998394872/TVBox/main/ext/4KHDR_Cookie.json"},
 		{"key": "drpy_js_播客","name": "播客","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/播客.js","searchable": 0,"quickSearch": 0,"filterable": 0},
-		{"key": "drpy_js_广播迷FM","name": "广播迷FM","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/广播迷FM.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_清风DJ","name": "清风DJ","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/清风DJ.js","searchable": 2,"quickSearch": 0,"filterable": 1},
 		{"key": "drpy_js_JangoIndex","name": "JangoIndex","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/JangoIndex.js","searchable": 2,"quickSearch": 0,"filterable": 0},
 		{"key": "drpy_js_有声绘本网","name": "有声绘本网","type": 3,"api": "http://drpy.lcjly.cn/libs/drpy2.min.js","ext":"http://drpy.lcjly.cn/js/有声绘本网.js","searchable": 2,"quickSearch": 0,"filterable": 0},
