@@ -1,5 +1,5 @@
 {
-	"spider": "./jar/custom_spider.jar",
+	"spider": "https://tvboxosc.pages.dev/jar/custom_spider.jar",
 	//"spider": "./jar/pg.jar;md5;2a802955dbf60450107eff13e31b7d12",
 	"wallpaper": "http://lcjly.cn/tupian",
 
