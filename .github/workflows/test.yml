@@ -99,6 +99,8 @@ jobs:
           setup_java_ver=$(grep -o 'JavaVersion.VERSION_[0-9_]\+' app/build.gradle |head -1 |sed 's/.*_//')
           if [ $setup_java_ver -gt 11 ]; then
             echo "setup_java_ver=$setup_java_ver" >> $GITHUB_ENV
+          else
+            echo "setup_java_ver=17" >> $GITHUB_ENV
           fi
       - uses: actions/setup-java@v4
         if: ${{ env.setup_java_ver }}
