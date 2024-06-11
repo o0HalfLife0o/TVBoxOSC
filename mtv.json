@@ -9,6 +9,10 @@
   {"name":"直播","type":0,"url":"https://mirror.ghproxy.com/https://raw.githubusercontent.com/YanG-1989/m3u/main/XX.m3u"}
   ],
   "sites":[
+    {"key": "乐草TV","name": "乐草TV","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/乐草TV.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+    {"key": "黑料不打烊","name": "黑料不打烊","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/黑料不打烊.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+    {"key": "黑料不打烊-z","name": "黑料不打烊-z","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/黑料不打烊-z.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+
   {"key": "hipy_heiliao","name": "黑料网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy3_js/heiliao.js","searchable": 1,"quickSearch": 0,"filterable": 1},
   //{"key":"csp_JavBus","name":"JavBus","type":3,"api":"csp_JavBus","searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.77},"timeout":60},
   //{"key":"csp_JavDb","name":"JavDb","type":3,"api":"csp_JavDb","searchable":1,"quickSearch":1,"filterable":1,"changeable":0,"style":{"type":"rect","ratio":1.77},"timeout":60},
