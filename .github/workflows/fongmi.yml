@@ -110,7 +110,7 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           find ~ -type d -iname "release" -print0 | while IFS= read -r -d '' dir; do
-            find "$dir" -type f -name "*.apk" -exec sh -c 'cp "$1" "apk/${{ matrix.repoName }}-${1##*/}"' sh {} \;
+            find "$dir" -type f -name "*.apk" -exec sh -c 'cp "$1" "apk/${1##*/}"' sh {} \;
           done
       - name: Release Note
         if: ${{ env.commit }}
@@ -179,8 +179,8 @@ jobs:
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
           sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
-          sed -i 's/"VersionCode": [a-zA-Z0-9]*/"VersionCode": ${{ env.VersionCode }}/' ${{ matrix.repoName }}update.json
-          sed -i 's/"VersionName": "[a-zA-Z0-9]*"/"VersionName": "${{ env.VersionCode }}"/' ${{ matrix.repoName }}update.json
+          sed -i 's/"code": [a-zA-Z0-9]*/"code": ${{ env.VersionCode }}/' ${{ matrix.repoName }}update.json
+          sed -i 's/"name": "[a-zA-Z0-9]*"/"name": "${{ env.VersionCode }}"/' ${{ matrix.repoName }}update.json
           sed -i 's|"desc": ".*"|"desc": "${{ env.desc }}"|g' ${{ matrix.repoName }}update.json
           sed -i "s/update at .*/update at $(date '+%Y-%m-%d %H:%M:%S')/" README.md
           git add --all
