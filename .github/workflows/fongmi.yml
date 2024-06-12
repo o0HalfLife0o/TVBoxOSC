@@ -131,6 +131,7 @@ jobs:
         run: |
           echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
           echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
+
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v3
         if: ${{ env.commit }}
@@ -143,14 +144,14 @@ jobs:
         if: ${{ inputs.donotpublish && env.commit }}
         run: |
           echo "commit=" >> $GITHUB_ENV
-          
+
       - name: Release and Upload Assets
         uses: ncipollo/release-action@main
         if: ${{ env.commit }}
         with:
           name: ${{ matrix.repoName }}
           tag: ${{ env.tag }}
-          bodyFile: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
+          bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
           artifacts: |
