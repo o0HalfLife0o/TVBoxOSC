@@ -2,7 +2,7 @@ name: XHTV
 
 on:
   schedule:
-    - cron: 59 */8 * * *
+    - cron: 0 0 * * *
   workflow_dispatch:
     inputs:
       rebuild:
@@ -54,12 +54,12 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          if [[ "${{ matrix.userName }}" != "xisohi" ]]; then
+          if [[ "${{ matrix.userName }}" != "FongMi" ]]; then
             echo '修改VersionName'
             sed -i "/versionName/s#[0-9a-zA-Z_\.\'\"-]\+\$#\'${{ env.tag }}\'#" app/build.gradle
             sed -i "/android:text=/s#=\"#=\"${{ env.tag }}\\\\n\\\\n#" app/src/main/res/layout/dialog_about.xml
           fi
-          if [[ "${{ matrix.userName }}" == "xisohi" ]]; then
+          if [[ "${{ matrix.userName }}" == "FongMi" ]]; then
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
       - name: Compress Source Code
