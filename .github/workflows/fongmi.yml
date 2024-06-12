@@ -54,7 +54,7 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          if [[ "${{ matrix.userName }}" == "FongMi" ]]; then
+          if [[ "${{ matrix.userName }}" == "xisohi" ]]; then
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
       - name: Compress Source Code
@@ -152,14 +152,6 @@ jobs:
             TVBoxOSC/apk/*.apk
             TVBoxOSC/source-${{ env.commitS }}.*
 
-      - uses: dev-drprasad/delete-older-releases@master
-        with:
-          keep_latest: 3
-          delete_tags: true
-          delete_tag_pattern: ${{ matrix.userName }}_${{ matrix.repoName }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-          
       - name: Push to master
         if: ${{ env.commit }}
         run: |
@@ -175,11 +167,3 @@ jobs:
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
 
-  clean:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Delete workflow runs
-      uses: GitRML/delete-workflow-runs@main
-      with:
-        retain_days: 1
-        keep_minimum_runs: 3
