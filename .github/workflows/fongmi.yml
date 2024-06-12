@@ -54,10 +54,6 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          if [[ "${{ matrix.userName }}" != "FongMi" ]]; then
-            echo '修改VersionName'
-            sed -i "/versionName/s#[0-9a-zA-Z_\.\'\"-]\+\$#\'${{ env.tag }}\'#" app/build.gradle
-          fi
           if [[ "${{ matrix.userName }}" == "FongMi" ]]; then
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
