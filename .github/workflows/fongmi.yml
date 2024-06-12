@@ -143,8 +143,8 @@ jobs:
         uses: ncipollo/release-action@main
         if: ${{ env.commit }}
         with:
-          name: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ env.tag }}
-          tag: ${{ matrix.userName }}_${{ matrix.repoName }}_${{ env.tag }}
+          name: ${{ matrix.repoName }}
+          tag: ${{ env.tag }}
           bodyFile: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
