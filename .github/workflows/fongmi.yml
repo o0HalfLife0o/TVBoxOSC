@@ -28,7 +28,7 @@ jobs:
           - userName: xisohi
             repoName: XHTV
             branchName: release
-            
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -43,6 +43,7 @@ jobs:
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
           fi
+
       - name: Checkout Source Code
         if: ${{ env.commit }}
         run: |
@@ -50,6 +51,7 @@ jobs:
           cd TVBoxOSC
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%y%m%d%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
+
       - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -57,12 +59,14 @@ jobs:
           if [[ "${{ matrix.userName }}" == "xisohi" ]]; then
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
+
       - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           #zip -q -x ".git/*" -x  ".github/*" -r source-${{ env.commitS }}.zip .
           tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
+
       - name: Option For Test
         if: ${{ inputs.testOption }}
         working-directory: TVBoxOSC
@@ -70,6 +74,7 @@ jobs:
           #添加arm64支持，不支持ijk解码
           sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" app/build.gradle
           sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" player/build.gradle
+
       - name: Release Apk Sign
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -84,25 +89,25 @@ jobs:
           sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
           sed -i '$a\RELEASE_STORE_PASSWORD=xh8621989'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=xh8621989'         ./gradle.properties
-          
+
       - name: Setup Java
         if: ${{ env.commit && (matrix.userName == 'xisohi') }}
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '17'
-        
+
       - name: Setup Gradle
         if: ${{ env.commit }}
         uses: gradle/gradle-build-action@v2
-        
+
       - name: Build With Gradle
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           chmod +x gradlew
           ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
-          
+
       - name: Prepare App
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -112,6 +117,7 @@ jobs:
           find ~ -type d -iname "release" -print0 | while IFS= read -r -d '' dir; do
             find "$dir" -type f -name "*.apk" -exec sh -c 'cp "$1" "apk/${1##*/}"' sh {} \;
           done
+
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -124,6 +130,7 @@ jobs:
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.repoName }}-Release.log
           fi
+
       - name: Build Upgrade log
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -136,6 +143,7 @@ jobs:
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- > apk/${{ matrix.repoName }}.log
           fi
+
       - name: Build Upgrade content
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -150,7 +158,7 @@ jobs:
           name: ${{ matrix.userName }}-${{ matrix.repoName }}
           path: |
             TVBoxOSC/apk/*
-            
+
       - name: Whether Or Not to Publish
         if: ${{ inputs.donotpublish && env.commit }}
         run: |
@@ -186,4 +194,3 @@ jobs:
           git add --all
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
-
