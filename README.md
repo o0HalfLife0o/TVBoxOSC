@@ -10,4 +10,4 @@ This repo relies on the following third-party projects:
 - [xisohi/TVBoxOSC](https://github.com/xisohi/TVBoxOSC)
 - [xisohi/XHYSTV](https://github.com/xisohi/XHYSTV) (Updated: be5b6bc6aa0bd931ccb626cd4c7878edd8949765)
 - [xisohi/XHYS](https://github.com/xisohi/XHYS) (Updated: aad8fb2a9b052fdb54aebea847cc01e277cbc331)
-- [xisohi/XHTV](https://github.com/xisohi/XHTV) (Updated: 9dec19938b0e1951aec2913c82b536906b3d0741)
+- [xisohi/XHTV](https://github.com/xisohi/XHTV) (Updated: f6e200e0da4ffa83f6bb8518e271641a736347c7)
