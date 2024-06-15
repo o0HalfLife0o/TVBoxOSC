@@ -89,16 +89,11 @@ jobs:
           sed -i '$a\RELEASE_STORE_PASSWORD=xh8621989'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=xh8621989'         ./gradle.properties
 
-      - name: Setup Java
-        if: ${{ env.commit && (matrix.userName == 'xisohi') }}
-        uses: actions/setup-java@v3
+      - name: Set up JDK and Gradle
+        uses: actions/setup-java@v2
         with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Setup Gradle
-        if: ${{ env.commit }}
-        uses: gradle/gradle-build-action@v2
+          java-version: '11'
+          distribution: 'adopt'
 
       - name: Build With Gradle
         if: ${{ env.commit }}
