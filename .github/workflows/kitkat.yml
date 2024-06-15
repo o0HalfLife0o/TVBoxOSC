@@ -62,7 +62,7 @@ jobs:
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
 
-      - name: Comment out core_settings.gradle import
+      - name: core_settings.gradle import
          run: |
            sed -i '/apply from: file("\/media\/core_settings.gradle")/ s/^#*/#/' settings.gradle
 
