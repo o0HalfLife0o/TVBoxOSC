@@ -1,23 +1,3 @@
-name: kitkat
-
-on:
-  schedule:
-    - cron: 0 0 * * *
-  workflow_dispatch:
-    inputs:
-      rebuild:
-        description: '忽略构建记录以重新构建'
-        required: false
-        type: boolean
-      donotpublish:
-        description: '构建后不提交发布新版'
-        required: false
-        type: boolean
-      testOption:
-        description: 'arm64支持，不支持ijk解码'
-        required: false
-        type: boolean
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,11 +13,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
       - name: Check New Commit
         run: |
           upStream=https://github.com/${{ matrix.userName }}/${{ matrix.repoName }}
           echo "upStream=$upStream" >> $GITHUB_ENV
-          commit=$(curl -sL $upStream/commits/${{ matrix.branchName }} |grep -o "/${{ matrix.userName }}/${{ matrix.repoName }}/commit/[a-z0-9]\+" |head -1 | cut -d\/ -f5)
+          commit=$(curl -sL $upStream/commits/${{ matrix.branchName }} | grep -o "/${{ matrix.userName }}/${{ matrix.repoName }}/commit/[a-z0-9]\+" | head -1 | cut -d\/ -f5)
           if ! grep -q "$commit" README.md || [ "${{ inputs.rebuild }}" == "true" ]; then
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
@@ -51,6 +32,13 @@ jobs:
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%y%m%d%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
 
+      - name: Replace jcenter and Fix Missing Script
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          find . -type f -name "settings.gradle" -exec sed -i 's/jcenter()/mavenCentral()/g' {} \;
+          find . -type f -name "settings.gradle" -exec sed -i '/\/media\/core_settings.gradle/d' {} \;
+
       - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -63,14 +51,12 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          #zip -q -x ".git/*" -x  ".github/*" -r source-${{ env.commitS }}.zip .
           tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
 
       - name: Option For Test
         if: ${{ inputs.testOption }}
         working-directory: TVBoxOSC
         run: |
-          #添加arm64支持，不支持ijk解码
           sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" app/build.gradle
           sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" player/build.gradle
 
@@ -80,14 +66,14 @@ jobs:
         run: |
           signingConfigs='ICAgIHNpZ25pbmdDb25maWdzIHtcCiAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICBteUNvbmZpZyB7XAogICAgICAgICAgICAgICAgc3RvcmVGaWxlIGZpbGUoUkVMRUFTRV9TVE9SRV9GSUxFKVwKICAgICAgICAgICAgICAgIHN0b3JlUGFzc3dvcmQgUkVMRUFTRV9TVE9SRV9QQVNTV09SRFwKICAgICAgICAgICAgICAgIGtleUFsaWFzIFJFTEVBU0VfS0VZX0FMSUFTXAogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgUkVMRUFTRV9LRVlfUEFTU1dPUkRcCiAgICAgICAgICAgICAgICB2MVNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICB2MlNpZ25pbmdFbmFibGVkIHRydWVcCiAgICAgICAgICAgICAgICBlbmFibGVWM1NpZ25pbmcgPSB0cnVlXAogICAgICAgICAgICAgICAgZW5hYmxlVjRTaWduaW5nID0gdHJ1ZVwKICAgICAgICAgICAgfVwKICAgICAgICB9XAogICAgfVwKXA=='
           signingConfig='ICAgICAgICAgICAgaWYgKHByb2plY3QuaGFzUHJvcGVydHkoIlJFTEVBU0VfU1RPUkVfRklMRSIpKSB7XAogICAgICAgICAgICAgICAgc2lnbmluZ0NvbmZpZyBzaWduaW5nQ29uZmlncy5teUNvbmZpZ1wKICAgICAgICAgICAgfVwK'
-          signingConfigs="$(echo "$signingConfigs" |base64 -d )"
-          signingConfig="$(echo "$signingConfig" |base64 -d )"
-          sed -i -e "/defaultConfig {/i\\$signingConfigs " -e "/debug {/a\\$signingConfig " -e "/release {/a\\$signingConfig " app/build.gradle
+          signingConfigs="$(echo "$signingConfigs" | base64 -d)"
+          signingConfig="$(echo "$signingConfig" | base64 -d)"
+          sed -i -e "/defaultConfig {/i\\$signingConfigs" -e "/debug {/a\\$signingConfig" -e "/release {/a\\$signingConfig" app/build.gradle
           cp -f ${{ github.workspace }}/.github/workflows/TVBoxOSC.jks app/TVBoxOSC.jks
-          sed -i '$a\RELEASE_STORE_FILE=./TVBoxOSC.jks'     ./gradle.properties
-          sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
-          sed -i '$a\RELEASE_STORE_PASSWORD=xh8621989'       ./gradle.properties
-          sed -i '$a\RELEASE_KEY_PASSWORD=xh8621989'         ./gradle.properties
+          sed -i '$a\RELEASE_STORE_FILE=./TVBoxOSC.jks' ./gradle.properties
+          sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC' ./gradle.properties
+          sed -i '$a\RELEASE_STORE_PASSWORD=xh8621989' ./gradle.properties
+          sed -i '$a\RELEASE_KEY_PASSWORD=xh8621989' ./gradle.properties
 
       - name: Setup Java
         if: ${{ env.commit && (matrix.userName == 'xisohi') }}
@@ -151,8 +137,8 @@ jobs:
           echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
 
       - name: Upload App To Artifact
-        uses: actions/upload-artifact@v3
         if: ${{ env.commit }}
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.userName }}-${{ matrix.repoName }}
           path: |
@@ -164,11 +150,11 @@ jobs:
           echo "commit=" >> $GITHUB_ENV
 
       - name: Release and Upload Assets
-        uses: ncipollo/release-action@main
+        uses: ncipollo/release-action@v1
         if: ${{ env.commit }}
         with:
           name: ${{ matrix.repoName }}
-          tag: ${{ matrix.repoName }}
+          tag: ${{ env.tag }}
           bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
