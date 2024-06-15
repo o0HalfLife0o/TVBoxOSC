@@ -60,11 +60,10 @@ jobs:
         run: |
           if [[ "${{ matrix.userName }}" == "xisohi" ]]; then
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
+            sed -i '/apply from: file("\/media\/core_settings.gradle")/ s/^#*/#/' settings.gradle
+
           fi
 
-      - name: core_settings.gradle import
-         run: |
-           sed -i '/apply from: file("\/media\/core_settings.gradle")/ s/^#*/#/' settings.gradle
 
       - name: Compress Source Code
         if: ${{ env.commit }}
