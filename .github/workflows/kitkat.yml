@@ -20,7 +20,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
@@ -30,6 +30,13 @@ jobs:
             branchName: kitkat
 
     steps:
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+        env:
+          PATH: /c/Python38:/c/Python38/Scripts:$PATH
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -44,7 +51,6 @@ jobs:
           if ! grep -q "$commit" README.md || [ "${{ inputs.rebuild }}" == "true" ]; then
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
-          fi
 
       - name: Checkout Source Code
         if: ${{ env.commit }}
@@ -64,6 +70,17 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           sed -i 's|apply from: file("/media/core_settings.gradle")|apply from: file("../media/core_settings.gradle")|' settings.gradle
+
+      - name: Modify minSdkVersion
+        if: ${{ env.commit }}
+        run: |
+          sed -i 's/minSdkVersion 21/minSdkVersion 16/' ../media/libraries/datasource_okhttp/build.gradle
+
+      - name: Modify build.gradle for Python path
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          sed -i 's|python.exe|/c/Python38/python.exe|' pyramid/build.gradle
 
       - name: Extra Modify
         if: ${{ env.commit }}
