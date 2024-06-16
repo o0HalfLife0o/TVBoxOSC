@@ -54,16 +54,24 @@ jobs:
           git checkout "${{ env.commit }}"
           echo "tag=$(git log --date=format:'%y%m%d%H%M' --pretty=format:%cd "${{ env.commitS }}" -1)" >> $GITHUB_ENV
 
+      - name: Clone Media Repository
+        if: ${{ env.commit }}
+        run: |
+          git clone --branch 1.2.0 https://github.com/androidx/media.git ../media
+
+      - name: Modify settings.gradle
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          sed -i 's|apply from: file("/media/core_settings.gradle")|apply from: file("../media/core_settings.gradle")|' settings.gradle
+
       - name: Extra Modify
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           if [[ "${{ matrix.userName }}" == "xisohi" ]]; then
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
-            sed -i '/apply from: file("\/media\/core_settings.gradle")/ s/^#*/#/' settings.gradle
-
           fi
-
 
       - name: Compress Source Code
         if: ${{ env.commit }}
