@@ -75,7 +75,7 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          if [ -f ../media/media-1.2.0/core_settings.gradle ]; then
+          if [ -f ../media/core_settings.gradle ]; then
             echo "Applying core_settings.gradle"
             echo "apply from: file('../media/core_settings.gradle')" >> settings.gradle
           else
