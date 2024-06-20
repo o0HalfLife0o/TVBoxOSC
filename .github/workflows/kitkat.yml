@@ -109,10 +109,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8.9'
-          architecture: 'x64'
-          token: ${{ secrets.YOUR_TOKEN }}
-      
+          python-version: 3.8
 
       - name: Verify Python version
         if: ${{ env.commit }}
