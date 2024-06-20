@@ -118,6 +118,16 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Setup Python 3.8.9
+        if: ${{ env.commit }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8.9
+
+      - name: Verify Python version
+        if: ${{ env.commit }}
+        run: python --version
+
       - name: Setup Gradle
         if: ${{ env.commit }}
         uses: gradle/gradle-build-action@v2
@@ -128,6 +138,9 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew assembleRelease --build-cache --parallel --daemon --warning-mode all
+        env:
+          JAVA_HOME: ${{ steps.setup-java.outputs.path }}
+          PYTHON_HOME: ${{ steps.setup-python.outputs.python-path }}
 
       - name: Prepare App
         if: ${{ env.commit }}
