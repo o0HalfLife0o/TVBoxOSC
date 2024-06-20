@@ -110,7 +110,9 @@ jobs:
         if: ${{ env.commit }}
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          architecture: 'x64'
+          python-version: 'custom'
+          custom-python-location: 'https://www.python.org/ftp/python/3.8.9/python-3.8.9-amd64.exe'
 
       - name: Verify Python version
         if: ${{ env.commit }}
