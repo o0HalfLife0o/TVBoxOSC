@@ -68,7 +68,7 @@ jobs:
           mkdir -p media
           wget https://github.com/androidx/media/archive/refs/tags/1.2.0.zip -O media/media-1.2.0.zip
           unzip media/media-1.2.0.zip -d media
-          mv media/media-1.2.0/* media/
+          mv media/media-1.2.0/media-1.2.0/* media/
           rm -rf media/media-1.2.0.zip media/media-1.2.0/
 
       - name: Apply core_settings.gradle
