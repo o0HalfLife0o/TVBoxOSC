@@ -68,7 +68,8 @@ jobs:
           mkdir -p media
           wget https://github.com/androidx/media/archive/refs/tags/1.2.0.zip -O media/media-1.2.0.zip
           unzip media/media-1.2.0.zip -d media
-          rm media/media-1.2.0.zip
+          mv media/media-1.2.0/* media/
+          rm -rf media/media-1.2.0.zip media/media-1.2.0/
 
       - name: Apply core_settings.gradle
         if: ${{ env.commit }}
@@ -76,7 +77,7 @@ jobs:
         run: |
           if [ -f ../media/media-1.2.0/core_settings.gradle ]; then
             echo "Applying core_settings.gradle"
-            echo "apply from: file('../media/media-1.2.0/media-1.2.0/core_settings.gradle')" >> settings.gradle
+            echo "apply from: file('../media/core_settings.gradle')" >> settings.gradle
           else
             echo "core_settings.gradle not found"
             exit 1
@@ -146,9 +147,9 @@ jobs:
           export LESSCHARSET=utf-8
           echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.repoName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
-            git log --pretty=format:%B ${{ env.commitS }} -1 | sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' | cat -n | sort -k2,2 -k1,1n | uniq -f1 | sort -k1,1n | cut -f2- >> apk/${{ matrix.repoName }}-Release.log
+            git log --pretty=format:%B ${{ env.commitS }} -1 | sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' | cat -n |sort -k2,2 -k1,1n | uniq -f1 | sort -k1,1n | cut -f2- >> apk/${{ matrix.repoName }}-Release.log
           else
-            git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} | sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' | cat -n |sort -k2,2 -k1,1n | uniq -f1 | sort -k1,1n | cut -f2- >> apk/${{ matrix.repoName }}-Release.log
+            git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} | sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' | cat -n | sort -k2,2 -k1,1n | uniq -f1 | sort -k1,1n | cut -f2- >> apk/${{ matrix.repoName }}-Release.log
           fi
 
       - name: Build Upgrade log
