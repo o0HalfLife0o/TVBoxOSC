@@ -113,6 +113,9 @@
 		{"key": "hipy_速播小屋","name": "速播小屋","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/速播小屋.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_酷云影视","name": "酷云影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/酷云影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_黑狐影院","name": "黑狐影院","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/黑狐影院.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_刺猬影视","name": "刺猬影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/刺猬影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_七新电影网","name": "七新电影网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/七新电影网.js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_七新电影网","name": "七新电影网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/七新电影网.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
 		{"key": "hipy_热片网","name": "热片网","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/热片网.js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_短剧在线","name": "短剧在线","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/短剧在线.js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -130,6 +133,7 @@
 		{"key": "hipy_蜡笔[盘]","name": "蜡笔[盘]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/蜡笔[盘].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_云盘资源网[盘]","name": "云盘资源网[盘]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/云盘资源网[盘].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
+		{"key": "hipy_采集之王[合]","name": "采集之王[合]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/采集之王[合].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_卧龙资源[资]","name": "卧龙资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/卧龙资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_量子影视[资]","name": "量子影视[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/量子影视[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_暴风资源[资]","name": "暴风资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/暴风资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
@@ -143,6 +147,7 @@
 		{"key": "hipy_黑木耳资源[资]","name": "黑木耳资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/黑木耳资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_iku喵[资]","name": "iku喵[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/iku喵[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_飞刀资源[资]","name": "飞刀资源[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/飞刀资源[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_文才[资]","name": "文才[资]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/文才[资].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
 		{"key": "hipy_兔小贝[儿]","name": "兔小贝[儿]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/兔小贝[儿].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_花子动漫[漫]","name": "花子动漫[漫]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/花子动漫[漫].js","searchable": 1,"quickSearch": 0,"filterable": 1},
