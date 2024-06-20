@@ -71,18 +71,6 @@ jobs:
           mv media/media-1.2.0/* media/
           rm -rf media/media-1.2.0.zip media/media-1.2.0/
 
-      - name: Apply core_settings.gradle
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          if [ -f ../media/core_settings.gradle ]; then
-            echo "Applying core_settings.gradle"
-            echo "apply from: file('../media/core_settings.gradle')" >> settings.gradle
-          else
-            echo "core_settings.gradle not found"
-            exit 1
-          fi
-
       - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
