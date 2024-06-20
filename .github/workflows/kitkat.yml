@@ -106,13 +106,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Setup Python 3.8.9
-        if: ${{ env.commit }}
+      - name: Set up Python
         uses: actions/setup-python@v2
         with:
+          python-version: '3.8.9'
           architecture: 'x64'
-          python-version: 'custom'
-          custom-python-location: 'https://www.python.org/ftp/python/3.8.9/python-3.8.9-amd64.exe'
+          token: ${{ secrets.YOUR_TOKEN }}
+      
 
       - name: Verify Python version
         if: ${{ env.commit }}
