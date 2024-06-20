@@ -62,6 +62,26 @@ jobs:
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
 
+      - name: Download and unzip media-1.2.0.zip
+        if: ${{ env.commit }}
+        run: |
+          mkdir -p media
+          wget https://github.com/androidx/media/archive/refs/tags/1.2.0.zip -O media/media-1.2.0.zip
+          unzip media/media-1.2.0.zip -d media
+          rm media/media-1.2.0.zip
+
+      - name: Apply core_settings.gradle
+        if: ${{ env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          if [ -f ../media/media-1.2.0/core_settings.gradle ]; then
+            echo "Applying core_settings.gradle"
+            echo "apply from: file('../media/media-1.2.0/core_settings.gradle')" >> settings.gradle
+          else
+            echo "core_settings.gradle not found"
+            exit 1
+          fi
+
       - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
