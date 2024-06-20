@@ -76,7 +76,7 @@ jobs:
         run: |
           if [ -f ../media/media-1.2.0/core_settings.gradle ]; then
             echo "Applying core_settings.gradle"
-            echo "apply from: file('../media/media-1.2.0/core_settings.gradle')" >> settings.gradle
+            echo "apply from: file('../media/media-1.2.0/media-1.2.0/core_settings.gradle')" >> settings.gradle
           else
             echo "core_settings.gradle not found"
             exit 1
