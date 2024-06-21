@@ -1,4 +1,4 @@
-name: fongmi
+name: XHTV
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
         include:
           - userName: xisohi
             repoName: XHTV
-            branchName: fongmi
+            branchName: release
 
     steps:
       - name: Checkout
@@ -169,7 +169,7 @@ jobs:
         if: ${{ env.commit }}
         with:
           name: ${{ matrix.repoName }}
-          tag: ${{ matrix.branchName }}
+          tag: ${{ matrix.repoName }}
           bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
@@ -187,9 +187,9 @@ jobs:
           git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
           sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
-          sed -i 's/"code": "[a-zA-Z0-9]*"/"code": "${{ env.VersionCode }}"/' update/${{ matrix.branchName }}.json
-          sed -i 's/"name": "[a-zA-Z0-9]*"/"name": "${{ env.VersionCode }}"/' update/${{ matrix.branchName }}.json
-          sed -i 's|"desc": ".*"|"desc": "${{ env.desc }}"|g' update/${{ matrix.branchName }}.json
+          sed -i 's/"code": "[a-zA-Z0-9]*"/"code": "${{ env.VersionCode }}"/' ${{ matrix.repoName }}update.json
+          sed -i 's/"name": "[a-zA-Z0-9]*"/"name": "${{ env.VersionCode }}"/' ${{ matrix.repoName }}update.json
+          sed -i 's|"desc": ".*"|"desc": "${{ env.desc }}"|g' ${{ matrix.repoName }}update.json
           sed -i "s/update at .*/update at $(date '+%Y-%m-%d %H:%M:%S')/" README.md
           git add --all
           git commit -m "${{ env.commit }}"
