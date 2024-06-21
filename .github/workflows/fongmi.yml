@@ -69,7 +69,7 @@ jobs:
           mv media/media-1.2.0/* media/
           rm -rf media/media-1.2.0.zip media/media-1.2.0/
 
-        - name: Compress Source Code
+      - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
