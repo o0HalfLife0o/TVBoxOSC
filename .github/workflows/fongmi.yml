@@ -60,7 +60,16 @@ jobs:
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
 
-      - name: Compress Source Code
+      - name: Download and unzip media-1.2.0.zip
+        if: ${{ env.commit }}
+        run: |
+          mkdir -p media
+          wget https://github.com/androidx/media/archive/refs/tags/1.2.0.zip -O media/media-1.2.0.zip
+          unzip media/media-1.2.0.zip -d media
+          mv media/media-1.2.0/* media/
+          rm -rf media/media-1.2.0.zip media/media-1.2.0/
+
+        - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
