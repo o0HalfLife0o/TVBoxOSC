@@ -122,7 +122,16 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           for file in `find ~ -name "*release*.apk" -print`; do
-            mv "$file" apk/TVBox_${{ matrix.userName }}_${{ env.tag }}.apk
+            # 获取文件的基本名称
+            base=$(basename "$file")
+            # 如果文件是 TVBox_ 开头
+            if [[ "$base" == TVBox_* ]]; then
+              new_base=$(echo "$base" | sed "s/release/${{ matrix.userName }}_${{ env.tag }}/")
+            else
+              new_base="TVBox_${{ matrix.userName }}_${{ env.tag }}.apk"
+            fi
+            # 移动并重命名文件
+            mv "$file" "apk/$new_base"
           done
       - name: Release Note
         if: ${{ env.commit }}
