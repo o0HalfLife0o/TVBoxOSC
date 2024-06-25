@@ -2,8 +2,8 @@
   "Code": 0,
   "Msg": "新春快乐",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240624,
-  "VersionName": "240624",
+  "VersionCode": 240626,
+  "VersionName": "240626",
   "UploadTime": "2024-06-25 18:56:06",
   "ModifyContent": "",
   "DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/2406251856/XHYS_Release.apk",
