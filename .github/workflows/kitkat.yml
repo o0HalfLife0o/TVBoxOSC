@@ -114,9 +114,6 @@ jobs:
         run: |
           echo "sdk.dir=/usr/lib/android-sdk" > local.properties
 
-      - name: Make gradlew executable
-        run: chmod +x gradlew
-
       - name: Build with Gradle
         run: ./gradlew assembleRelease --build-cache --parallel --daemon --warning-mode all
         env:
