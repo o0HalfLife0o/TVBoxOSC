@@ -96,7 +96,7 @@ jobs:
           setup_java_ver=$(grep -o 'JavaVersion.VERSION_[0-9_]\+' app/build.gradle |head -1 |sed 's/.*_//')
           if [ $setup_java_ver -gt 11 ]; then
             echo "setup_java_ver=$setup_java_ver" >> $GITHUB_ENV
-                    else
+          else
             echo "setup_java_ver=17" >> $GITHUB_ENV
           fi
       - uses: actions/setup-java@v4
@@ -119,7 +119,7 @@ jobs:
           rm -rf apk/
           mkdir -p apk/
           for file in `find ~ -name "*release*.apk" -print`; do
-          # 获取文件的基本名称
+            # 获取文件的基本名称
             base=$(basename "$file")
             # 如果文件是 TVBox_ 开头
             if [[ "$base" == TVBox_* ]]; then
@@ -206,7 +206,8 @@ jobs:
           git add --all
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
-    clean:
+
+  clean:
     needs: build
     runs-on: ubuntu-latest
     steps:
