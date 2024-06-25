@@ -30,8 +30,8 @@ jobs:
             branchName: kitkat
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
@@ -110,19 +110,20 @@ jobs:
         with:
           python-version: '3.8.18'
 
-      - name: Setup Gradle
-        if: ${{ env.commit }}
-        uses: gradle/gradle-build-action@v2
-
-      - name: Build With Gradle
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
+      - name: Create local.properties
         run: |
-          chmod +x gradlew
-          ./gradlew assembleRelease --build-cache --parallel --daemon --warning-mode all
+          echo "sdk.dir=/usr/lib/android-sdk" > local.properties
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew assembleRelease --build-cache --parallel --daemon --warning-mode all
         env:
-          JAVA_HOME: ${{ steps.setup-java.outputs.path }}
-          PYTHON_HOME: ${{ steps.setup-python.outputs.python-path }}
+            JAVA_HOME: ${{ env.JAVA_HOME_17_X64 }}
+            GRADLE_BUILD_ACTION_SETUP_COMPLETED: true
+            GRADLE_BUILD_ACTION_CACHE_RESTORED: true
+            PYTHON_HOME: ${{ env.pythonLocation }}
 
       - name: Prepare App
         if: ${{ env.commit }}
