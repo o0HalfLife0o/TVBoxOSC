@@ -2,7 +2,7 @@
   "Code": 0,
   "Msg": "新春快乐",
   "UpdateStatus": 3,//1、默认更新2、强制更新3、使用系统弹窗提示
-  "VersionCode": 240611,
+  "VersionCode": 240626,
   "VersionName": "240611",
   "UploadTime": "2024-06-15 12:01:19",
   "ModifyContent": "",
