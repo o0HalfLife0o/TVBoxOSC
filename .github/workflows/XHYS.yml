@@ -158,8 +158,8 @@ jobs:
           echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
           echo "UploadTime=$(git log --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
           echo "ModifyContent=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
-          echo "ApkMd5=$(md5sum apk/${{ matrix.repoName }}_Release.apk | awk '{ print $1 }')" >> $GITHUB_ENV
-          echo "ApkSize=$(ls -l --block-size=K apk/${{ matrix.repoName }}_Release.apk | awk '{ print $5 }'|grep -o '[0-9]\+')" >> $GITHUB_ENV
+          echo "ApkMd5=$(md5sum apk/TVBox_${{ matrix.repoName }}-armeabi-generic.apk | awk '{ print $1 }')" >> $GITHUB_ENV
+          echo "ApkSize=$(ls -l --block-size=K apk/TVBox_${{ matrix.repoName }}-armeabi-generic.apk | awk '{ print $5 }'|grep -o '[0-9]\+')" >> $GITHUB_ENV
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v4
         if: ${{ env.commit }}
@@ -197,7 +197,7 @@ jobs:
           sed -i 's/"VersionName": "[a-zA-Z0-9]*"/"VersionName": "${{ env.VersionCode }}"/' update/${{ matrix.repoName }}.json
           sed -i 's|"UploadTime": ".*"|"UploadTime": "${{ env.UploadTime }}"|g' update/${{ matrix.repoName }}.json
           sed -i 's|"ModifyContent": ".*"|"ModifyContent": "${{ env.ModifyContent }}"|g' update/${{ matrix.repoName }}.json
-          sed -i 's|"DownloadUrl": ".*"|"DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/${{ env.tag }}/${{ matrix.repoName }}_Release.apk"|g' update/${{ matrix.repoName }}.json
+          sed -i 's|"DownloadUrl": ".*"|"DownloadUrl": "https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/${{ env.tag }}/TVBox_${{ matrix.repoName }}-armeabi-generic.apk"|g' update/${{ matrix.repoName }}.json
           sed -i 's/"ApkSize": [a-zA-Z0-9]*/"ApkSize": ${{ env.ApkSize }}/' update/${{ matrix.repoName }}.json
           sed -i 's/"ApkMd5": "[a-zA-Z0-9]*"/"ApkMd5": "${{ env.ApkMd5 }}"/' update/${{ matrix.repoName }}.json
           git add --all
