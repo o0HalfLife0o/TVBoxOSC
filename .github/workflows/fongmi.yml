@@ -143,51 +143,40 @@ jobs:
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.repoName }}-Release.log
           fi
 
-      - name: Build Upgrade log
-      if: ${{ env.commit }}
-      working-directory: TVBoxOSC
-      run: |
-        lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
-        export LESSCHARSET=utf-8
-        echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.repoName }}.log
-        if [ "${{ env.commit }}" == "${lastCommit}" ]; then
-          git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- > apk/${{ matrix.repoName }}.log
-        else
-          git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- > apk/${{ matrix.repoName }}.log
-        fi
-
-      - name: Build Upgrade content
+      - name: Check if release exists and delete it
         if: ${{ env.commit }}
-        working-directory: TVBoxOSC
         run: |
-          echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
-          echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
-
-      - name: Upload App To Artifact
-        uses: actions/upload-artifact@v3
-        if: ${{ env.commit }}
-        with:
-          name: ${{ matrix.userName }}-${{ matrix.repoName }}
-          path: |
-            TVBoxOSC/apk/*
-
-      - name: Whether Or Not to Publish
-        if: ${{ inputs.donotpublish && env.commit }}
-        run: |
-          echo "commit=" >> $GITHUB_ENV
+          # 设置你的 GitHub 仓库信息
+          REPO_OWNER=xisohi
+          REPO_NAME=TVBoxOSC
+          GITHUB_TOKEN=${{ secrets.GITHUBXYTV_TOKEN }} # 这是 GitHub Actions 自动提供的 token
+          RELEASE_NAME=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}\/tree\/${{ matrix.branchName }}" ${{ github.workspace }}/README.md |grep -o '[0-9\-]\{13\}') # 这是你想要删除的 releases 的名称
+          # 使用 curl 和 GitHub API 获取 releases 列表
+          RELEASES=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases")
+          # 使用 jq 工具解析 JSON，并查找匹配的 releases ID
+          RELEASE_ID=$(echo "$RELEASES" | jq -r --arg name "$RELEASE_NAME" '.[] | select(.name == $name) | .id')
+          # 检查是否找到了匹配的 releases
+          if [ -n "$RELEASE_ID" ]; then
+            echo "Found release with name $RELEASE_NAME and ID $RELEASE_ID. Deleting it..."
+            # 使用 curl 和 GitHub API 删除匹配的 releases
+            curl -s -X DELETE -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases/$RELEASE_ID"
+            echo "Release deleted successfully."
+          else
+            echo "No release found with name $RELEASE_NAME."
+          fi
 
       - name: Release and Upload Assets
-        uses: ncipollo/release-action@main
+        uses: ncipollo/release-action@v1
         if: ${{ env.commit }}
         with:
-          name: ${{ matrix.repoName }}
-          tag: ${{ matrix.branchName }}
-          bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
+          name: ${{ env.tag }}
+          tag: ${{ env.tag }}
+          bodyFile: TVBoxOSC/apk/${{ matrix.userName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
           artifacts: |
             TVBoxOSC/apk/*.apk
-            TVBoxOSC/source-${{ env.commitS }}.*
+            TVBoxOSC/source-${{ env.commitS }}.*  
 
       - name: Push to master
         if: ${{ env.commit }}
@@ -196,14 +185,12 @@ jobs:
           sed -i '/url =/d' ./.git/config
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}"
+          git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git pull --rebase
-          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
-          sed -i 's/"code": "[a-zA-Z0-9]*"/"code": "${{ env.VersionCode }}"/' update/${{ matrix.branchName }}.json
-          sed -i 's/"name": "[a-zA-Z0-9]*"/"name": "${{ env.VersionCode }}"/' update/${{ matrix.branchName }}.json
-          sed -i 's|"desc": ".*"|"desc": "${{ env.desc }}"|g' update/${{ matrix.branchName }}.json
-          sed -i "s/update at .*/update at $(date '+%Y-%m-%d %H:%M:%S')/" README.md
+          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}\/tree\/${{ matrix.branchName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
+          sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}\/tree\/${{ matrix.branchName }}/s#name: [0-9\-]*#name: ${{ env.tag }}#" README.md
           git add --all
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
-
+          #continue-on-error: true 是因为 git commit 会失败也是预期的，这个步骤可以忽略失败。加上这个命令就可以在这个步骤失败的时候，不会影响其他步骤
+        continue-on-error: true
