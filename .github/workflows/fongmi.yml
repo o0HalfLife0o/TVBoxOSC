@@ -157,41 +157,41 @@ jobs:
             fi
 
       - name: Build Upgrade content
-              if: ${{ env.commit }}
-              working-directory: TVBoxOSC
-              run: |
-                echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
-                echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
+          if: ${{ env.commit }}
+          working-directory: TVBoxOSC
+          run: |
+            echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
+            echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
 
       - name: Upload App To Artifact
-              uses: actions/upload-artifact@v3
-              if: ${{ env.commit }}
-              with:
-                name: ${{ matrix.userName }}-${{ matrix.repoName }}
-                path: |
-                  TVBoxOSC/apk/*
+          uses: actions/upload-artifact@v3
+          if: ${{ env.commit }}
+          with:
+          name: ${{ matrix.userName }}-${{ matrix.repoName }}
+           path: |
+             TVBoxOSC/apk/*
 
       - name: Whether Or Not to Publish
-              if: ${{ inputs.donotpublish && env.commit }}
-              run: |
+          if: ${{ inputs.donotpublish && env.commit }}
+          run: |
                 echo "commit=" >> $GITHUB_ENV
 
       - name: Release and Upload Assets
-              uses: ncipollo/release-action@main
-              if: ${{ env.commit }}
-              with:
-                name: ${{ matrix.repoName }}
-                tag: ${{ matrix.branchName }}
-                bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
-                allowUpdates: true
-                removeArtifacts: true
-                artifacts: |
-                  TVBoxOSC/apk/*.apk
-                  TVBoxOSC/source-${{ env.commitS }}.*
+          uses: ncipollo/release-action@main
+          if: ${{ env.commit }}
+          with:
+            name: ${{ matrix.repoName }}
+            tag: ${{ matrix.branchName }}
+            bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
+            allowUpdates: true
+            removeArtifacts: true
+            artifacts: |
+               TVBoxOSC/apk/*.apk
+               TVBoxOSC/source-${{ env.commitS }}.*
 
       - name: Push to master
-              if: ${{ env.commit }}
-              run: |
+          if: ${{ env.commit }}
+          run: |
                 rm -rf TVBoxOSC
                 sed -i '/url =/d' ./.git/config
                 git config --local user.name "github-actions[bot]"
