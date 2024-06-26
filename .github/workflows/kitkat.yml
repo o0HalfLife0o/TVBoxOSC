@@ -62,15 +62,6 @@ jobs:
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
 
-      - name: Download and unzip media-1.2.0.zip
-        if: ${{ env.commit }}
-        run: |
-          mkdir -p media
-          wget https://github.com/androidx/media/archive/refs/tags/1.2.0.zip -O media/media-1.2.0.zip
-          unzip media/media-1.2.0.zip -d media
-          mv media/media-1.2.0/* media/
-          rm -rf media/media-1.2.0.zip media/media-1.2.0/
-
       - name: Compress Source Code
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -110,9 +101,6 @@ jobs:
         with:
           python-version: '3.8.18'
 
-      - name: Create local.properties
-        run: |
-          echo "sdk.dir=/usr/lib/android-sdk" > local.properties
 
       - name: Build with Gradle
         run: ./gradlew assembleRelease --build-cache --parallel --daemon --warning-mode all
