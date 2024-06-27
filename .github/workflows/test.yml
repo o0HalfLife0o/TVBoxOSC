@@ -183,6 +183,12 @@ jobs:
               echo "存在多个文件: $appReleases"
               # 重新赋值，只保留带有 'armeabi-generic.apk' 的文件
               appReleases=$(echo "$appReleases" | grep "armeabi-generic.apk")
+              # 再次检查文件数量
+              appReleaseCount=$(echo "$appReleases" | wc -l)
+              if [ "$appReleaseCount" -gt 1 ]; then 
+                # 还是存在多个 那么取第一个
+                appReleases=$(echo "$appReleases" | head -n 1)
+              fi
             else
               echo "只有一个文件: $appReleases"
             fi
