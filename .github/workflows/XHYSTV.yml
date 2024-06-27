@@ -2,7 +2,7 @@ name: XHYSTV
 
 on:
   schedule:
-    - cron: 59 */8 * * *
+    - cron: 0 6 * * *
   workflow_dispatch:
     inputs:
       rebuild:

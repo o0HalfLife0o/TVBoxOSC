@@ -3,7 +3,7 @@ name: fongmi
 on:
   push:
   schedule:
-    - cron: 0 0 * * *
+    - cron: 0 2 * * *
   workflow_dispatch:
     inputs:
       rebuild:
