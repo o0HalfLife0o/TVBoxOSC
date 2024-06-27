@@ -107,7 +107,7 @@ jobs:
         with:
           distribution: temurin
           java-version: ${{ env.setup_java_ver }}
-      - uses: gradle/gradle-build-action@v3
+      - uses: gradle/actions/setup-gradle@v3
         if: ${{ env.commit }}
       - name: Build With Gradle
         if: ${{ env.commit }}
