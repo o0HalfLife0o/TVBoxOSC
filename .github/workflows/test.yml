@@ -176,6 +176,17 @@ jobs:
             OUTPUT="${{ github.workspace }}/TVBoxOSC"
             export appRelease=$(find $OUTPUT/apk/ -name "*${{ matrix.userName }}*.apk")
             export sourceCode=$(find $OUTPUT -name "source-${{ env.commitS }}.*")
+           
+            # 检查文件数量
+            appReleaseCount=$(echo "$appReleases" | wc -l)
+            if [ "$appReleaseCount" -gt 1 ]; then
+              echo "存在多个文件: $appReleases"
+              # 重新赋值，只保留带有 'armeabi-generic.apk' 的文件
+              appReleases=$(echo "$appReleases" | grep "armeabi-generic.apk")
+            else
+              echo "只有一个文件: $appReleases"
+            fi
+          
             ESCAPED="$(sed -e '1s/\[\(.*\)\].*/#\1/' -e 's#\([&"\/]\)#\\\1#g' apk/${{ matrix.userName }}-Release.log)"
             count=$(echo "$ESCAPED" |wc -m |cut -d ' ' -f1)
             if [ ${count} -eq 1 ] || [ ${count} -gt 1024 ]; then
