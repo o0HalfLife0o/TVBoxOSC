@@ -35,6 +35,8 @@
     {"key": "hipy_古风漫画[画]","name": "古风漫画[画]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/古风漫画[画].js","searchable": 1,"quickSearch": 0,"filterable": 1},
     {"key": "hipy_包子漫画[画]","name": "包子漫画[画]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/包子漫画[画].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
+    {"key": "hipy_ASMR[听]","name": "ASMR[听]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/ASMR[听].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+
     {"key":"18av_open","name":"18av貓","type":3,"api":"./cat/js/18av_open.js","style":{"type":"rect","ratio":1.485}},
     {"key":"量子","name":"量子","type":0,"api":"https://cj.lziapi.com/api.php/provide/vod/at/xml/","searchable":1,"changeable":1,"categories":["伦理片"]},
   {"key":"18AV","name":"18AV","type":3,"api":"csp_Eighteen","searchable":1,"recordable":0,"style":{"type":"rect","ratio":1.485}},
