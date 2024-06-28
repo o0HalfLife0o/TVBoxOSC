@@ -1,7 +1,6 @@
 name: fongmi
 # 代码来自xinyi1984
 on:
-  push:
   schedule:
     - cron: 0 2 * * *
   workflow_dispatch:
