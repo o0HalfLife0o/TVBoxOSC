@@ -149,7 +149,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           echo "versionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
-          echo "versionName=$(grep -oP 'versionName \K\d+' app/build.gradle)" >> $GITHUB_ENV
+          echo "versionName=$(grep -oP 'versionName \"\K[^\"]+' app/build.gradle)" >> $GITHUB_ENV
           echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
 
       - name: Upload App To Artifact

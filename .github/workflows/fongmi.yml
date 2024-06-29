@@ -2,7 +2,7 @@ name: fongmi
 # 代码来自xinyi1984
 on:
   schedule:
-    - cron: 0 8 * * *
+    - cron: 0 6 * * *
   workflow_dispatch:
     inputs:
       rebuild:
@@ -160,7 +160,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
-          echo "VersionName=$(grep -oP 'versionName \K\d+' app/build.gradle)" >> $GITHUB_ENV
+          echo "VersionName=$(grep -oP 'versionName \"\K[^\"]+' app/build.gradle)" >> $GITHUB_ENV
           echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
 
       - name: Upload App To Artifact
