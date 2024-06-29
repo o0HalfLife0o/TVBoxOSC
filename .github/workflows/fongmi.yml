@@ -2,7 +2,7 @@ name: fongmi
 # 代码来自xinyi1984
 on:
   schedule:
-    - cron: 0 2 * * *
+    - cron: 0 8 * * *
   workflow_dispatch:
     inputs:
       rebuild:
