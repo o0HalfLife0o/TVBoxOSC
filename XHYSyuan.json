@@ -199,6 +199,7 @@
 		{"key": "hipy_驴番[漫]","name": "驴番[漫]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/驴番[漫].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_OmoFun[漫]","name": "OmoFun[漫]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/OmoFun[漫].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_奶狗影视[慢]","name": "奶狗影视[慢]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/奶狗影视[慢].js","searchable": 1,"quickSearch": 0,"filterable": 1},
+		{"key": "hipy_路漫漫[慢]","name": "路漫漫[慢]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/路漫漫[慢].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 
 		{"key": "hipy_555影视[飞]","name": "555影视[飞]","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/555影视[飞].js","searchable": 1,"quickSearch": 0,"filterable": 1},
 		{"key": "hipy_鸭奈飞影视","name": "鸭奈飞影视","type": 3,"api": "https://hipy-server.lcjly.cn/app/t4/files/drpy_libs/drpy2.min.js","ext":"https://hipy-server.lcjly.cn/app/t4/files/drpy_js/鸭奈飞影视.js","searchable": 1,"quickSearch": 0,"filterable": 1},
