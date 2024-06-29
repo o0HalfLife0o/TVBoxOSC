@@ -160,6 +160,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           echo "VersionCode=$(grep -oP 'versionCode \K\d+' app/build.gradle)" >> $GITHUB_ENV
+          echo "VersionName=$(grep -oP 'versionName \K\d+' app/build.gradle)" >> $GITHUB_ENV
           echo "desc=$(awk 'BEGIN{ORS="\\\\n"}{print NR ": " $0}' apk/${{ matrix.repoName }}.log)" >> $GITHUB_ENV
 
       - name: Upload App To Artifact
@@ -199,8 +200,8 @@ jobs:
           git pull --rebase
           sed -i "/${{ matrix.userName }}\/${{ matrix.repoName }}/s#Updated: [a-zA-Z0-9]*#Updated: ${{ env.commit }}#" README.md
           sed -i 's/"code": "[a-zA-Z0-9]*"/"code": "${{ env.VersionCode }}"/' update/${{ matrix.branchName }}.json
-          sed -i 's/"name": "[a-zA-Z0-9]*"/"name": "${{ env.VersionCode }}"/' update/${{ matrix.branchName }}.json
-          sed -i 's|"desc": ".*"|"desc": "${{ env.desc }}"|g' update/${{ matrix.branchName }}.json
+          sed -i 's/"name": "[a-zA-Z0-9]*"/"name": "${{ env.VersionName }}"/' update/${{ matrix.branchName }}.json
+          #sed -i 's|"desc": ".*"|"desc": "${{ env.desc }}"|g' update/${{ matrix.branchName }}.json
           sed -i "s/update at .*/update at $(date '+%Y-%m-%d %H:%M:%S')/" README.md
           git add --all
           git commit -m "${{ env.commit }}"
