@@ -56,8 +56,6 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          #替换APK下载地址
-          sed -i "s|https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/releases/download/XHTV|https://mirror.ghproxy.com/https://github.com/xisohi/TVBoxOSC/${{ env.tag }}/download/XHTV|g" catvod/src/main/java/com/github/catvod/utils/Github.java
           if [[ "${{ matrix.userName }}" == "xisohi" ]]; then
             sed -i 's/TeamNewPipe/teamnewpipe/g' app/build.gradle
           fi
@@ -172,7 +170,7 @@ jobs:
         if: ${{ env.commit }}
         with:
           name: ${{ matrix.repoName }}
-          tag: ${{ env.tag }}
+          tag: ${{ matrix.branchName }}
           bodyFile: TVBoxOSC/apk/${{ matrix.repoName }}-Release.log
           allowUpdates: true
           removeArtifacts: true
