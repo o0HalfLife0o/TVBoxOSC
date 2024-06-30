@@ -1,5 +1,5 @@
 {
-  "code": "240",
+  "code": "239",
   "name": "0627",
-  "desc": "1: merge dev\n2: Dev\n3: Fix layout bug\n4: Fix bug\n5: Update Downloader\n"
+  "desc": "1: Update build.gradle\n"
 }
