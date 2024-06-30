@@ -1,5 +1,5 @@
 {
   "code": "240",
   "name": "0627",
-  "desc": "1: 修复已知BUG\n2: 修正优先使用自定义源\n"
+  "desc": "1: merge dev\n2: Dev\n3: Fix layout bug\n4: Fix bug\n5: Update Downloader\n"
 }
