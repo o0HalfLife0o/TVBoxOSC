@@ -212,7 +212,7 @@ jobs:
 
       - name: Cache Bot API Binary
         id: cache-bot-api
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: telegram-bot-api-binary
           key: CI-telegram-bot-api-${{ hashFiles('telegram-bot-api-status') }}
