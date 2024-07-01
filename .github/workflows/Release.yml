@@ -47,12 +47,8 @@ jobs:
       - name: Checkout Source Code
         if: ${{ env.commit }}
         run: |
-          git clone https://github.com/androidx/media.git TVBoxOSC
+          git clone ${{ env.upStream }} TVBoxOSC
           cd TVBoxOSC
-          git checkout -b main origin/main
-          cd /home/runner/work/TVBoxOSC/TVBoxOSC
-          git clone ${{ env.upStream }} TVBoxOSC/media
-          cd TVBoxOSC/media
           git checkout ${{ env.commit }}
           echo "tag=$(git log --date=format:'%y%m%d%H%M' --pretty=format:%cd ${{ env.commitS }} -1)" >> $GITHUB_ENV
 
