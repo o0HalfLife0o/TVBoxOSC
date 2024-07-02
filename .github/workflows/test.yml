@@ -13,10 +13,6 @@ on:
         description: '构建后不提交发布新版'
         required: false
         type: boolean
-      testOption:
-        description: 'arm64支持，不支持ijk解码'
-        required: false
-        type: boolean
 
 jobs:
   build:
@@ -31,6 +27,7 @@ jobs:
           - userName: takagen99
             repoName: Box
             branchName: main
+            java_ver: 17
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -71,13 +68,6 @@ jobs:
         run: |
           #zip -q -x ".git/*" -x  ".github/*" -r source-${{ env.commitS }}.zip .
           tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
-      - name: Option For Test
-        if: ${{ inputs.testOption }}
-        working-directory: TVBoxOSC
-        run: |
-          #添加arm64支持，不支持ijk解码
-          sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" app/build.gradle
-          sed -i "/armeabi-v7a[\'\"]$/s#\$#, 'arm64-v8a'#" player/build.gradle
       - name: Release Apk Sign
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -92,22 +82,12 @@ jobs:
           sed -i '$a\RELEASE_KEY_ALIAS=TVBoxOSC'            ./gradle.properties
           sed -i '$a\RELEASE_STORE_PASSWORD=TVBoxOSC'       ./gradle.properties
           sed -i '$a\RELEASE_KEY_PASSWORD=TVBoxOSC'         ./gradle.properties
-      - name: Check JAVA Version
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        run: |
-          setup_java_ver=$(grep -o 'JavaVersion.VERSION_[0-9_]\+' app/build.gradle |head -1 |sed 's/.*_//')
-          if [ $setup_java_ver -gt 11 ]; then
-            echo "setup_java_ver=$setup_java_ver" >> $GITHUB_ENV
-          else
-            echo "setup_java_ver=17" >> $GITHUB_ENV
-          fi
       - uses: actions/setup-java@v4
-        if: ${{ env.setup_java_ver }}
+        if: ${{ matrix.java_ver }}
         with:
           distribution: temurin
-          java-version: ${{ env.setup_java_ver }}
-      - uses: gradle/gradle-build-action@v3
+          java-version: ${{ matrix.java_ver }}
+      - uses: gradle/actions/setup-gradle@v3
         if: ${{ env.commit }}
       - name: Build With Gradle
         if: ${{ env.commit }}
@@ -133,18 +113,20 @@ jobs:
             # 移动并重命名文件
             mv "$file" "apk/$new_base"
           done
+          mv source-${{ env.commitS }}.* apk/
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
           lastCommit=$(grep "${{ matrix.userName }}\/${{ matrix.repoName }}" ${{ github.workspace }}/README.md |grep -o '[a-z0-9]\{40\}')
           export LESSCHARSET=utf-8
-          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:" > apk/${{ matrix.userName }}-Release.log
+          echo -e "Credit: [${{ matrix.userName }}](${{ env.upStream }})\nCommit: ${{ env.commit }}\nChangelog:\n\`\`\`" > apk/${{ matrix.userName }}-Release.log
           if [ "${{ env.commit }}" == "${lastCommit}" ]; then
             git log --pretty=format:%B ${{ env.commitS }} -1 |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           else
             git log --pretty=format:%B ${{ env.commitS }}...${lastCommit:0:7} |sed -e "s# \{2,\}#\n#g" -e "/^Merge \(pull\|branch\|remote\)/d" -e '/^$/d' |cat -n |sort -k2,2 -k1,1n |uniq -f1 |sort -k1,1n |cut -f2- >> apk/${{ matrix.userName }}-Release.log
           fi
+          echo -e '\n```' >> apk/${{ matrix.userName }}-Release.log
       - name: Upload App To Artifact
         uses: actions/upload-artifact@v4
         if: ${{ env.commit }}
@@ -167,35 +149,33 @@ jobs:
           removeArtifacts: true
           artifacts: |
             TVBoxOSC/apk/*.apk
-            TVBoxOSC/source-${{ env.commitS }}.*
+            TVBoxOSC/apk/source-${{ env.commitS }}.*
+      - name: Download Telegram Bot API Binary
+        if: ${{ env.commit }}
+        uses: actions/download-artifact@v4
+        with:
+          name: telegram-bot-api-binary
+          path: TVBoxOSC
       - name: Post To Telegram
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
+        env:
+          CHAT_ID: -1001734684817
+          TELEGRAM_TOKEN: ${{ secrets.BOT_TOKEN }}
         run: |
-          if [ -n "${{ secrets.CHANNEL_ID }}" ] && [ -n "${{ secrets.BOT_TOKEN }}" ]; then
-            OUTPUT="${{ github.workspace }}/TVBoxOSC"
-            export appRelease=$(find $OUTPUT/apk/ -name "*${{ matrix.userName }}*.apk")
-            export sourceCode=$(find $OUTPUT -name "source-${{ env.commitS }}.*")
-            ESCAPED="$(sed -e '1s/\[\(.*\)\].*/#\1/' -e 's#\([&"\/]\)#\\\1#g' apk/${{ matrix.userName }}-Release.log)"
-            count=$(echo "$ESCAPED" |wc -m |cut -d ' ' -f1)
-            if [ ${count} -eq 1 ] || [ ${count} -gt 1024 ]; then
-              ESCAPED="$(echo -e "Credit: #${{ matrix.userName }}\nCommit: ${{ env.commit }}\nChangelog:\n${{ env.upStream }}/commits/${{ matrix.branchName }}")"
-            fi
-            ESCAPED=`python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$ESCAPED"`
-            #检查源码尺寸，太大则不上传
-            file_size=$(du -s ${sourceCode} | awk '{print $1}')
-            #文件最大值，1024代表1M
-            file_limit_size=20480
-            if [[ ${file_size} -lt ${file_limit_size} ]];then
-              curl -v "https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendMediaGroup?chat_id=${{ secrets.CHANNEL_ID }}&media=%5B%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FappRelease%22%7D%2C%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FsourceCode%22%2C%20%22caption%22%3A%22${ESCAPED}%22%7D%5D" -F appRelease="@$appRelease" -F sourceCode="@$sourceCode"
-            else
-              curl -v "https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendMediaGroup?chat_id=${{ secrets.CHANNEL_ID }}&media=%5B%7B%22type%22%3A%22document%22%2C%20%22media%22%3A%22attach%3A%2F%2FappRelease%22%2C%20%22caption%22%3A%22${ESCAPED}%22%7D%5D" -F appRelease="@$appRelease"
-            fi
+          if [ -n "${{ secrets.BOT_TOKEN }}" ]; then
+            sed -i -e '1s/\[\(.*\)\].*/#\1/' -e 's#\([&"\/]\)#\\\1#g' apk/${{ matrix.userName }}-Release.log
+            mv -f apk/${{ matrix.userName }}-Release.log caption.txt
+            chmod +x telegram-bot-api-binary
+            ./telegram-bot-api-binary --api-id=21724 --api-hash=3e0cb5efcd52300aec5994fdfc5bdc16 --local 2>&1 > /dev/null &
+            mv ../.github/scripts/upload.py ./
+            python upload.py
           fi
       - name: Push to master
         if: ${{ env.commit }}
         run: |
           rm -rf TVBoxOSC
+          git reset --hard
           sed -i '/url =/d' ./.git/config
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -205,6 +185,46 @@ jobs:
           git add --all
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
+
+  telegram-bot-api:
+    name: Telegram Bot API
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Clone Telegram Bot API
+        run: |
+          git clone --recursive https://github.com/tdlib/telegram-bot-api.git
+          git status telegram-bot-api >> telegram-bot-api-status
+
+      - name: Cache Bot API Binary
+        id: cache-bot-api
+        uses: actions/cache@v4
+        with:
+          path: telegram-bot-api-binary
+          key: CI-telegram-bot-api-${{ hashFiles('telegram-bot-api-status') }}
+
+      - name: Compile Telegram Bot API
+        if: steps.cache-bot-api.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install make git zlib1g-dev libssl-dev gperf cmake g++
+          cd telegram-bot-api
+          rm -rf build
+          mkdir build
+          cd build
+          cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=.. ..
+          cmake --build . --target install -j$(nproc)
+          cd ../..
+          ls -l telegram-bot-api/bin/telegram-bot-api*
+          cp telegram-bot-api/bin/telegram-bot-api telegram-bot-api-binary
+
+      - name: Upload Binary
+        uses: actions/upload-artifact@master
+        with:
+          name: telegram-bot-api-binary
+          path: telegram-bot-api-binary
 
   clean:
     needs: build
