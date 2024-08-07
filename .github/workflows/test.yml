@@ -155,27 +155,7 @@ jobs:
           artifacts: |
             TVBoxOSC/apk/*.apk
             TVBoxOSC/apk/source-${{ env.commitS }}.*
-      - name: Download Telegram Bot API Binary
-        if: ${{ env.commit }}
-        uses: actions/download-artifact@v4
-        with:
-          name: telegram-bot-api-binary
-          path: TVBoxOSC
-      - name: Post To Telegram
-        if: ${{ env.commit }}
-        working-directory: TVBoxOSC
-        env:
-          CHAT_ID: -1001734684817
-          TELEGRAM_TOKEN: ${{ secrets.BOT_TOKEN }}
-        run: |
-          if [ -n "${{ secrets.BOT_TOKEN }}" ]; then
-            sed -i -e '1s/\[\(.*\)\].*/#\1/' -e 's#\([&"\/]\)#\\\1#g' apk/${{ matrix.userName }}-Release.log
-            mv -f apk/${{ matrix.userName }}-Release.log caption.txt
-            chmod +x telegram-bot-api-binary
-            ./telegram-bot-api-binary --api-id=21724 --api-hash=3e0cb5efcd52300aec5994fdfc5bdc16 --local 2>&1 > /dev/null &
-            mv ../.github/scripts/upload.py ./
-            python upload.py
-          fi
+
       - name: Push to master
         if: ${{ env.commit }}
         run: |
@@ -190,46 +170,6 @@ jobs:
           git add --all
           git commit -m "${{ env.commit }}"
           git push -u -f origin master
-
-  telegram-bot-api:
-    name: Telegram Bot API
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Clone Telegram Bot API
-        run: |
-          git clone --recursive https://github.com/tdlib/telegram-bot-api.git
-          git status telegram-bot-api >> telegram-bot-api-status
-
-      - name: Cache Bot API Binary
-        id: cache-bot-api
-        uses: actions/cache@v4
-        with:
-          path: telegram-bot-api-binary
-          key: CI-telegram-bot-api-${{ hashFiles('telegram-bot-api-status') }}
-
-      - name: Compile Telegram Bot API
-        if: steps.cache-bot-api.outputs.cache-hit != 'true'
-        run: |
-          sudo apt-get update
-          sudo apt-get install make git zlib1g-dev libssl-dev gperf cmake g++
-          cd telegram-bot-api
-          rm -rf build
-          mkdir build
-          cd build
-          cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=.. ..
-          cmake --build . --target install -j$(nproc)
-          cd ../..
-          ls -l telegram-bot-api/bin/telegram-bot-api*
-          cp telegram-bot-api/bin/telegram-bot-api telegram-bot-api-binary
-
-      - name: Upload Binary
-        uses: actions/upload-artifact@master
-        with:
-          name: telegram-bot-api-binary
-          path: telegram-bot-api-binary
 
   clean:
     needs: build
