@@ -155,6 +155,8 @@ jobs:
           artifacts: |
             TVBoxOSC/apk/*.apk
             TVBoxOSC/apk/source-${{ env.commitS }}.*
+            token: ${{ github.token }}
+            generateReleaseNotes: true
 
       - name: Push to master
         if: ${{ env.commit }}
