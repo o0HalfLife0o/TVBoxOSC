@@ -63,9 +63,9 @@ jobs:
           fi 
           echo 'crosswalk源，防挂'
           if grep -q 'crosswalk' build.gradle; then
-            sed -i "/crosswalk/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
+            sed -i "/crosswalk/a\        maven { url 'https://yangjb0913.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
           else
-            sed -i "/jitpack.io/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
+            sed -i "/jitpack.io/a\        maven { url 'https://yangjb0913.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
           fi
       - name: Compress Source Code
         if: ${{ env.commit }}
