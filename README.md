@@ -1,7 +1,7 @@
 # TVBoxOSC
 
-![Build](https://shields.io/github/actions/workflow/status/yenkj/TVBoxOS/test.yml?branch=master&logo=github&label=Build)
-[![Download](https://img.shields.io/github/v/release/yenkj/TVBoxOS?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/yenkj/TVBoxOS/releases/latest) 
+![Build](https://shields.io/github/actions/workflow/status/yenkj/TVBox/test.yml?branch=master&logo=github&label=Build)
+[![Download](https://img.shields.io/github/v/release/yenkj/TVBox?color=orange&logoColor=orange&label=Download&logo=DocuSign)](https://github.com/yenkj/TVBox/releases/latest) 
 
 ## Credits
 This repo relies on the following third-party projects:
