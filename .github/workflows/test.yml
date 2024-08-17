@@ -92,7 +92,7 @@ jobs:
         with:
           distribution: temurin
           java-version: ${{ matrix.java_ver }}
-      - uses: gradle/actions/setup-gradle@v3
+      - uses: gradle/actions/setup-gradle@v4
         if: ${{ env.commit }}
       - name: Build With Gradle
         if: ${{ env.commit }}
