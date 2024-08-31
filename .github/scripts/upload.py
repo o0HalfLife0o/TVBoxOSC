@@ -12,11 +12,10 @@ def get_caption() -> str:
         return f.read()
 
 def genFileDirectory(path):
-    files_walk = os.walk(path)
     files = {}
     media = []
-    for root, dirs, file_name_dic in files_walk:
-        for fileName in file_name_dic:
+    for root, dirs, file_name_dic in os.walk(path):
+        for fileName in sorted(file_name_dic):
             files[fileName] = open(path + "/" + fileName, "rb")
             media.append(dict(type='document', media=f'attach://{fileName}'))
     media[-1]['caption'] = get_caption()
