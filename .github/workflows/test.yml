@@ -73,8 +73,8 @@ jobs:
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
         run: |
-          #zip -q -x ".git/*" -x  ".github/*" -r source-${{ env.commitS }}.zip .
-          tar -cJf source-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
+          #zip -q -x ".git/*" -x  ".github/*" -r sourceCode-${{ env.commitS }}.zip .
+          tar -cJf sourceCode-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
       - name: Release Apk Sign
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -120,7 +120,7 @@ jobs:
             # 移动并重命名文件
             mv "$file" "apk/$new_base"
           done
-          mv source-${{ env.commitS }}.* apk/
+          mv sourceCode-${{ env.commitS }}.* apk/
       - name: Release Note
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
@@ -156,7 +156,7 @@ jobs:
           removeArtifacts: true
           artifacts: |
             TVBoxOSC/apk/*.apk
-            TVBoxOSC/apk/source-${{ env.commitS }}.*
+            TVBoxOSC/apk/sourceCode-${{ env.commitS }}.*
       - name: Download Telegram Bot API Binary
         if: ${{ env.commit }}
         uses: actions/download-artifact@v4
