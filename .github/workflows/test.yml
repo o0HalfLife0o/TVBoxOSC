@@ -45,6 +45,7 @@ jobs:
             echo "commit=$commit" >> $GITHUB_ENV
             echo "commitS=${commit:0:7}" >> $GITHUB_ENV
           fi
+          echo "commit=$commit"
       - name: Checkout Source Code
         if: ${{ env.commit }}
         run: |
