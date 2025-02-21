@@ -16,7 +16,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix:
@@ -232,7 +232,7 @@ jobs:
           cp telegram-bot-api/bin/telegram-bot-api telegram-bot-api-binary
 
       - name: Upload Binary
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@main
         with:
           name: telegram-bot-api-binary
           path: telegram-bot-api-binary
