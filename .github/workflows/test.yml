@@ -117,8 +117,8 @@ jobs:
             # echo "GRADLE_OPTS=-Xmx4g" >> $GITHUB_ENV 
             # 不使用守护线程 --no-daemon
             # ./gradlew assemblerelease --build-cache --parallel --no-daemon --warning-mode all
-            # 或者关闭R8 会导致内存不够编译失败
-            ./gradlew assemblerelease --build-cache --parallel --daemon -Dandroid.enableR8=false --warning-mode all 
+            # 或者关闭R8 会导致内存不够编译失败 -Dandroid.enableR8=false 
+            ./gradlew assemblerelease --build-cache --parallel --max-workers=4 --no-daemon --warning-mode all 
           else
             ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
           fi
