@@ -66,14 +66,7 @@ jobs:
           else
              sed -i "/versionName/s#[0-9a-zA-Z_\.\'\"-]\+\$#\'${{ env.tag }}\'#" app/build.gradle
              sed -i "/android:text=/s#=\"#=\"${{ env.tag }}\\\\n\\\\n#" app/src/main/res/layout/dialog_about.xml
-          fi
-          
-          if [ "${{ matrix.userName }}" == "q215613905" ]; then
-            echo '修改Q版编译条件'
-            sed -i 's/4.2.2/7.4.2/g' build.gradle
-            sed -i 's/7.3.3/7.5/g' gradle/wrapper/gradle-wrapper.properties
-          fi
-          
+          fi 
           echo 'crosswalk源，防挂'
           if grep -q 'crosswalk' build.gradle; then
             sed -i "/crosswalk/a\        maven { url 'https://o0halflife0o.github.io/crosswalk/releases/crosswalk/android/maven2' }" build.gradle
@@ -112,16 +105,7 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           chmod +x gradlew
-          if [ "${{ matrix.userName }}" == "q215613905" ]; then
-            # 修改环境变量不行
-            # echo "GRADLE_OPTS=-Xmx4g" >> $GITHUB_ENV 
-            # 不使用守护线程 --no-daemon
-            # ./gradlew assemblerelease --build-cache --parallel --no-daemon --warning-mode all
-            # 或者关闭R8 会导致内存不够编译失败 -Dandroid.enableR8=false 
-            ./gradlew assemblerelease --build-cache --parallel --max-workers=4 --no-daemon --warning-mode all 
-          else
-            ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
-          fi
+          ./gradlew assemblerelease --build-cache --parallel --daemon --warning-mode all
       - name: Prepare App
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
