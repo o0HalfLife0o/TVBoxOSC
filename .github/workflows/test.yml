@@ -79,6 +79,31 @@ jobs:
         run: |
           #zip -q -x ".git/*" -x  ".github/*" -r sourceCode-${{ env.commitS }}.zip .
           tar -cJf sourceCode-${{ env.commitS }}.tar.xz --exclude=.git --exclude=.github *
+      
+      - name: Setup Python
+        if: ${{ matrix.userName == 'q215613905' && env.commit }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
+
+      - name: Install Python dependencies
+        if: ${{ matrix.userName == 'q215613905' && env.commit }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install lxml ujson pyquery requests jsonpath cachetools pycryptodome beautifulsoup4
+
+      - name: Modify pyramid——build.gradle
+        if: ${{ matrix.userName == 'q215613905' && env.commit }}
+        working-directory: TVBoxOSC
+        run: |
+          # 替换Windows路径为系统Python路径
+          sed -i "s|buildPython(\"D:/Programs/Python/Python38/python.exe\")|buildPython(\"/usr/bin/python3\")|g" pyramid/build.gradle
+          
+          # 确保Python配置正确
+          sed -i '/python {/!b;n;c\            version "3.8"' pyramid/build.gradle
+          sed -i '/version "3.8"/a\            buildPython("/usr/bin/python3")' pyramid/build.gradle
+          
       - name: Release Apk Sign
         if: ${{ env.commit }}
         working-directory: TVBoxOSC
