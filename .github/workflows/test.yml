@@ -86,11 +86,11 @@ jobs:
         with:
           python-version: '3.8'
 
-      - name: Install Python dependencies
-        if: ${{ matrix.userName == 'q215613905' && env.commit }}
-        run: |
-          python -m pip install --upgrade pip
-          pip install lxml ujson pyquery requests jsonpath cachetools pycryptodome beautifulsoup4
+      # - name: Install Python dependencies
+      #   if: ${{ matrix.userName == 'q215613905' && env.commit }}
+      #   run: |
+      #     python -m pip install --upgrade pip
+      #     pip install lxml ujson pyquery requests jsonpath cachetools pycryptodome beautifulsoup4
 
       - name: Modify pyramid——build.gradle
         if: ${{ matrix.userName == 'q215613905' && env.commit }}
@@ -102,7 +102,7 @@ jobs:
       - name: Setup Python local.properties
         if: ${{ matrix.userName == 'q215613905' && env.commit }}
         working-directory: TVBoxOSC
-        run: echo "sdk.dir=${{ env.ANDROID_SDK_ROOT }}" > local.properties 
+        run: echo "" > local.properties 
           
       - name: Release Apk Sign
         if: ${{ env.commit }}
