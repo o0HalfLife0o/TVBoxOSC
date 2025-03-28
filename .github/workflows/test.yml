@@ -98,6 +98,11 @@ jobs:
         run: |
           # 替换Windows路径为系统Python路径
           sed -i "s|buildPython(\"D:/Programs/Python/Python38/python.exe\")|buildPython(\"/usr/bin/python3\")|g" pyramid/build.gradle
+
+      - name: Setup Python local.properties
+        if: ${{ matrix.userName == 'q215613905' && env.commit }}
+        working-directory: TVBoxOSC
+        run: echo "sdk.dir=${{ env.ANDROID_SDK_ROOT }}" > local.properties 
           
       - name: Release Apk Sign
         if: ${{ env.commit }}
