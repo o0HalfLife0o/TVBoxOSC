@@ -97,7 +97,8 @@ jobs:
         working-directory: TVBoxOSC
         run: |
           # 替换Windows路径为系统Python路径
-          sed -i "s|buildPython(\"D:/Programs/Python/Python38/python.exe\")|buildPython(\"/usr/bin/python3\")|g" pyramid/build.gradle
+          # sed -i "s|buildPython(\"D:/Programs/Python/Python38/python.exe\")|buildPython(\"/usr/bin/python3\")|g" pyramid/build.gradle
+          sed -i '/buildPython("D:\/Programs\/Python\/Python38\/python.exe")/d' pyramid/build.gradle
 
       - name: Setup Python local.properties
         if: ${{ matrix.userName == 'q215613905' && env.commit }}
