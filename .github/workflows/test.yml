@@ -82,7 +82,7 @@ jobs:
       
       - name: Setup Python
         #if: ${{ matrix.userName == 'q215613905' && env.commit }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.8'
 
